@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "source": "/home/cwadmin/exports/SCPRC_Review_Evidence_Export_20261102/04_Gate_Diagnostics/frozen_inference_lineage.json",
+  "source_sha256": "46cf9ecaddfe22ed54e0de3f27c7fc73de276ee422f8d3ac099905f96304f561",
+  "folds_checked": 18,
+  "all_canonical_full_pointers": true,
+  "all_current_checkpoint_prediction_hashes_match_export": true,
+  "all_weights_unchanged": true,
+  "all_before_after_weight_hashes_equal": true,
+  "max_saved_prediction_abs_difference_kWh": 0.0078125,
+  "all_within_recorded_fold_acceptance_tolerance": true,
+  "parity_evidence": "frozen gate export forward-vs-saved prediction comparison, not bitwise identity",
+  "forward_rerun_in_this_analysis": false,
+  "training": false
+}

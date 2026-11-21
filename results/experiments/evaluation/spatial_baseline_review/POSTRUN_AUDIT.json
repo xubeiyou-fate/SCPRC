@@ -1,0 +1,657 @@
+{
+  "generated_at": "2026-11-01T20:16:44+08:00",
+  "training_status": "completed",
+  "folds": 18,
+  "completed_at": "2026-10-31T20:18:02+08:00",
+  "paper_acceptance_status": "review_pending",
+  "checks": {
+    "complete_fold_grid": true,
+    "all_completed": true,
+    "all_labels_stations_truth_align_to_anchor": true,
+    "all_predictions_and_truth_finite": true,
+    "all_metrics_recomputed_match": true,
+    "all_artifact_hashes_match_manifest": true
+  },
+  "equal_fold_metrics": {
+    "rmse": 363.5875316627248,
+    "mae": 28.900251291390717
+  },
+  "by_city": {
+    "AMS": {
+      "rmse": 14.98227037160877,
+      "mae": 10.05106066987899
+    },
+    "JHB": {
+      "rmse": 10.247098711328531,
+      "mae": 9.361314342591964
+    },
+    "LOA": {
+      "rmse": 10.220175319886758,
+      "mae": 7.933142653934278
+    },
+    "MEL": {
+      "rmse": 139.81924672920164,
+      "mae": 34.78344853083327
+    },
+    "SPO": {
+      "rmse": 14.26255175710462,
+      "mae": 13.70414610748094
+    },
+    "SZH": {
+      "rmse": 1991.9938470872187,
+      "mae": 97.56839544362487
+    }
+  },
+  "duplicate_JHB_seed17": {
+    "status": "unresolved_run_difference",
+    "primary_metrics": {
+      "mae": 8.131130947255032,
+      "rmse": 9.008798748069818
+    },
+    "parallel_metrics": {
+      "mae": 5.553533832182468,
+      "rmse": 6.839715758356993
+    },
+    "same_protocol": true,
+    "same_recorded_code": true,
+    "same_scaler": true,
+    "policy": "Primary directory retained without overwriting; parallel result retained; no selection by validation score; exact cause of run difference not established."
+  },
+  "claim_boundary": "fixed-distance Graph WaveNet only; not adaptive GWN, MTGNN or DCRNN. Numerical and alignment checks do not resolve duplicate-run provenance or establish a tuned baseline.",
+  "rows": [
+    {
+      "fold": "target_ams_seed13",
+      "city": "AMS",
+      "seed": 13,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        2449
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 12.69458588936343,
+        "mae": 7.572078430132992
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "7dff0b9abb24dc7e26ee44f8bd33813a68bb7a650182e1f7c26f5f2046e857b9",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "d9e96cc5e4c4314222109f4c6358b96830b194e2fb49d354b113fda75e55ca20",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "6a9335dcdedae0501fef8a873aec9db87fe988c8ee9be56ba4ab1a44f004ec1c",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T15:36:13+08:00"
+    },
+    {
+      "fold": "target_ams_seed17",
+      "city": "AMS",
+      "seed": 17,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        2449
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 14.130536875516656,
+        "mae": 9.839895035279591
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "dd83332c2261b8a557fa28cf909a867ca81216b62ab3032cb5f0c917bf1fcc5d",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "3e08c8a3a7b04688a535564cfd417ee3935437c8ac28b0728c10cbbfbcb8e364",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "6c8f1bd3a24a7a62c8e8044dc65c37e4465056b8eaf6a003b34f073d5edabb12",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T15:59:11+08:00"
+    },
+    {
+      "fold": "target_ams_seed29",
+      "city": "AMS",
+      "seed": 29,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        2449
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 18.121688349946226,
+        "mae": 12.741208544224385
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "7bd11bd449aea0afa6d5247b46fe4625da225668f219b6b8404ba0a7d9459742",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "bd125dc9cbb5a774484c32eeb7369d15be43d6cf91eb207e1779e2ad3f7bf549",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "b497abea3e44c52c91f343ca7f880682ce9256764b09e2e35b3465958db43178",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T16:28:09+08:00"
+    },
+    {
+      "fold": "target_jhb_seed13",
+      "city": "JHB",
+      "seed": 13,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        47
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 7.973769137025738,
+        "mae": 6.909947425115743
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "55e7bb8f20a07307f530ddd7dba368d6860aad1b4f14924fc5540c9604bbe601",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "61b1438f17535c7bd4ce03fe44192cd70afa1daaf26697e59e12425ef8fc2a6e",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "0fe0a8119a60642f9c8e6e74d35085d60bf044159a7319ca60c1f00b4881e9c3",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T15:50:26+08:00"
+    },
+    {
+      "fold": "target_jhb_seed17",
+      "city": "JHB",
+      "seed": 17,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        47
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 9.008798748069818,
+        "mae": 8.131130947255032
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "7eb846fbcf1efd0bbb380b58515480b793236eac8806645d40af1c9d16d3af65",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "dc8bb5e31a2abb78ae9a60a75d2a5b82e62bef7b39f65cd9ef0b2b8ea48949ef",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "10a1f97c93751d940a6de59f96b38efe448051e00382b61534ca0a760e162968",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T17:05:32+08:00"
+    },
+    {
+      "fold": "target_jhb_seed29",
+      "city": "JHB",
+      "seed": 29,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        47
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 13.758728248890039,
+        "mae": 13.042864655405117
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "f1d174f1b7f6c1b361672fcd190ea89821dc258fae618aa1e868b13a965597dd",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "2576e2b7284be05e53896711b7fb17789875a5ed706a3505b6a4b11bfebaecea",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "05d1d0023fe043bef61064ef8ff622f661040b77ccd8f896efa634b9d804b5d8",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T17:24:05+08:00"
+    },
+    {
+      "fold": "target_loa_seed13",
+      "city": "LOA",
+      "seed": 13,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        229
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 8.037836694726535,
+        "mae": 5.417856870323569
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "147dfbe859769dd9078bbc102b68075e0e7fd3d71a5d662402c885d63f2a9611",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "1c27869b263f67a23d91a98c4aa59b190dd5511852c0a0942394fee196ca9ea3",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "d6a0636d8814591c6d8210602dcc82c7c82b2b1d645371ede664208ba1166d29",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T15:50:37+08:00"
+    },
+    {
+      "fold": "target_loa_seed17",
+      "city": "LOA",
+      "seed": 17,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        229
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 9.367346462351184,
+        "mae": 6.251743557875533
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "57127a628c9445820e18e4f3be340a6da2defbf42c838d1b4736369619e6b080",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "31ece76dd02334ff801ac2bf9e1cfbfc3db33801801041f43c25c91e4596adf8",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "7cc110973bdb76377835ae10690fa6a48b54f8c024f1539be6ac31f599b4caee",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T16:56:23+08:00"
+    },
+    {
+      "fold": "target_loa_seed29",
+      "city": "LOA",
+      "seed": 29,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        229
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 13.255342802582556,
+        "mae": 12.129827533603734
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "d8e3fa7339a035f4a6f98eca4626f462fafad015d5d6cca09b5f0e16df6a765d",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "c195d24f3d35b0c7458db6b4d1b34d1310b7fc29dd6537ee4743123c50f01c4a",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "f914aa037709485954bd0e8a302f99a680f395c27b5b5af698360eb36e38e9df",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T17:42:31+08:00"
+    },
+    {
+      "fold": "target_mel_seed13",
+      "city": "MEL",
+      "seed": 13,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        63
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 151.01665019130834,
+        "mae": 35.94635820646283
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "7171e26f257e69caac7b56c8cebbd0f7adbc5f60c6b482f3dc0966ab782b3462",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "dbbbbfcd520c75eba3c391adecda858cbe65b2d6c94dd3c824fc4394d0b7c508",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "212ab13180fc717dd003d3c5ee71453262258de800678f193220dae581006334",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T18:01:03+08:00"
+    },
+    {
+      "fold": "target_mel_seed17",
+      "city": "MEL",
+      "seed": 17,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        63
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 129.0978676356283,
+        "mae": 33.36973873672591
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "f52e60af71dba8a55e6443a7f765da319126bb94de743e919cc1486619c4733b",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "90b4fe5fc920d6b0796f98122380cbdf34300b6501ef69678daf62570d91f19d",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "5e4331383c2468304005430479151d1fec11761075d8ceb55c512d8db9b82ef9",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T18:19:36+08:00"
+    },
+    {
+      "fold": "target_mel_seed29",
+      "city": "MEL",
+      "seed": 29,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        63
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 139.34322236066825,
+        "mae": 35.03424864931106
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "3d2623f63a9be7614f98ef36f0048a248019420a123aa4b871d356036b3fa84b",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "5e4e0da27bf7d954090560bfcb1fbff8fed0ce59b273397c45c9c7278ad1d352",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "da6de278f5de7ccc628f61ea40ecc544a065898c4e3a3833a1c2334af6306ae8",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T18:38:10+08:00"
+    },
+    {
+      "fold": "target_spo_seed13",
+      "city": "SPO",
+      "seed": 13,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        47
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 14.472658998230589,
+        "mae": 14.018007524771647
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "8097d80ccefe720cb70ee25cba1d9f2136dad54794d3411183c21da9d75cc545",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "32f38a367b6d9aa170d10d7b9c43d4e4c47fb32c653697a5f1de084c21a9b8a7",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "94c4876a07e776db18b3825dac3a2da9aa918b78532dd7a074b4c18419a7d93f",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T18:56:45+08:00"
+    },
+    {
+      "fold": "target_spo_seed17",
+      "city": "SPO",
+      "seed": 17,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        47
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 14.896916472187502,
+        "mae": 14.122613216476013
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "9387a4da1916fe1bb0c3d6e007f4013b04d90c4adcda2c69b8b3394c8ab0a242",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "b940df43e3d2bbb250499df96c539bdd1cbc34f467f829a2761e99753bc81db6",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "b56b227340858896c0ac5caa326d86b4178812b07123e647b87ca1e1046c6019",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T19:15:18+08:00"
+    },
+    {
+      "fold": "target_spo_seed29",
+      "city": "SPO",
+      "seed": 29,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        47
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 13.418079800895764,
+        "mae": 12.971817581195157
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "2c00b2ff441b4f509cbb2e2f8987f79025189462dea4a22f40258747d54ab4cf",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "78229498296f06e85d865765b2f6cab1729b202d83544a96d1cd699633e829df",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "cc9732256aaf907b51e172b32805aa0a5c74c1e0a435486879510fd634e0d0e3",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T19:33:52+08:00"
+    },
+    {
+      "fold": "target_szh_seed13",
+      "city": "SZH",
+      "seed": 13,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        1445
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 2008.4340218169657,
+        "mae": 99.50115041926409
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "ece60f635f330d1778f01e16203d1ec9dcc3d41c35f910172fff5d196806e5b6",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "c04019f185b7ccfebf659f40b6c11276227c97b186971ab576687d43df935016",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "a77d74b51573878687eeaa3534248d2261a889ad1ca4d88fd5f5a34d15966e5a",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T19:48:34+08:00"
+    },
+    {
+      "fold": "target_szh_seed17",
+      "city": "SZH",
+      "seed": 17,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        1445
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 1992.9117945781045,
+        "mae": 99.19187455991968
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "f3d8e41e52a59d45a7b8044a87b0c2676e98d1088a260910942aea15e81acccf",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "57104f2bfd706a11dbc1b1b864561f7f6d8f3d952acf72ac33939cb80d152418",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "0aabff27ad0fb30ce64fc3d0dd74d1e0956b3ff288d83e0ef727e33a17379b01",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T20:03:19+08:00"
+    },
+    {
+      "fold": "target_szh_seed29",
+      "city": "SZH",
+      "seed": 29,
+      "status": "completed",
+      "shape": [
+        721,
+        24,
+        1445
+      ],
+      "aligned_to_anchor": true,
+      "finite": true,
+      "metrics_match_saved_result": true,
+      "metrics": {
+        "rmse": 1974.6357248665856,
+        "mae": 94.0121613516908
+      },
+      "artifact_hashes": {
+        "result.json": {
+          "sha256": "3ff0f2c81b7f947865a5a88942c42e5f28404d9822e504dfc0fef463277fd950",
+          "matches_manifest": true
+        },
+        "state.pt": {
+          "sha256": "7fec19a90f41d45337100924a0c08e641b38f2933a15c322f07567281e1ca90d",
+          "matches_manifest": true
+        },
+        "predictions.npz": {
+          "sha256": "d9db211e262958a9a66f50929b0982ec62873ddec323a2e85d9c5d6db3758aa4",
+          "matches_manifest": true
+        }
+      },
+      "finished_at": "2026-10-31T20:18:02+08:00"
+    }
+  ]
+}

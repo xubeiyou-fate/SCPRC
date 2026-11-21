@@ -1,0 +1,3 @@
+model,folds,rmse,mae
+Full SCPRC,18,32.17603393,7.01777212
+Original PhaseFormer,18,34.75483732,7.73231720

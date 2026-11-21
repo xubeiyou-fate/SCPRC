@@ -1,0 +1,23 @@
+{
+  "captured_at": "2026-11-21 Asia/Shanghai",
+  "scope": "migration validation environment; not a replacement for historical training environment records",
+  "python": "3.12.7",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.7.1+cu118",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.2",
+    "scikit-learn": "1.5.1",
+    "einops": "0.8.2",
+    "tqdm": "4.66.5",
+    "openpyxl": "3.1.5",
+    "PyYAML": "6.0.1",
+    "sympy": "1.13.3",
+    "psutil": "5.9.0"
+  },
+  "torch_cuda_build": "11.8",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 4080 SUPER"
+}

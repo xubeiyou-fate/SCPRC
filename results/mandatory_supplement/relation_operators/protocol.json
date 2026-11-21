@@ -1,0 +1,74 @@
+{
+  "data_split": {
+    "cities": [
+      "AMS",
+      "JHB",
+      "LOA",
+      "MEL",
+      "SPO",
+      "SZH"
+    ],
+    "evaluation_origins_per_city": 721,
+    "evaluation_window": "2023-08-01 through 2023-08-31, label origins [2928, 3672)",
+    "interpretation": "retrospective; August was exposed during prior development",
+    "september_values_materialized": false,
+    "source_window": "2023-04-01 through 2023-07-31, indices [0, 2928)",
+    "target_adaptation_steps": 0
+  },
+  "input": {
+    "context_hours": 168,
+    "coordinates_input": false,
+    "dataset": "CHARGED v3",
+    "duration_input": false,
+    "features": [
+      "volume"
+    ],
+    "forecast_horizon_hours": 24,
+    "target": "volume",
+    "target_city_identifier_input": false
+  },
+  "measurement": {
+    "claim_boundary": "No blind-confirmation claim; all August results are retrospective",
+    "primary_metrics": [
+      "RMSE",
+      "MAE"
+    ],
+    "reporting_unit": "same 721 rolling origins per city and city x seed fold",
+    "required_artifacts": [
+      "protocol.json",
+      "command.txt",
+      "environment.json",
+      "per-fold result.json",
+      "predictions.npz",
+      "trained checkpoint",
+      "summary.json"
+    ],
+    "uncertainty": "paired 168-hour moving-block bootstrap; city x seed is the outer repetition unit"
+  },
+  "normalization": {
+    "scaler": "source-only equal-city weighted global volume mean/std",
+    "target_city_data_used_for_scaler": false
+  },
+  "protocol_id": "scpcr-matched-baseline-20261023",
+  "purpose": "Fair architecture diagnostics under the SCPRC source-only CHARGED protocol",
+  "status": "frozen_for_retrospective_august_audit",
+  "training_budget": {
+    "batch_size_windows": 4,
+    "budget_matching_unit": "effective source windows; optimizer-step counts are reported separately",
+    "effective_source_windows": 8192,
+    "gradient_aggregation": "PCGrad for multi-source SCPRC and matched baseline runs unless a baseline-specific control is explicitly labelled",
+    "learning_rate": 0.001,
+    "loss": "standardized volume MSE + 0.15 multi-resolution consistency at factors 2,3,4,6,12",
+    "parameter_optimizer": "AdamW",
+    "pcgrad_parameter_updates": "ceil(2048 / 5) = 410 rounds for five source cities",
+    "seeds": [
+      13,
+      17,
+      29
+    ],
+    "single_task_parameter_updates": 2048,
+    "source_minibatches_total": 2048,
+    "source_schedule": "round-robin over the five source cities; PCGrad aggregates one task batch per source city per round",
+    "weight_decay": 0.0001
+  }
+}

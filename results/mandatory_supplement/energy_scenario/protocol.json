@@ -1,0 +1,86 @@
+{
+  "status": "completed",
+  "created_at_utc": "2026-10-29T18:43:47.738009+00:00",
+  "purpose": "E1 energy-operation scenario replay plus horizon/peak diagnostics",
+  "no_retraining": true,
+  "dataset": "CHARGED v3",
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "fold_count": 18,
+  "origins_per_fold": 721,
+  "horizon_hours": 24,
+  "context_hours": 168,
+  "evaluation_window": "2023-08-01 through 2023-08-31; label starts [2928, 3649)",
+  "raw_archive_rows_read_per_city": 3672,
+  "raw_archive_cutoff": "2023-09-01 00:00 exclusive; no September outcome rows read",
+  "model_sources": {
+    "Exact PhaseFormer": "pred_exact_pcgrad_raw",
+    "Full SCPRC candidate": "pred_scpcr_candidate_raw"
+  },
+  "prediction_root": "/data/TimeMixer/experiments/supplementary/current_matched_ablation_20261027_homogeneous",
+  "superseded_legacy_prediction_root": "/data/TimeMixer/experiments/supplementary/current_scpcr_charged_20261024",
+  "prediction_cache_sha256": {
+    "AMS_seed13": "cec24ee3a6d60f61e20a10a7b63bdc6e085a217f24673069738828c64258c596",
+    "AMS_seed17": "2844f7a4197f7ce903da33908a5dfd03029504074dc7da0599b5d6ed68201a46",
+    "AMS_seed29": "6a9dc7da351a1e211275822d72db399dd80e53c8922e79af75bc6102f6fb0be8",
+    "JHB_seed13": "57672c6c0f11a04dc2bc5297475aafbe160ba994eec89ff306efdbffabd133f1",
+    "JHB_seed17": "673b435b5b52c8ea25f13d5509ed83b960a488c682e3bdff29bb98e5649d09c1",
+    "JHB_seed29": "ea922d7b99d0397ecf92a52cb0cf014479e3b8185b6fa2a15a282919cdf5f64a",
+    "LOA_seed13": "6196a75ea449cb1f7b4323b2197c7c40bd22bb64d08bae2f86586b0b91850c05",
+    "LOA_seed17": "bd70ab381789365fe3114d0d7f9290ef89add26be15adc6e1da5b72d4e1b0085",
+    "LOA_seed29": "734e11bce7a615d7986d709ec8993a528f0786d62517146f79837b97f7e5cd28",
+    "MEL_seed13": "70cabc05351b80859f3b7d198ba04dcbf0942f0b6993c9829bbd9a591dc3c20a",
+    "MEL_seed17": "ceaeda360525f38590013ad24c901652f00f89687daa4e5f82da86248ae882a2",
+    "MEL_seed29": "34e9e22a7f603726784a3cb0d14ef4094667d9ceefb8a0c0d4bcc1a65bd11748",
+    "SPO_seed13": "86d28a9a94f4ddddc9945d17a792e4441699cdfd824726bf987f2030658e561d",
+    "SPO_seed17": "44d9a03083fe718871fa19b01a6d871f135da87ae60edabfa42b8c28be2e3381",
+    "SPO_seed29": "f8da945981e3b96060825dfd8044655778c743adfe5a21778d1a10b090d6523d",
+    "SZH_seed13": "b6dbb42cc2b81be0df9516b082485e8cdc525463ead0c11d652aa621ad827f20",
+    "SZH_seed17": "ff5e479c48c9587d77b8be8c4b886a86bab4f2b238e8549b7b384a2e26596840",
+    "SZH_seed29": "3af3b0d176724799bd3313adb85b4af0a0940902baf2cc8e6a06b1793f9c6ddb"
+  },
+  "source_archive_sha256": "1ec9c9513b64f3f492fe73261bf08a5955c268dfb876ef0fe283d05cc5a02fab",
+  "safety_margins": [
+    0.0,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "primary_safety_margin": 0.1,
+  "safety_margin_policy": "Fixed a-priori margins; no test-set tuning. Primary margin is 10%.",
+  "safety_margin_source": "The 10% primary margin is a pre-specified operational stress parameter used for comparability, not estimated from August labels, not selected by minimizing test cost, and not back-calibrated from model errors. The 0/5/10/20% grid is a sensitivity analysis.",
+  "test_tuning_prohibited": true,
+  "overload_penalties": [
+    1.0,
+    5.0,
+    10.0,
+    20.0
+  ],
+  "relative_cost_definition": "cost = reserved_capacity + lambda * overload_volume; normalized cost divides per-origin cost by actual aggregate peak",
+  "capacity_definition": "max over 24 forecasted aggregate city-volume values times (1+safety_margin)",
+  "oracle_boundary": "Oracle actual peak uses realized aggregate 24-hour peak as capacity; it is an unavailable lower-bound comparator, never a deployable forecast and never used to choose the safety margin.",
+  "overload_definition": "positive(actual aggregate volume - reserved capacity) per hour",
+  "peak_definition": "actual aggregate city load at or above within-origin 75th percentile",
+  "primary_models": [
+    "Exact PhaseFormer",
+    "Full SCPRC candidate",
+    "Seasonal naive 24 h"
+  ],
+  "software": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "matplotlib": "3.9.2"
+  }
+}

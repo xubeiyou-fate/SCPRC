@@ -1,0 +1,199 @@
+{
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "experiment_type": "historical high-budget component/structure matrix",
+  "folds": 18,
+  "interpretation_limits": [
+    "Descriptive August ablation comparison; August was previously inspected in project iterations.",
+    "Variants are diagnostics, not independently nested release decisions; do not substitute them for strict release scores.",
+    "No confidence intervals here; city-seed folds share cities and should not be treated as fully independent samples.",
+    "All variants use the same PCGrad training path except the exact PhaseFormer reference; this is a component ablation, not an optimizer comparison."
+  ],
+  "paper_use": "supplementary attribution context; not a new final-protocol retraining run",
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "source": "scprc/training/scpcr_v22_structure_highbudget_multiseed_20261021.json",
+  "source_markdown": "scprc/training/scpcr_v22_structure_highbudget_multiseed_20261021.md",
+  "source_sha256": "bf5b5400fd7794ea21c88b34609c4890a608ca8f4e637618afd8ca7eb67203c3",
+  "status": "completed_audit_only",
+  "steps_per_variant": 2048,
+  "variants": {
+    "phaseformer_exact": {
+      "by_seed_mean_delta_pct": {
+        "13": {
+          "mae": 0.0,
+          "rmse": 0.0
+        },
+        "17": {
+          "mae": 0.0,
+          "rmse": 0.0
+        },
+        "29": {
+          "mae": 0.0,
+          "rmse": 0.0
+        }
+      },
+      "folds_degraded_any_rmse_mae": 0,
+      "folds_improved_both_rmse_mae": 0,
+      "macro_metric_means": {
+        "mae": 8.402842184905579,
+        "p95_window_rmse": 47.3419962284082,
+        "rmse": 35.895581388430166
+      },
+      "mean_paired_fold_delta_pct": {
+        "mae": 0.0,
+        "p95_window_rmse": 0.0,
+        "rmse": 0.0
+      }
+    },
+    "relation_daily_uncertified": {
+      "by_seed_mean_delta_pct": {
+        "13": {
+          "mae": -24.06835182502945,
+          "rmse": -8.703487915562334
+        },
+        "17": {
+          "mae": -7.067915870145931,
+          "rmse": -8.230520532394431
+        },
+        "29": {
+          "mae": -37.74228751805689,
+          "rmse": -22.511199378397446
+        }
+      },
+      "folds_degraded_any_rmse_mae": 2,
+      "folds_improved_both_rmse_mae": 16,
+      "macro_metric_means": {
+        "mae": 7.044408870898878,
+        "p95_window_rmse": 42.264405935901564,
+        "rmse": 32.62044151517067
+      },
+      "mean_paired_fold_delta_pct": {
+        "mae": -22.959518404410755,
+        "p95_window_rmse": -12.786367211001675,
+        "rmse": -13.148402608784737
+      }
+    },
+    "relation_phase_source_certified": {
+      "by_seed_mean_delta_pct": {
+        "13": {
+          "mae": -25.0508435790223,
+          "rmse": -10.308450935697026
+        },
+        "17": {
+          "mae": -3.442644615114963,
+          "rmse": -8.624887209101464
+        },
+        "29": {
+          "mae": -38.80745047216203,
+          "rmse": -22.519912789598752
+        }
+      },
+      "folds_degraded_any_rmse_mae": 2,
+      "folds_improved_both_rmse_mae": 16,
+      "macro_metric_means": {
+        "mae": 7.049830738806765,
+        "p95_window_rmse": 41.82400116799798,
+        "rmse": 32.190831784870824
+      },
+      "mean_paired_fold_delta_pct": {
+        "mae": -22.43364622209976,
+        "p95_window_rmse": -13.291849796643854,
+        "rmse": -13.817750311465748
+      }
+    },
+    "relation_phase_support_certified": {
+      "by_seed_mean_delta_pct": {
+        "13": {
+          "mae": -25.27196587253424,
+          "rmse": -10.245726209964246
+        },
+        "17": {
+          "mae": -3.6575719098472024,
+          "rmse": -8.615135619060355
+        },
+        "29": {
+          "mae": -39.09775802824452,
+          "rmse": -22.516807414115487
+        }
+      },
+      "folds_degraded_any_rmse_mae": 2,
+      "folds_improved_both_rmse_mae": 16,
+      "macro_metric_means": {
+        "mae": 6.990217168357427,
+        "p95_window_rmse": 41.85188729336213,
+        "rmse": 32.215595197545554
+      },
+      "mean_paired_fold_delta_pct": {
+        "mae": -22.675765270208647,
+        "p95_window_rmse": -13.273373239141499,
+        "rmse": -13.792556414380028
+      }
+    },
+    "relation_phase_uncertified": {
+      "by_seed_mean_delta_pct": {
+        "13": {
+          "mae": -25.064807873044348,
+          "rmse": -10.323187257136079
+        },
+        "17": {
+          "mae": -3.476537497474732,
+          "rmse": -8.633675144049313
+        },
+        "29": {
+          "mae": -38.808823824851665,
+          "rmse": -22.521348837369384
+        }
+      },
+      "folds_degraded_any_rmse_mae": 2,
+      "folds_improved_both_rmse_mae": 16,
+      "macro_metric_means": {
+        "mae": 7.0486347972889405,
+        "p95_window_rmse": 41.818518336225424,
+        "rmse": 32.184683099373345
+      },
+      "mean_paired_fold_delta_pct": {
+        "mae": -22.45005639845691,
+        "p95_window_rmse": -13.298623180727823,
+        "rmse": -13.82607041285159
+      }
+    },
+    "scpcr_v22_full": {
+      "by_seed_mean_delta_pct": {
+        "13": {
+          "mae": -25.260248528601398,
+          "rmse": -10.231715688323069
+        },
+        "17": {
+          "mae": -3.6327070105089643,
+          "rmse": -8.617244431031283
+        },
+        "29": {
+          "mae": -39.096960182274,
+          "rmse": -22.515257729645626
+        }
+      },
+      "folds_degraded_any_rmse_mae": 2,
+      "folds_improved_both_rmse_mae": 16,
+      "macro_metric_means": {
+        "mae": 6.990575601086608,
+        "p95_window_rmse": 41.853090183529496,
+        "rmse": 32.21742957136626
+      },
+      "mean_paired_fold_delta_pct": {
+        "mae": -22.663305240461455,
+        "p95_window_rmse": -13.269797528990564,
+        "rmse": -13.788072616333329
+      }
+    }
+  }
+}

@@ -1,0 +1,1834 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "workspace": "/data/TimeMixer/git",
+  "backup": "/tmp/scprc_names_backup_20261121T173850",
+  "scope": [
+    "scprc/**/*.py",
+    "experiments/**/*.py"
+  ],
+  "python_file_count": 92,
+  "source_files": {
+    "experiments/commands/paired_external_block_bootstrap.py": {
+      "renamed_from": "paper2/scripts/paired_external_block_bootstrap_20261028.py",
+      "before_repair_sha256": "37730e72e87f6bfca97595b37ec2ac05e9bb25ae40cf15cdaa8d4d77ef4550b0",
+      "release_backup_sha256": "74017bf09de7395a324078258e1a71235d50f819bdf777534e55222066a3f9de",
+      "sha256": "13872a8203132c0227ef9008ebb855be62f4af4754f60751b62dfc71b1a683a0",
+      "bytes": 5566,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/run_external_dlinear_baselines.py": {
+      "renamed_from": "paper2/scripts/run_external_dlinear_baselines_20261028.py",
+      "before_repair_sha256": "d20ab05b17858d1cd37589e4b3e40bc4fdedeff4694bcbc30cb4652b2f065ccd",
+      "release_backup_sha256": "38246ff98d7f0ddb0ce197eec5afb0e9fda8643e97e73d564c226737f7a9ce2a",
+      "sha256": "50aa5dae414c225f932678260131fc466353b2a990bafaf7df4963df34576550",
+      "bytes": 22776,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/run_external_nbeats_graph_baseline.py": {
+      "renamed_from": "paper2/scripts/run_external_nbeats_graph_baseline_20261028.py",
+      "before_repair_sha256": "d0ba7147286434bd1a65c95a56dce32b09fcc6b2c4ff8667fdcbebb1403845bc",
+      "release_backup_sha256": "adb3d0bc8c4e12ed455b5c2721064ca65d54ae5191981c17c4f996bd66cbd38d",
+      "sha256": "c3fabaa43ddf54ace8998528f59736ae4c4cab50b879d671abca7563dc14de5b",
+      "bytes": 13256,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/run_external_patchtst_baselines.py": {
+      "renamed_from": "paper2/scripts/run_external_patchtst_baselines_20261028.py",
+      "before_repair_sha256": "7a1f9cf1638e49aa3460010a7d366aa1dd5dd7127a5695cc5a97bc23d444305e",
+      "release_backup_sha256": "936233effa1a4358f3b58c6adde838b34e0ef8d8abd50da9dc6423a456a19eaf",
+      "sha256": "4c31da393fdc65c0008b56b4c9fbfd23afb59336f63890dc93277275b4c8ecdf",
+      "bytes": 20436,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/run_external_timemixer_baselines.py": {
+      "renamed_from": "paper2/scripts/run_external_timemixer_baselines_20261028.py",
+      "before_repair_sha256": "f83e6309ba1ba6035b23b9b169e7c03a8df16e0abc478076f8c6aed7ddef4e10",
+      "release_backup_sha256": "1548e32211ff69bba4c5e786076402dc6dd38b5e0cc6bb423df7fb3c4c7c13f2",
+      "sha256": "2dc48c58cdc93cc0c8d4c3e5027642a22e0c7da4ce72de01026fecb0f4fa4414",
+      "bytes": 14708,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/run_matched_ablation_fold.py": {
+      "renamed_from": "paper2/scripts/run_matched_ablation_fold_20261026.py",
+      "before_repair_sha256": "3241e6f3587de4eff7e40842d7ca8f3c532cd3d4488229d7a1a9cac0075f4b55",
+      "release_backup_sha256": "5e7767008a3dec39105edea480eeccaba0df8333fccc00ca000657310eff11f8",
+      "sha256": "e2dbceca3ae680b920f2024175a36c6aef22c74bcb952ebd4334e89d6ab002d4",
+      "bytes": 16445,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/run_scprc_charged_fold.py": {
+      "renamed_from": "paper2/scripts/run_current_scpcr_charged_fold.py",
+      "before_repair_sha256": "5545cccd4f1dc7e4e962fb42b6232a0c29b3537221d3a6ecc8bd255342fdbf84",
+      "release_backup_sha256": "81f6e97b2109db3b4abc27ffcd9f76990c75f531c4c0ca960c3a18849411ed36",
+      "sha256": "5c94c8bf657dae0873778e8955ca1afd41bf89c808680c290d9f0eea455a6c2a",
+      "bytes": 5480,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/run_scprc_external_fold.py": {
+      "renamed_from": "paper2/scripts/run_current_scpcr_external_fold.py",
+      "before_repair_sha256": "feec01a05e88e361298ba1f95482e3049fc3eb7dd8ed37548d4807c4dec933f4",
+      "release_backup_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+      "sha256": "a5f25567c3c501756e65a26e1792ca04d10a1546c653463423bb1889165a7a84",
+      "bytes": 6012,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/run_scprc_fold.py": {
+      "renamed_from": "paper2/scripts/run_homogeneous_full_candidate_fold_20261027.py",
+      "before_repair_sha256": "f7b0c3617e244b29fceed92957385f8cbb440d093b81f6c8382de9fdfffcd22c",
+      "release_backup_sha256": "f6ffe6e20148239f6fd7b4be7029e52ae44ba6157c6a2f4479e0987326d8dac4",
+      "sha256": "712411350773c6a0af4102126657d4f3238457d14e8cecd55ce5271af4eca035",
+      "bytes": 12910,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/commands/summarize_external_baseline_results.py": {
+      "renamed_from": "paper2/scripts/summarize_external_baseline_results_20261028.py",
+      "before_repair_sha256": "6b2c45f580ab74f0259867534aa5049daa5ba9f2879979c36ca4b3ca89dd9102",
+      "release_backup_sha256": "6fe4ab1a89ff2aa0344c2afa84bdd7ebd3ee40e6e7e199cfcf043d7bb41af732",
+      "sha256": "4477d6f4ee5ad47b87f4aca44a591091928939d96eae9c8ea2f5941400282b08",
+      "bytes": 14778,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/design_controls/audit_completed_runs.py": {
+      "renamed_from": "paper2/experiments/supplementary_design_controls_20261117/audit_completed_runs.py",
+      "before_repair_sha256": "601559506dc2ce91c72ea4a5240136acd2aa237140cedcf03c226bac2222eabc",
+      "release_backup_sha256": "2ea15e6fe9413133ea18c9476a00697a40e377f6eaa4ca6b31d4956f78eb57aa",
+      "sha256": "bfe1413404d0a6c184a99a054493110f77ed0ecf3ae71aed7c3ddfc91ed7c268",
+      "bytes": 34314,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/design_controls/evaluate_controls.py": {
+      "renamed_from": "paper2/experiments/supplementary_design_controls_20261117/evaluate_controls.py",
+      "before_repair_sha256": "35acca90b419f7eb2d49942b8670a90fe10f46b4698965d1acdc120b87470d65",
+      "release_backup_sha256": "35acca90b419f7eb2d49942b8670a90fe10f46b4698965d1acdc120b87470d65",
+      "sha256": "ecd00987519eeffb13769f8cdd590d0659807d37ca75c4f253f41e2b0baf600f",
+      "bytes": 56476,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/design_controls/measure_frozen_efficiency.py": {
+      "renamed_from": "paper2/experiments/supplementary_design_controls_20261117/measure_frozen_efficiency.py",
+      "before_repair_sha256": "376331c1fdb9cf09f39b708bae7968e8708028a71bfb36391c1945b7d3dda0a7",
+      "release_backup_sha256": "376331c1fdb9cf09f39b708bae7968e8708028a71bfb36391c1945b7d3dda0a7",
+      "sha256": "3862e911fe5295cb6e74143eb249c155969e4ccf5e7530279a40260c9549efae",
+      "bytes": 33729,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/design_controls/model_variants.py": {
+      "renamed_from": "paper2/experiments/supplementary_design_controls_20261117/model_variants.py",
+      "before_repair_sha256": "4385c103ea40e1477d4590e12fd36f9bfcad7a54e1531c8e7b2019675e477511",
+      "release_backup_sha256": "8e809846e7a3445105e57db56e6fb6c6bbaf063e4ec6ac774a41104aaa3a156a",
+      "sha256": "1e06549716bc99f18175ee1c428f073f1c13590e2339d05c97ef4ae49d9e9402",
+      "bytes": 14446,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/design_controls/run_control.py": {
+      "renamed_from": "paper2/experiments/supplementary_design_controls_20261117/run_control.py",
+      "before_repair_sha256": "49a1c4f32c5e167d8029d48b073fabfe07d0e795bf0a6693ab0236a2e3a8368a",
+      "release_backup_sha256": "f117b2a7c664826a63b8b7dde6661abd36c6e78ea4bfed59cd90f4d09a17c603",
+      "sha256": "a8d229115ffa01164e0b4ad16b010631180c743d05aa475daec1da434410d7da",
+      "bytes": 16790,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/design_controls/update_matrices.py": {
+      "renamed_from": "paper2/experiments/supplementary_design_controls_20261117/update_matrices.py",
+      "before_repair_sha256": "0df5797aff5ccf312dfaec14f71c847833d8c4ef86a7bc5d35ac6944b388a1b0",
+      "release_backup_sha256": "0df5797aff5ccf312dfaec14f71c847833d8c4ef86a7bc5d35ac6944b388a1b0",
+      "sha256": "0df5797aff5ccf312dfaec14f71c847833d8c4ef86a7bc5d35ac6944b388a1b0",
+      "bytes": 29425,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "experiments/efficiency/final_checkpoint/benchmark_final_checkpoints.py": {
+      "renamed_from": "paper2/efficiency/final_checkpoint_20261030/benchmark_final_checkpoints.py",
+      "before_repair_sha256": "3e086d5e4fe31024ae25fe71553cba22329b7625d8650b7fcadb8db6e9e85d0b",
+      "release_backup_sha256": "b08924118d042b581dd9d9d0d17fe16c0a445595471a700b41ce1270b9430ab1",
+      "sha256": "a5f52d31425c1e511e15b168588ef9d35ea31eba1808dc19b43791e619f1b04d",
+      "bytes": 11922,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/energy_value/03_mechanism/analyze_mechanism.py": {
+      "renamed_from": "paper2/experiments/energy_value_20261104/03_mechanism/analyze_mechanism.py",
+      "before_repair_sha256": "1290f294ce46a6b662d4f9fe63e36ba25a0f4ddb76445c475a23c378dda187b1",
+      "release_backup_sha256": "6eb5e2898507c452a8d9f5826023103bd71978a7942ddaa7a92170268b742a70",
+      "sha256": "c00dbbc8fcced74098d89366bf5a99f12ae67266ab589db3b8bd68de21c5f8ae",
+      "bytes": 44433,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/energy_value/04_capacity/reconcile_existing.py": {
+      "renamed_from": "paper2/experiments/energy_value_20261104/04_capacity/reconcile_existing.py",
+      "before_repair_sha256": "f89858c6d25658df90acd605f167556fddf20294448e40333aecf135bf48fd0f",
+      "release_backup_sha256": "242e0045fdf4de0e68dee2960b81638a75edd2af853041e7209c7895b878a941",
+      "sha256": "2735e7249eb27b97273b07f5eeb75f412ca54b42d03ecca192eeafa51692e8fe",
+      "bytes": 4954,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/energy_value/gate_removal/run_strict_component_ablation.py": {
+      "renamed_from": "paper2/experiments/energy_value_20261104/agent_strict_gap/run_strict_component_ablation.py",
+      "before_repair_sha256": "69f92fd6c83f7d53681766dbad4813df47f503d76530da1261438d2516bc1aaf",
+      "release_backup_sha256": "ed7850ebdd146c62325c80e3bbb857b78fd183c0179d1a9df2d4ddcef0810bbf",
+      "sha256": "779bfff3b54e3a42ed58c9ba77c7cf5140a221eed4b99a1624a80b6eae854353",
+      "bytes": 9704,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/energy_value/run_energy_evaluation.py": {
+      "renamed_from": "paper2/experiments/energy_value_20261104/run_energy_evaluation.py",
+      "before_repair_sha256": "8006dd40e218422f53e01ae61a954bd407035beeda1c47aa7486db7f22d27849",
+      "release_backup_sha256": "596a6e2ecc56d167ad2ef0691532ba8b65733308a13542b02c7d57e92a27cfea",
+      "sha256": "856807a7532ee8a706abe3822ead2db7bd50bf6b0e5cc8a7899a60ef692338ab",
+      "bytes": 24134,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/efficiency_and_uncertainty/benchmark_three_models.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/e1_original_efficiency_stats/benchmark_three_models.py",
+      "before_repair_sha256": "33ca356646776abade929940e2c8a6c34629e283d6a85ed7b575f3a7968f0ab2",
+      "release_backup_sha256": "d6a46291634162a6aaf0f5b9462c4235bbc3b52084feb9f45837aa430f24eaf9",
+      "sha256": "4922b7bee436d6bd9133f9a8bdc46348f9d1fa8d1c3f3b894da5b80943989c22",
+      "bytes": 9587,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/efficiency_and_uncertainty/paired_fold_ci.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/e1_original_efficiency_stats/paired_fold_ci.py",
+      "before_repair_sha256": "4f68c5ad4d49694f9fbda97302a35b51e6e477b539e79bf86602ef0cd0a97a5d",
+      "release_backup_sha256": "699286ed22d6ad26410714af441cb5053f0869e61273ce69bdbe25cae608c836",
+      "sha256": "25ef236575515208884bd7d9ae6731ff2dbc3d63a414708ba933ff1c55867ab8",
+      "bytes": 8508,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/energy_diagnostics/run_r12_energy_diagnostics.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/r12_energy_diagnostics/run_r12_energy_diagnostics.py",
+      "before_repair_sha256": "18e949ff7dcfcfed2d50afb2be78145cd994c906104f80abb14c61bc2673fa64",
+      "release_backup_sha256": "23b648222e7a29aec9d0f3ac643c704cf265f41b73c1b70d1e4901bf87bdfb70",
+      "sha256": "516ceb65742f9530b4f7e34d3f4c3fd1faf4270c61a61a94113657ad2a758d45",
+      "bytes": 32577,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/factorial_analysis/paired_factorial_ci.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/r9_factorial_stats/paired_factorial_ci.py",
+      "before_repair_sha256": "64bf5f45b61eab9e95f08272a31d925b342ab5e196ea1c656ca3956cb50be5cd",
+      "release_backup_sha256": "d6e71930cba9c6fb1da6d4a7f43e462631afe4475d25a857dc8736586a16a9ba",
+      "sha256": "a9bb06ebb34444dc0181ece42bc0e875ec8f4bd044cb06022d96b60b6df14e8d",
+      "bytes": 9195,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/phaseformer_h48/run_h48_original_fold.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/h48_original/run_h48_original_fold.py",
+      "before_repair_sha256": "3df29312778eb030e68eff45da9d9d5d48ec744879772ad00dd1dca22458eacb",
+      "release_backup_sha256": "edaf0854c5a3ac0cd8f1588ed676632e9ff5f258e73576d29c999eedbb81d81a",
+      "sha256": "457743c550a94d9cf28a1d431b11eeaf9ffcc643ff804ccc53b8fcbb892ad9a2",
+      "bytes": 16324,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/prediction_intervals/run_u1_original_coverage.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/u1_original_coverage/run_u1_original_coverage.py",
+      "before_repair_sha256": "57aaa8f1786b6e367e2ed72e30b19374afd17671eea8d84fdf1601227283e7f5",
+      "release_backup_sha256": "6355d2311bb61602c18124a59aff02502f7e912afb367d531849e7a35db10711",
+      "sha256": "77619e12729cb33dbaa2411c356d82bbee8016005339a997db4ae02a5bd683f4",
+      "bytes": 32341,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/robustness/run_u2_original_robustness.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/u2_original_robustness/run_u2_original_robustness.py",
+      "before_repair_sha256": "9726b97bd89d55de488bfbadb95fe9d58f29e8c5ce049874b3bff044c487b4c7",
+      "release_backup_sha256": "a8bd19be977f2a0f26d6ff7e1e2fff2a7621bc4b7f5536bf831c1230e2db5304",
+      "sha256": "c55fa3fb747d4efec4056839de5dc0287da74f1f381b091077c7217ecb306e46",
+      "bytes": 27462,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/scprc_mean_gradient/run_full_no_pcgrad_fold.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/r8_full_no_pcgrad/run_full_no_pcgrad_fold.py",
+      "before_repair_sha256": "8a94ef0962b80ce8f173ccba26fff7aeea859582ac99066d385b225319182440",
+      "release_backup_sha256": "0ad17763e43b20d4e0658249a1d9c2a386be2f28257d162bf1089613870796db",
+      "sha256": "5308e2a59acae3c7e06801d9ec5cffc15098728b2c9cf02d2d4eb8a60e02a204",
+      "bytes": 18834,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/evaluation/spatial_baseline_review/run_r10_graphwavenet_volume_only.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261031/r10_spatial_baselines/run_r10_graphwavenet_volume_only.py",
+      "before_repair_sha256": "15816d7bf1a0611ae564dc37288e21d03f62398e614b232920897249238833a3",
+      "release_backup_sha256": "3f13b2a682e27b4e39b50c8fe51537ae21d3f8dbcb94edca3eeeeccff5466df7",
+      "sha256": "74d153cb2f6bd2cafdf2157d018bb0f24e93a314f6565436292fb7deaa793913",
+      "bytes": 20386,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/forecasting/h24_framework/run_canonical_anchor_fold.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261030/canonical_h24_anchor/run_canonical_anchor_fold.py",
+      "before_repair_sha256": "ded74598eba3ff3f46d0609ba8446580f9eb555054a5228e529ecb1d442a2ccf",
+      "release_backup_sha256": "d28f6779d43a7f5e3643156e3b824be45d2113593bf859a160ccfdf0e75a8dde",
+      "sha256": "4c314f60c3430667815a3eed0544747c6f4f1aa0ca77e6bee52bcea01f04cb24",
+      "bytes": 19958,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/forecasting/h48_framework/run_h48_fold.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261030/h48/run_h48_fold.py",
+      "before_repair_sha256": "2b7a935abacd90646882fe7cbb940848a2911b7b1a9d0c68a9e16b611ce665d8",
+      "release_backup_sha256": "a039425031743719b338a004a18f717f35c8bd0595f2003aa0c48f5893869eb8",
+      "sha256": "9f9fba8a11afbd7973110ab2901d2701fd28b3150db53b4da57f63624f4bb60e",
+      "bytes": 5410,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/forecasting/run_phaseformer_mean_gradient.py": {
+      "renamed_from": "paper2/experiments/rebuild_20261030/strict_no_pcgrad_phaseformer.py",
+      "before_repair_sha256": "746462ec54a99b8311001e469ec1dc469987e3a3850926ca755c7b1dc96430f3",
+      "release_backup_sha256": "8b8dbfd51aa2ffc271d16e676efb7a2974e38a0f87cb5110afb98c3ebf6ae7f5",
+      "sha256": "e1e2c2ff4294ca7ec06aaa6d0def68ede70dd38bdd96cadeca0ec2e1505fffbc",
+      "bytes": 14278,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/independent_gates/run_canonical_component_ablation.py": {
+      "renamed_from": "paper2/experiments/p2_components/run_canonical_component_ablation.py",
+      "before_repair_sha256": "715047a2359186ce427af1436a6b063da38a78e6c6467d8bbe332fd46071a01d",
+      "release_backup_sha256": "507eb26646cd5a683acbaa0fc5a0d08280b1c9579562e7624e8ffc80b4ce3569",
+      "sha256": "f46a2c278d07769d2b359ae68aa960d6266b6e09bc73262ff2bfa670cecc662e",
+      "bytes": 11519,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/input_robustness/run_p1_clean_gated_robustness.py": {
+      "renamed_from": "paper2/experiments/p1_robustness/run_p1_clean_gated_robustness.py",
+      "before_repair_sha256": "b05722cfcfaa320662b732cd6d6b4c66e7d5f83b06ab4e89f4b2e70a8418d3e7",
+      "release_backup_sha256": "0b3b26efd975ec40ccf41d8fb16b65da100ced32e4d135b02344abb69ce5097c",
+      "sha256": "5441245ea37cba37d0b7e713e94734d66303acb2d9b9569bac6cee13d826060f",
+      "bytes": 29206,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/operators/deepsets_adapter_loco/run_deepsets_adapter_loco.py": {
+      "renamed_from": "paper2/relation_aggregator/deepsets_adapter_loco_20261024/run_deepsets_adapter_loco.py",
+      "before_repair_sha256": "cf510e172046e7a31d7ed21483a9e579e4352d0841c7d775de892e4754165ad4",
+      "release_backup_sha256": "dcd2e4d3c5555bde33d1d796602600dedd01499fb4e90f9761b7efdf15757687",
+      "sha256": "8b400a20ed4341aac3855b90164fd4ffe89c95cc25fa4e0466a0ef94f63a10d8",
+      "bytes": 15492,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/supplementary/energy_scenario/run_energy_scenario.py": {
+      "renamed_from": "paper2/mandatory_supplement/energy_scenario_20261030/run_energy_scenario.py",
+      "before_repair_sha256": "ff30d55332af02f8ab94cea78fbea2cb33573a5b60b6631c6274ad5d24f08fdc",
+      "release_backup_sha256": "ea7d4a03d1dbb682c24156ff4ba3288292e6071d3ed2357da9964ee6217adf10",
+      "sha256": "11a17330583e5427e3607597d6c25ab8fa379ec7d154019a3662533f4cc36969",
+      "bytes": 25451,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/supplementary/relation_operators/audit_canonical_operator_controls.py": {
+      "renamed_from": "paper2/mandatory_supplement/canonical_operator_controls_20261027/audit_canonical_operator_controls.py",
+      "before_repair_sha256": "cbec921bb0a9e6e63547d80fca377a8bae5f5cf87b5c63669cce16aeb7865186",
+      "release_backup_sha256": "1dddb2aef4bb097ca70e4aec19d364c32a26a3bcf8df7d50f97ca9f8fa15cc04",
+      "sha256": "cbec921bb0a9e6e63547d80fca377a8bae5f5cf87b5c63669cce16aeb7865186",
+      "bytes": 14705,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "experiments/supplementary/relation_operators/run_canonical_operator_controls.py": {
+      "renamed_from": "paper2/mandatory_supplement/canonical_operator_controls_20261027/run_canonical_operator_controls.py",
+      "before_repair_sha256": "c93b725dd50262221b5c7eab5039ebc86d07b91d39d9ac46f7026b7198558606",
+      "release_backup_sha256": "7f4fac69580e4f12cb6688839ccf3580f1721a869fbe9c0b79d1399dfeb76360",
+      "sha256": "f4369c3c990ef1d21910488428d3323768083728c3c75f652c0725308b310ddd",
+      "bytes": 15842,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "experiments/supplementary/robustness/run_multihorizon_replay_audit.py": {
+      "renamed_from": "paper2/mandatory_supplement/robustness_20261030/run_multihorizon_replay_audit.py",
+      "before_repair_sha256": "1a7ee032a4a92459ed89c092de6077346181986973a2a3034644732993c263cd",
+      "release_backup_sha256": "88c9280412023d686aef0b9ede1c6bdad1df82de4c7efc0ae497a30ac11cb6d4",
+      "sha256": "f6ad083effc6d24b17d9f0d8d442cb69fa6d2a2338be396a575f9a4a2d93c651",
+      "bytes": 6394,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/baselines/graphwavenet_charged_adapter.py": {
+      "renamed_from": "reproduction/optional_baselines/graphwavenet_charged_adapter.py",
+      "before_repair_sha256": "1ec8191facda5fbbc9590bde1402a88ef40663d78c911da08b9e9120330b51b8",
+      "release_backup_sha256": "1ec8191facda5fbbc9590bde1402a88ef40663d78c911da08b9e9120330b51b8",
+      "sha256": "1ec8191facda5fbbc9590bde1402a88ef40663d78c911da08b9e9120330b51b8",
+      "bytes": 8141,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/baselines/patchtst_adapter.py": {
+      "renamed_from": "reproduction/optional_baselines/patchtst_adapter.py",
+      "before_repair_sha256": "c1b97efc45f1cd358dd8d285aa17c140fe91c07b82080ed8ece0c57379fc27f4",
+      "release_backup_sha256": "c1b97efc45f1cd358dd8d285aa17c140fe91c07b82080ed8ece0c57379fc27f4",
+      "sha256": "1ed970ef4ba42f1eb0c54fd62e7e89a969829d5b5dece228ff44ec418c494536",
+      "bytes": 3222,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/baselines/phaseformer_adapter.py": {
+      "renamed_from": "reproduction/optional_baselines/phaseformer_adapter.py",
+      "before_repair_sha256": "51a69a9d942529db2d79726da133f5fad24b6927f0849d6446df8c372e775d4e",
+      "release_backup_sha256": "51a69a9d942529db2d79726da133f5fad24b6927f0849d6446df8c372e775d4e",
+      "sha256": "51a69a9d942529db2d79726da133f5fad24b6927f0849d6446df8c372e775d4e",
+      "bytes": 4229,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/data.py": {
+      "renamed_from": "reproduction/data.py",
+      "before_repair_sha256": "ffb4b04d1a4a95fe7ed80dbd3e967ca74fd2c15998dbb2ffa54932280c5478e1",
+      "release_backup_sha256": "ffb4b04d1a4a95fe7ed80dbd3e967ca74fd2c15998dbb2ffa54932280c5478e1",
+      "sha256": "2b99631988b7faf1e37bd9567025f1c40b9e0c6d1a56e4f11db07b90d59ea39c",
+      "bytes": 9360,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/data_adapters/charged/city_adapter.py": {
+      "renamed_from": "research/urbanev_timemixer/external_data/charged/city_adapter.py",
+      "before_repair_sha256": "e9c6c71a62891225b2855e0f1afe450dc0620e6f79ac6f0f2f6ad1b086c1fb77",
+      "release_backup_sha256": "e9c6c71a62891225b2855e0f1afe450dc0620e6f79ac6f0f2f6ad1b086c1fb77",
+      "sha256": "1dcf56085529283f82b7ef2ae912d41f2f2dc35a4d56e8ad61dad6a95fd99dcb",
+      "bytes": 15305,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/data_adapters/cross_city_adapter.py": {
+      "renamed_from": "research/urbanev_timemixer/external_data/cross_city_adapter.py",
+      "before_repair_sha256": "bb0e58ca964586c72b5341228778f039bbf490c37092015775a52303e43c8e54",
+      "release_backup_sha256": "bb0e58ca964586c72b5341228778f039bbf490c37092015775a52303e43c8e54",
+      "sha256": "bb0e58ca964586c72b5341228778f039bbf490c37092015775a52303e43c8e54",
+      "bytes": 26109,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/models/innovation_exchange.py": {
+      "renamed_from": "reproduction/models/innovation_exchange.py",
+      "before_repair_sha256": "d52a05facf30c352353052ff06a8e83b87ab13600bd8d28bad1c29b3e6750543",
+      "release_backup_sha256": "d52a05facf30c352353052ff06a8e83b87ab13600bd8d28bad1c29b3e6750543",
+      "sha256": "d52a05facf30c352353052ff06a8e83b87ab13600bd8d28bad1c29b3e6750543",
+      "bytes": 5667,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/models/linear.py": {
+      "renamed_from": "reproduction/models/linear.py",
+      "before_repair_sha256": "e2891a71d96bf87776115dea11fcd34a5ea3c230538d908f3f07c5664fa027d9",
+      "release_backup_sha256": "5ef3a987926b166d1ab78a26599aee872e4afce9913272a490ad1f6fb012aabb",
+      "sha256": "e2891a71d96bf87776115dea11fcd34a5ea3c230538d908f3f07c5664fa027d9",
+      "bytes": 7460,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/models/phaseformer_deepsets_adapter.py": {
+      "renamed_from": "reproduction/models/phaseformer_deepsets_adapter.py",
+      "before_repair_sha256": "bcca0a5d8d5893ac2f3aeea9481743c53376488a0778ec24ddd9e7883662f036",
+      "release_backup_sha256": "094027d3d6a3e3bb0c8f45764e36f3d17cbef5e2c6065718bc55b41a8a4e2ffd",
+      "sha256": "bcca0a5d8d5893ac2f3aeea9481743c53376488a0778ec24ddd9e7883662f036",
+      "bytes": 6755,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/models/phasewise_attention_set_adapter.py": {
+      "renamed_from": "reproduction/models/phasewise_attention_set_adapter.py",
+      "before_repair_sha256": "8c661012af4222b6e0be464603b29e835f151987f483ff53bbdf88c7b401aad7",
+      "release_backup_sha256": "2c21d73ea6809e0a3b107bf8ae120123221cf89a51e8f88c4adffd7865ba337d",
+      "sha256": "8c661012af4222b6e0be464603b29e835f151987f483ff53bbdf88c7b401aad7",
+      "bytes": 9135,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/models/residual_calibration.py": {
+      "renamed_from": "reproduction/models/source_certified_phase_relation_calibration.py",
+      "before_repair_sha256": "b3da46adcecde3acec808cff8afb432822db12fd3ce00a59f553ae5d3ead8061",
+      "release_backup_sha256": "b3da46adcecde3acec808cff8afb432822db12fd3ce00a59f553ae5d3ead8061",
+      "sha256": "b3da46adcecde3acec808cff8afb432822db12fd3ce00a59f553ae5d3ead8061",
+      "bytes": 6417,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/models/scprc.py": {
+      "renamed_from": "reproduction/models/source_certified_internal_phase_adapter.py",
+      "before_repair_sha256": "c60b159945042feaca9c7e903fafb8b5ae7595c46f5975db2da2f154203c23b2",
+      "release_backup_sha256": "57f8f81949de16cbbd6a2570c6d9ac5bc588588e0d18cfacb7110bb0fc270679",
+      "sha256": "c60b159945042feaca9c7e903fafb8b5ae7595c46f5975db2da2f154203c23b2",
+      "bytes": 7129,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/models/timemixer.py": {
+      "renamed_from": "reproduction/models/timemixer.py",
+      "before_repair_sha256": "6f853bf38c3c9b11d71417c856b4c5183198901a08efa7b1c1cedae821b5581b",
+      "release_backup_sha256": "c41429a82de92d2cc1aa4f351f9c2f723f47f088255a0f76f31ea97d819bdfbc",
+      "sha256": "628a513c68dbdc18a72fc4a08d134a3616aea3412ee86e63805d899bf59d9fb6",
+      "bytes": 314042,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/project_paths.py": {
+      "renamed_from": "reproduction/project_paths.py",
+      "before_repair_sha256": "fc5394ebcfecded768d0782405971b3918d863b42ed55a5e4ba766793f12d2f1",
+      "release_backup_sha256": "bd8cd53e0b736cfc1e381b64177db63e53db8b794fcf0c3ae443fd07cc605321",
+      "sha256": "5caa9a933c0904f3165b5d145af56f45f40db8254399e9e32c98ac913ac4ef36",
+      "bytes": 4253,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/charged_rule_baselines/build_charged_rule_baselines_18fold.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/charged_rule_baselines_18fold_20261022/build_charged_rule_baselines_18fold.py",
+      "before_repair_sha256": "0e1080cf4ad22644f1c1875fe1cd8b109b304c931c5d430585b0eaa8d115a151",
+      "release_backup_sha256": "5b669fe1bd6275316f554778327456c040d3c6a8f67ad11473480f848af972ce",
+      "sha256": "e62cf10ed8977e111ebdd157d3c3cf901af071eca762030c3e8f313fa062a7b3",
+      "bytes": 14152,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/nbeats_graph.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/charged_shared_station_nbeats_behavior_graph_residual.py",
+      "before_repair_sha256": "15231bd015906512416e436104eb57e1cfb786e97a0dae8d38bc474b6c461f4d",
+      "release_backup_sha256": "d9deffd50b9993f3183031e7a53e2b488bee6ec6389a96f915321cc3a2ef81eb",
+      "sha256": "494cc0916baadf30a13e54137695392681686e7bf13f78d61371ca91ed5a0398",
+      "bytes": 10404,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/phase_relations.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/input_phase_station_relation.py",
+      "before_repair_sha256": "0369a2f880ad16d80ba92c994f56fcdd5676f3f75940a280cfcec19620fa2ea6",
+      "release_backup_sha256": "b853d106b3470337cde6ab206b0eb3c0490c74985ab807d4551c752b9ac54b6d",
+      "sha256": "50c13cf74386bef5bb6de8defcec1e3289e2116f3752d01b2da1d3ac6139d0fb",
+      "bytes": 8042,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/prepare_jiaxing_scprc_external.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/prepare_jiaxing_scpcr_external_20261021.py",
+      "before_repair_sha256": "5d932a143938ec909cdb02e26b68b4f3e3daed09be79e3ef4bcdd072677335ff",
+      "release_backup_sha256": "efcece5cb3d1fbc96338bdfe1fee6a10d5a5c435048f19fbf7cc8f0e7a356fb4",
+      "sha256": "543a410d12708bd7e0bac37bf08be4b4e58cc8d745fc0deb75d46390132f9d92",
+      "bytes": 10262,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/prepare_mp_evdata_external_scprc.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/prepare_mp_evdata_external_scpcr_20261021.py",
+      "before_repair_sha256": "e92c6311d5ce58cce15c4761d56e75db49ba5e34b95f1c4bc352a4ff6192d0e7",
+      "release_backup_sha256": "fe94cd9e0b0db2027a7be28f9bee9070432d8c141268ba18ff041092a3fa1228",
+      "sha256": "796003a84b1007775c1dc76ae8e68fc56e4b98638ae9f7a73b6c55d43009e3a4",
+      "bytes": 7285,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/relation_attenuation.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/input_phase_scale_capped_relation.py",
+      "before_repair_sha256": "d7070c91aed400c94c63d3f118599239a7dc9233baa401ed4f4f0a33fbbd3b20",
+      "release_backup_sha256": "267ec37e101fcebe7af9cfcfb10ec2ecd48e9bd14f8ad871e62aeebdabca3805",
+      "sha256": "d7070c91aed400c94c63d3f118599239a7dc9233baa401ed4f4f0a33fbbd3b20",
+      "bytes": 6416,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/training/run_charged_covariate_hptn_phaseformer_loco.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_covariate_hptn_phaseformer_loco.py",
+      "before_repair_sha256": "284df85b5577cbb294a747a5c8011393ac1af20e0147e2259dd6b96c1363cf42",
+      "release_backup_sha256": "d7ccca83aec1a6336c3f4ea0687681737138c62c0dbc4d7da91b751f0c28c021",
+      "sha256": "e71a53e194563ea47ac6a79f3d099267c381a7206584ac505d4be7fde7a02dac",
+      "bytes": 28354,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/run_charged_linear_loco.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_linear_loco.py",
+      "before_repair_sha256": "df7a71e751d6b4b23a5406fd8f5434ffd35dc687a21305351c974b5d890691c9",
+      "release_backup_sha256": "8a263d055500f3cca605fa10ed2763cebd63823d7eb83130decf688c53c1c3be",
+      "sha256": "3dc3e11a955362a1e646bb5a65e51417e307bab80fea32d09740f10f6bb05c36",
+      "bytes": 20699,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/run_charged_patchtst_2var_loco.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_patchtst_2var_loco.py",
+      "before_repair_sha256": "a2e7149f593b3b839cb5be53677762deba0c73ec7a34c8c5b0f10a3cbd509de8",
+      "release_backup_sha256": "a25f91fe0e3fd6966ffadf0bf467cbf6635b169d2e86ca87667a1851de18889d",
+      "sha256": "59eaac62e67f67933811a3eac6973ee3090cbbc43dacc48ec05c01237f18b2a3",
+      "bytes": 18654,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/run_charged_patchtst_volume_only_loco.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_patchtst_volume_only_loco_20261023.py",
+      "before_repair_sha256": "fd02a7151306ecc90600531330421aa825481ca5f612de1b56f3a1c77b403cb0",
+      "release_backup_sha256": "1edaa1d1ae9ba08f3fe2e2fac5285bff23bddd7bc3e9324c9801ef75a9d050a4",
+      "sha256": "1392e38dc025692c837f97a2f4c1c8f10d8676162ae87cac5cc30197a02a4e54",
+      "bytes": 24900,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/run_charged_relation_controls.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_relation_controls_20261023.py",
+      "before_repair_sha256": "9f1ee9e46c2b789baeb8a6fb57278ad038bdda11df355d881cb87331f117053c",
+      "release_backup_sha256": "ead767393bd4fa2f6855a5f266c9b54e3acd74e0d7c4eff439316c697817932c",
+      "sha256": "f042444776713df20f5118480c4696e59eb728aa5abd664f544a7cf78204f1ae",
+      "bytes": 20201,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/run_charged_timemixer_matched.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_timemixer_matched_20261023.py",
+      "before_repair_sha256": "ff9abf1080ba16eb1c29f28b2858ceaf6131be531f94a00799bfe89c59a0e0bd",
+      "release_backup_sha256": "2abaa678dc7d4bfc58d4b896ff8af49e7f46f1df37fd913c66d012ae59c1c0ef",
+      "sha256": "b2836b319cd06dc5092d06e4d3c1f1a029201b8883844e523e61d2256ece52dd",
+      "bytes": 32999,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/run_jiaxing_external_scprc.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_jiaxing_external_scpcr_v22.py",
+      "before_repair_sha256": "5d9a5885467ec52c51a289dad6ec95215c7541e883683090933a7d37fe6c91c0",
+      "release_backup_sha256": "0e0fe93aa7e7c50100dd7d43e70ed17814048e98762894d767e9dffbbf5fdc22",
+      "sha256": "4f6741cf018934258e2dab7f187cb19f613ef7d5ea94754071265759b5bf10ec",
+      "bytes": 14999,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/run_mp_evdata_external_scprc.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_mp_evdata_external_scpcr_20261021.py",
+      "before_repair_sha256": "1cd024bafaa10e1311bdbbfbc0300cf6ec6b719a8af312eb717c39908b7d14c3",
+      "release_backup_sha256": "439a3013a8e25a34659342479d145a7496e2643af8f6dfd385996428f4dd0245",
+      "sha256": "0cf1d510420f51d94781aa15e934c1a9003df6d0451e2bb70873ffcfd4010a6e",
+      "bytes": 23665,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/run_urbanev_external_scprc.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_urbanev_external_scpcr_v22.py",
+      "before_repair_sha256": "269738b0cfaa02fee840fbaf942e13b01f694e3f27300793bf25de4151273d7b",
+      "release_backup_sha256": "13fddf7455ea4c8134172fd5a7174ff502913e3a647955295637516b7a74bb5c",
+      "sha256": "16247a691de2d4d869a469ad06188c82d573a68ef272571bec8af41d9a497711",
+      "bytes": 18616,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/scprc_training_support.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_source_certified_internal_phase_loco.py",
+      "before_repair_sha256": "4c1eb0d434891cedfb7deea2bae6d6b488d98879647cf594dc2e23c49fcd2109",
+      "release_backup_sha256": "38a71c96ffeba96f03c8b6a23901614fdaa7d41fcae40839b9b9d9f97c31bd91",
+      "sha256": "97ee06d2dabc566ccf0bfd6c233831ecd4916e8f7229b072d41f4d5db5e89a26",
+      "bytes": 16759,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/source_calibration_support.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_source_certified_relation_loco.py",
+      "before_repair_sha256": "c42b59a96aea716445b8b70bc766a9c325f338d0c0f08fd6cde22176567a2308",
+      "release_backup_sha256": "70e1d76c10a93bb8d0be1870c263465c77fe6e4a364f1a3a35de78fe60ff2077",
+      "sha256": "2f0b755197ee54816955edb4f15db9168e0442a6331d41b074cf74e32ed70ed3",
+      "bytes": 11311,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/train_scprc.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_scpcr_v22_pcgrad_loco.py",
+      "before_repair_sha256": "eebeb9f1c5f45093a7d8077f3a2fbdd265ad3940d07bdfb9c6481fa6743d005c",
+      "release_backup_sha256": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+      "sha256": "74d877cca30f95abf996e31ae28e3b85cba4c9d5fbd2a2ccefea1624f7a2d720",
+      "bytes": 9865,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/training_protocol.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/run_charged_input_phase_relation_loco.py",
+      "before_repair_sha256": "81a99e2973449a6739a97b63f05548e63f8a54cefebb12f3add5758a3e1b9fcc",
+      "release_backup_sha256": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+      "sha256": "abf14d8049190375a1320348c797b51d54c3886229d7c6b63e7f37460f61ce23",
+      "bytes": 18915,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/training/urbanev_rule_baselines/build_urbanev_locked_rule_baselines.py": {
+      "renamed_from": "research/urbanev_timemixer/experiments/urbanev_locked_rule_baselines_20261022/build_urbanev_locked_rule_baselines.py",
+      "before_repair_sha256": "d1decd278300ea2b43a0c06aa40e2c0bfee4c679be821c569eb249b907915d5e",
+      "release_backup_sha256": "73b3ef6f25db666d066af864ad5fcd013d1cc8a9ed001a0e06eb20a9ae2e8248",
+      "sha256": "4320e93c314e1d4037ebb3234546b3ee2e5916bbaac92742922ebf6a34aabf64",
+      "bytes": 15662,
+      "changed_from_pre_repair_snapshot": true
+    },
+    "scprc/vendor/Graph-WaveNet/model.py": {
+      "renamed_from": "reproduction/vendor/Graph-WaveNet/model.py",
+      "before_repair_sha256": "f357319260657716c18916d691d31179e2380dcb882b9c41556c9a55912f1059",
+      "release_backup_sha256": "f357319260657716c18916d691d31179e2380dcb882b9c41556c9a55912f1059",
+      "sha256": "f357319260657716c18916d691d31179e2380dcb882b9c41556c9a55912f1059",
+      "bytes": 7730,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PatchTST/PatchTST_supervised/layers/PatchTST_backbone.py": {
+      "renamed_from": "reproduction/vendor/PatchTST/PatchTST_supervised/layers/PatchTST_backbone.py",
+      "before_repair_sha256": "df67173153787c2356bdfb6491159cd754332ef7382986efe879e1fbea8ebf26",
+      "release_backup_sha256": "df67173153787c2356bdfb6491159cd754332ef7382986efe879e1fbea8ebf26",
+      "sha256": "df67173153787c2356bdfb6491159cd754332ef7382986efe879e1fbea8ebf26",
+      "bytes": 17968,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PatchTST/PatchTST_supervised/layers/PatchTST_layers.py": {
+      "renamed_from": "reproduction/vendor/PatchTST/PatchTST_supervised/layers/PatchTST_layers.py",
+      "before_repair_sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+      "release_backup_sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+      "sha256": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+      "bytes": 4720,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PatchTST/PatchTST_supervised/layers/RevIN.py": {
+      "renamed_from": "reproduction/vendor/PatchTST/PatchTST_supervised/layers/RevIN.py",
+      "before_repair_sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+      "release_backup_sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+      "sha256": "e64c0ccded9228b347134e7368420d3fb10f70c75145b5ff2d8bdd8c3af59df6",
+      "bytes": 2083,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PatchTST/PatchTST_supervised/models/PatchTST.py": {
+      "renamed_from": "reproduction/vendor/PatchTST/PatchTST_supervised/models/PatchTST.py",
+      "before_repair_sha256": "49d8bb865e1226d6338842f4b33c4bc6992cefb048dc2a4a5a8c410ca708586b",
+      "release_backup_sha256": "49d8bb865e1226d6338842f4b33c4bc6992cefb048dc2a4a5a8c410ca708586b",
+      "sha256": "49d8bb865e1226d6338842f4b33c4bc6992cefb048dc2a4a5a8c410ca708586b",
+      "bytes": 5442,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PhaseFormer/src/__init__.py": {
+      "renamed_from": "reproduction/vendor/PhaseFormer/src/__init__.py",
+      "before_repair_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_backup_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PhaseFormer/src/models/PhaseFormer.py": {
+      "renamed_from": "reproduction/vendor/PhaseFormer/src/models/PhaseFormer.py",
+      "before_repair_sha256": "449ff8c7a9ee57b252643ac73125a213702bca55eeaa6a81a3b87f5ec2cb7b73",
+      "release_backup_sha256": "449ff8c7a9ee57b252643ac73125a213702bca55eeaa6a81a3b87f5ec2cb7b73",
+      "sha256": "449ff8c7a9ee57b252643ac73125a213702bca55eeaa6a81a3b87f5ec2cb7b73",
+      "bytes": 25183,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PhaseFormer/src/models/__init__.py": {
+      "renamed_from": "reproduction/vendor/PhaseFormer/src/models/__init__.py",
+      "before_repair_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "release_backup_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PhaseFormer/src/models/layers/SelfAttention_Family.py": {
+      "renamed_from": "reproduction/vendor/PhaseFormer/src/models/layers/SelfAttention_Family.py",
+      "before_repair_sha256": "6af6cf25028a94f36166ab8dcf6176711e2e8ff54b120a6292c64cfb06ad9129",
+      "release_backup_sha256": "6af6cf25028a94f36166ab8dcf6176711e2e8ff54b120a6292c64cfb06ad9129",
+      "sha256": "6af6cf25028a94f36166ab8dcf6176711e2e8ff54b120a6292c64cfb06ad9129",
+      "bytes": 12308,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PhaseFormer/src/models/pl_bases/default_module.py": {
+      "renamed_from": "reproduction/vendor/PhaseFormer/src/models/pl_bases/default_module.py",
+      "before_repair_sha256": "aaf6ae586c893a2899285a10c907f63fa1702c4aa9bea3b9fe4cf7b978accbe3",
+      "release_backup_sha256": "aaf6ae586c893a2899285a10c907f63fa1702c4aa9bea3b9fe4cf7b978accbe3",
+      "sha256": "aaf6ae586c893a2899285a10c907f63fa1702c4aa9bea3b9fe4cf7b978accbe3",
+      "bytes": 4846,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PhaseFormer/src/utils/__init__.py": {
+      "renamed_from": "reproduction/vendor/PhaseFormer/src/utils/__init__.py",
+      "before_repair_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_backup_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/PhaseFormer/src/utils/metrics.py": {
+      "renamed_from": "reproduction/vendor/PhaseFormer/src/utils/metrics.py",
+      "before_repair_sha256": "e24363150a8509ba3829604d10f060d9811ce61329f7ed96a3a2014d6da933af",
+      "release_backup_sha256": "e24363150a8509ba3829604d10f060d9811ce61329f7ed96a3a2014d6da933af",
+      "sha256": "e24363150a8509ba3829604d10f060d9811ce61329f7ed96a3a2014d6da933af",
+      "bytes": 1360,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/TimeMixer/layers/Autoformer_EncDec.py": {
+      "renamed_from": "reproduction/vendor/TimeMixer/layers/Autoformer_EncDec.py",
+      "before_repair_sha256": "48745b4bb647355e9845792a855df9c59fd7df7fcc664c765351fec390c4073e",
+      "release_backup_sha256": "48745b4bb647355e9845792a855df9c59fd7df7fcc664c765351fec390c4073e",
+      "sha256": "48745b4bb647355e9845792a855df9c59fd7df7fcc664c765351fec390c4073e",
+      "bytes": 6831,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/TimeMixer/layers/Embed.py": {
+      "renamed_from": "reproduction/vendor/TimeMixer/layers/Embed.py",
+      "before_repair_sha256": "ab492ea2f68459bbcf3cbffdd1beb75b24d0d70248d017a313a3b470316aaa2b",
+      "release_backup_sha256": "ab492ea2f68459bbcf3cbffdd1beb75b24d0d70248d017a313a3b470316aaa2b",
+      "sha256": "ab492ea2f68459bbcf3cbffdd1beb75b24d0d70248d017a313a3b470316aaa2b",
+      "bytes": 9579,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/TimeMixer/layers/StandardNorm.py": {
+      "renamed_from": "reproduction/vendor/TimeMixer/layers/StandardNorm.py",
+      "before_repair_sha256": "cc1c0bc65b7b094bbe83f988fb05b86272a59638c030c3781aa52ce8880379df",
+      "release_backup_sha256": "cc1c0bc65b7b094bbe83f988fb05b86272a59638c030c3781aa52ce8880379df",
+      "sha256": "cc1c0bc65b7b094bbe83f988fb05b86272a59638c030c3781aa52ce8880379df",
+      "bytes": 2183,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/TimeMixer/layers/__init__.py": {
+      "renamed_from": "reproduction/vendor/TimeMixer/layers/__init__.py",
+      "before_repair_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_backup_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/TimeMixer/models/TimeMixer.py": {
+      "renamed_from": "reproduction/vendor/TimeMixer/models/TimeMixer.py",
+      "before_repair_sha256": "08880d252d12b1be2a8836ec1e039f0ef7920a89530f4009747d44dbc8e2ab1a",
+      "release_backup_sha256": "08880d252d12b1be2a8836ec1e039f0ef7920a89530f4009747d44dbc8e2ab1a",
+      "sha256": "08880d252d12b1be2a8836ec1e039f0ef7920a89530f4009747d44dbc8e2ab1a",
+      "bytes": 198765,
+      "changed_from_pre_repair_snapshot": false
+    },
+    "scprc/vendor/TimeMixer/models/__init__.py": {
+      "renamed_from": "reproduction/vendor/TimeMixer/models/__init__.py",
+      "before_repair_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_backup_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "changed_from_pre_repair_snapshot": false
+    }
+  },
+  "tests": [
+    {
+      "test": "SCPRC",
+      "returncode": 0,
+      "stdout": "37263\ntorch.Size([1, 24, 3])",
+      "stderr": ""
+    },
+    {
+      "test": "PhaseFormer",
+      "returncode": 0,
+      "stdout": "36360\ntorch.Size([1, 24, 3])",
+      "stderr": ""
+    },
+    {
+      "test": "PatchTST",
+      "returncode": 0,
+      "stdout": "25913\ntorch.Size([1, 24, 3])",
+      "stderr": ""
+    },
+    {
+      "test": "GraphWaveNet",
+      "returncode": 0,
+      "stdout": "295032\ntorch.Size([1, 24, 3])",
+      "stderr": "\n[W1121 17:48:17.516874361 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.517811194 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.519190455 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.519921405 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.521112405 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.521700260 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.522413577 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.522698362 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.522925786 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:48:17.523181326 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware."
+    },
+    {
+      "test": "vendor_import_order",
+      "returncode": 0,
+      "stdout": "25913\ntorch.Size([1, 24, 3])",
+      "stderr": ""
+    },
+    {
+      "test": "matched_baselines_after_frozen_protocol_restore",
+      "returncode": 0,
+      "stdout": "{\"matched_patchtst\": {\"parameters\": 25913, \"shape\": [1, 24]}, \"matched_timemixer\": {\"parameters\": 293263, \"shape\": [1, 24]}, \"dlinear\": {\"parameters\": 8112, \"shape\": [1, 24, 3]}, \"nlinear\": {\"parameters\": 4056, \"shape\": [1, 24, 3]}}",
+      "stderr": "[W1121 17:54:45.259748582 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:54:45.259923156 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:54:45.260054999 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware.\n[W1121 17:54:45.260162043 NNPACK.cpp:57] Could not initialize NNPACK! Reason: Unsupported hardware."
+    },
+    {
+      "test": "different_cwd_help:scprc/training/train_scprc.py",
+      "returncode": 0,
+      "stdout": "usage: train_scprc.py [-h] --target {AMS,JHB,LOA,MEL,SPO,SZH} --seed SEED\n                      [--d",
+      "stderr": ""
+    },
+    {
+      "test": "different_cwd_help:scprc/training/run_charged_patchtst_volume_only_loco.py",
+      "returncode": 0,
+      "stdout": "usage: run_charged_patchtst_volume_only_loco.py [-h]\n                                               ",
+      "stderr": ""
+    },
+    {
+      "test": "different_cwd_help:scprc/training/run_charged_timemixer_matched.py",
+      "returncode": 0,
+      "stdout": "usage: run_charged_timemixer_matched.py [-h] [--smoke-only] [--run-all]\n                            ",
+      "stderr": ""
+    },
+    {
+      "test": "different_cwd_help:experiments/forecasting/h24_framework/run_canonical_anchor_fold.py",
+      "returncode": 0,
+      "stdout": "usage: run_canonical_anchor_fold.py [-h] --target {AMS,JHB,LOA,MEL,SPO,SZH}\n                        ",
+      "stderr": ""
+    }
+  ],
+  "protocol": {
+    "sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5",
+    "restored_byte_for_byte_from_backup": true,
+    "historical_payload_identity_retained": true,
+    "accepted_hash_count": 1,
+    "published_protocol_sha256_identifiers": 0,
+    "patchtst_guard": "hashlib.sha256(_protocol_bytes).hexdigest() != FROZEN_PROTOCOL_SHA256"
+  },
+  "code_migration_audit_sha256_before_final_validation": "f82eb3f686c02b5e8dd5544c5e363113ef81f1d82a2afd11fc614b35582323eb",
+  "import_probes": [
+    {
+      "module": "experiments.commands.paired_external_block_bootstrap",
+      "path": "experiments/commands/paired_external_block_bootstrap.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/paired_external_block_bootstrap.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.run_external_dlinear_baselines",
+      "path": "experiments/commands/run_external_dlinear_baselines.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/run_external_dlinear_baselines.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.run_external_nbeats_graph_baseline",
+      "path": "experiments/commands/run_external_nbeats_graph_baseline.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/run_external_nbeats_graph_baseline.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.run_external_patchtst_baselines",
+      "path": "experiments/commands/run_external_patchtst_baselines.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/run_external_patchtst_baselines.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.run_external_timemixer_baselines",
+      "path": "experiments/commands/run_external_timemixer_baselines.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/run_external_timemixer_baselines.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.run_matched_ablation_fold",
+      "path": "experiments/commands/run_matched_ablation_fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/run_matched_ablation_fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.run_scprc_charged_fold",
+      "path": "experiments/commands/run_scprc_charged_fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/run_scprc_charged_fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.run_scprc_external_fold",
+      "path": "experiments/commands/run_scprc_external_fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/run_scprc_external_fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.run_scprc_fold",
+      "path": "experiments/commands/run_scprc_fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/run_scprc_fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.commands.summarize_external_baseline_results",
+      "path": "experiments/commands/summarize_external_baseline_results.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/commands/summarize_external_baseline_results.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.design_controls.audit_completed_runs",
+      "path": "experiments/design_controls/audit_completed_runs.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/design_controls/audit_completed_runs.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git/experiments/design_controls\", \"PROJECT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.design_controls.evaluate_controls",
+      "path": "experiments/design_controls/evaluate_controls.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/design_controls/evaluate_controls.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.design_controls.measure_frozen_efficiency",
+      "path": "experiments/design_controls/measure_frozen_efficiency.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/design_controls/measure_frozen_efficiency.py\", \"project_roots\": {\"PROJECT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.design_controls.model_variants",
+      "path": "experiments/design_controls/model_variants.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/design_controls/model_variants.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.design_controls.run_control",
+      "path": "experiments/design_controls/run_control.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/design_controls/run_control.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.design_controls.update_matrices",
+      "path": "experiments/design_controls/update_matrices.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/design_controls/update_matrices.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git/experiments/design_controls\", \"PROJECT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.efficiency.final_checkpoint.benchmark_final_checkpoints",
+      "path": "experiments/efficiency/final_checkpoint/benchmark_final_checkpoints.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/efficiency/final_checkpoint/benchmark_final_checkpoints.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.energy_value.03_mechanism.analyze_mechanism",
+      "path": "experiments/energy_value/03_mechanism/analyze_mechanism.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/energy_value/03_mechanism/analyze_mechanism.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.energy_value.04_capacity.reconcile_existing",
+      "path": "experiments/energy_value/04_capacity/reconcile_existing.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/energy_value/04_capacity/reconcile_existing.py\", \"project_roots\": {\"PROJECT_ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.energy_value.gate_removal.run_strict_component_ablation",
+      "path": "experiments/energy_value/gate_removal/run_strict_component_ablation.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/energy_value/gate_removal/run_strict_component_ablation.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.energy_value.run_energy_evaluation",
+      "path": "experiments/energy_value/run_energy_evaluation.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/energy_value/run_energy_evaluation.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.efficiency_and_uncertainty.benchmark_three_models",
+      "path": "experiments/evaluation/efficiency_and_uncertainty/benchmark_three_models.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/efficiency_and_uncertainty/benchmark_three_models.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.efficiency_and_uncertainty.paired_fold_ci",
+      "path": "experiments/evaluation/efficiency_and_uncertainty/paired_fold_ci.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/efficiency_and_uncertainty/paired_fold_ci.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.energy_diagnostics.run_r12_energy_diagnostics",
+      "path": "experiments/evaluation/energy_diagnostics/run_r12_energy_diagnostics.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/energy_diagnostics/run_r12_energy_diagnostics.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.factorial_analysis.paired_factorial_ci",
+      "path": "experiments/evaluation/factorial_analysis/paired_factorial_ci.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/factorial_analysis/paired_factorial_ci.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.phaseformer_h48.run_h48_original_fold",
+      "path": "experiments/evaluation/phaseformer_h48/run_h48_original_fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/phaseformer_h48/run_h48_original_fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.prediction_intervals.run_u1_original_coverage",
+      "path": "experiments/evaluation/prediction_intervals/run_u1_original_coverage.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/prediction_intervals/run_u1_original_coverage.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.robustness.run_u2_original_robustness",
+      "path": "experiments/evaluation/robustness/run_u2_original_robustness.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/robustness/run_u2_original_robustness.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.scprc_mean_gradient.run_full_no_pcgrad_fold",
+      "path": "experiments/evaluation/scprc_mean_gradient/run_full_no_pcgrad_fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/scprc_mean_gradient/run_full_no_pcgrad_fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.evaluation.spatial_baseline_review.run_r10_graphwavenet_volume_only",
+      "path": "experiments/evaluation/spatial_baseline_review/run_r10_graphwavenet_volume_only.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/evaluation/spatial_baseline_review/run_r10_graphwavenet_volume_only.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.forecasting.h24_framework.run_canonical_anchor_fold",
+      "path": "experiments/forecasting/h24_framework/run_canonical_anchor_fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/forecasting/h24_framework/run_canonical_anchor_fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.forecasting.h48_framework.run_h48_fold",
+      "path": "experiments/forecasting/h48_framework/run_h48_fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/forecasting/h48_framework/run_h48_fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.forecasting.run_phaseformer_mean_gradient",
+      "path": "experiments/forecasting/run_phaseformer_mean_gradient.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/forecasting/run_phaseformer_mean_gradient.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.independent_gates.run_canonical_component_ablation",
+      "path": "experiments/independent_gates/run_canonical_component_ablation.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/independent_gates/run_canonical_component_ablation.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.input_robustness.run_p1_clean_gated_robustness",
+      "path": "experiments/input_robustness/run_p1_clean_gated_robustness.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/input_robustness/run_p1_clean_gated_robustness.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.operators.deepsets_adapter_loco.run_deepsets_adapter_loco",
+      "path": "experiments/operators/deepsets_adapter_loco/run_deepsets_adapter_loco.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/operators/deepsets_adapter_loco/run_deepsets_adapter_loco.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.supplementary.energy_scenario.run_energy_scenario",
+      "path": "experiments/supplementary/energy_scenario/run_energy_scenario.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/supplementary/energy_scenario/run_energy_scenario.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.supplementary.relation_operators.audit_canonical_operator_controls",
+      "path": "experiments/supplementary/relation_operators/audit_canonical_operator_controls.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/supplementary/relation_operators/audit_canonical_operator_controls.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.supplementary.relation_operators.run_canonical_operator_controls",
+      "path": "experiments/supplementary/relation_operators/run_canonical_operator_controls.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/supplementary/relation_operators/run_canonical_operator_controls.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "experiments.supplementary.robustness.run_multihorizon_replay_audit",
+      "path": "experiments/supplementary/robustness/run_multihorizon_replay_audit.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/experiments/supplementary/robustness/run_multihorizon_replay_audit.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.baselines.graphwavenet_charged_adapter",
+      "path": "scprc/baselines/graphwavenet_charged_adapter.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/baselines/graphwavenet_charged_adapter.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.baselines.patchtst_adapter",
+      "path": "scprc/baselines/patchtst_adapter.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/baselines/patchtst_adapter.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.baselines.phaseformer_adapter",
+      "path": "scprc/baselines/phaseformer_adapter.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/baselines/phaseformer_adapter.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.data",
+      "path": "scprc/data.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/data.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.data_adapters.charged.city_adapter",
+      "path": "scprc/data_adapters/charged/city_adapter.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/data_adapters/charged/city_adapter.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.data_adapters.cross_city_adapter",
+      "path": "scprc/data_adapters/cross_city_adapter.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/data_adapters/cross_city_adapter.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.models.innovation_exchange",
+      "path": "scprc/models/innovation_exchange.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/models/innovation_exchange.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.models.linear",
+      "path": "scprc/models/linear.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/models/linear.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.models.phaseformer_deepsets_adapter",
+      "path": "scprc/models/phaseformer_deepsets_adapter.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/models/phaseformer_deepsets_adapter.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.models.phasewise_attention_set_adapter",
+      "path": "scprc/models/phasewise_attention_set_adapter.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/models/phasewise_attention_set_adapter.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.models.residual_calibration",
+      "path": "scprc/models/residual_calibration.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/models/residual_calibration.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.models.scprc",
+      "path": "scprc/models/scprc.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/models/scprc.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.models.timemixer",
+      "path": "scprc/models/timemixer.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/models/timemixer.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.project_paths",
+      "path": "scprc/project_paths.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/project_paths.py\", \"project_roots\": {\"PROJECT_ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.charged_rule_baselines.build_charged_rule_baselines_18fold",
+      "path": "scprc/training/charged_rule_baselines/build_charged_rule_baselines_18fold.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/charged_rule_baselines/build_charged_rule_baselines_18fold.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.nbeats_graph",
+      "path": "scprc/training/nbeats_graph.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/nbeats_graph.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.phase_relations",
+      "path": "scprc/training/phase_relations.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/phase_relations.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.prepare_jiaxing_scprc_external",
+      "path": "scprc/training/prepare_jiaxing_scprc_external.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/prepare_jiaxing_scprc_external.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.prepare_mp_evdata_external_scprc",
+      "path": "scprc/training/prepare_mp_evdata_external_scprc.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/prepare_mp_evdata_external_scprc.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.relation_attenuation",
+      "path": "scprc/training/relation_attenuation.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/relation_attenuation.py\", \"project_roots\": {}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_charged_covariate_hptn_phaseformer_loco",
+      "path": "scprc/training/run_charged_covariate_hptn_phaseformer_loco.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_charged_covariate_hptn_phaseformer_loco.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_charged_linear_loco",
+      "path": "scprc/training/run_charged_linear_loco.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_charged_linear_loco.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_charged_patchtst_2var_loco",
+      "path": "scprc/training/run_charged_patchtst_2var_loco.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_charged_patchtst_2var_loco.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_charged_patchtst_volume_only_loco",
+      "path": "scprc/training/run_charged_patchtst_volume_only_loco.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_charged_patchtst_volume_only_loco.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_charged_relation_controls",
+      "path": "scprc/training/run_charged_relation_controls.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_charged_relation_controls.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_charged_timemixer_matched",
+      "path": "scprc/training/run_charged_timemixer_matched.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_charged_timemixer_matched.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_jiaxing_external_scprc",
+      "path": "scprc/training/run_jiaxing_external_scprc.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_jiaxing_external_scprc.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_mp_evdata_external_scprc",
+      "path": "scprc/training/run_mp_evdata_external_scprc.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_mp_evdata_external_scprc.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.run_urbanev_external_scprc",
+      "path": "scprc/training/run_urbanev_external_scprc.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/run_urbanev_external_scprc.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.scprc_training_support",
+      "path": "scprc/training/scprc_training_support.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/scprc_training_support.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.source_calibration_support",
+      "path": "scprc/training/source_calibration_support.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/source_calibration_support.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.train_scprc",
+      "path": "scprc/training/train_scprc.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/train_scprc.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.training_protocol",
+      "path": "scprc/training/training_protocol.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/training_protocol.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    },
+    {
+      "module": "scprc.training.urbanev_rule_baselines.build_urbanev_locked_rule_baselines",
+      "path": "scprc/training/urbanev_rule_baselines/build_urbanev_locked_rule_baselines.py",
+      "returncode": 0,
+      "stdout": "{\"source\": \"/data/TimeMixer/git/scprc/training/urbanev_rule_baselines/build_urbanev_locked_rule_baselines.py\", \"project_roots\": {\"ROOT\": \"/data/TimeMixer/git\"}}",
+      "stderr": ""
+    }
+  ],
+  "static_validation": {
+    "parse_pass_count": 92,
+    "vendor_file_count": 18,
+    "vendor_byte_differences": [],
+    "model_class_invariants": [
+      {
+        "path": "experiments/commands/paired_external_block_bootstrap.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/run_external_dlinear_baselines.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/run_external_nbeats_graph_baseline.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/run_external_patchtst_baselines.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/run_external_timemixer_baselines.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/run_matched_ablation_fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/run_scprc_charged_fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/run_scprc_external_fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/run_scprc_fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/commands/summarize_external_baseline_results.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/design_controls/audit_completed_runs.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/design_controls/evaluate_controls.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/design_controls/measure_frozen_efficiency.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/design_controls/model_variants.py",
+        "old_class_count": 4,
+        "new_class_count": 4,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/design_controls/run_control.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/design_controls/update_matrices.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/efficiency/final_checkpoint/benchmark_final_checkpoints.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/energy_value/03_mechanism/analyze_mechanism.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/energy_value/04_capacity/reconcile_existing.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/energy_value/gate_removal/run_strict_component_ablation.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/energy_value/run_energy_evaluation.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/efficiency_and_uncertainty/benchmark_three_models.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/efficiency_and_uncertainty/paired_fold_ci.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/energy_diagnostics/run_r12_energy_diagnostics.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/factorial_analysis/paired_factorial_ci.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/phaseformer_h48/run_h48_original_fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/prediction_intervals/run_u1_original_coverage.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/robustness/run_u2_original_robustness.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/scprc_mean_gradient/run_full_no_pcgrad_fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/evaluation/spatial_baseline_review/run_r10_graphwavenet_volume_only.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/forecasting/h24_framework/run_canonical_anchor_fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/forecasting/h48_framework/run_h48_fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/forecasting/run_phaseformer_mean_gradient.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/independent_gates/run_canonical_component_ablation.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/input_robustness/run_p1_clean_gated_robustness.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/operators/deepsets_adapter_loco/run_deepsets_adapter_loco.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/supplementary/energy_scenario/run_energy_scenario.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/supplementary/relation_operators/audit_canonical_operator_controls.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/supplementary/relation_operators/run_canonical_operator_controls.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "experiments/supplementary/robustness/run_multihorizon_replay_audit.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/baselines/graphwavenet_charged_adapter.py",
+        "old_class_count": 3,
+        "new_class_count": 3,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/baselines/patchtst_adapter.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/baselines/phaseformer_adapter.py",
+        "old_class_count": 2,
+        "new_class_count": 2,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/data.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/data_adapters/charged/city_adapter.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/data_adapters/cross_city_adapter.py",
+        "old_class_count": 5,
+        "new_class_count": 5,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/models/innovation_exchange.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/models/linear.py",
+        "old_class_count": 4,
+        "new_class_count": 4,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/models/phaseformer_deepsets_adapter.py",
+        "old_class_count": 2,
+        "new_class_count": 2,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/models/phasewise_attention_set_adapter.py",
+        "old_class_count": 2,
+        "new_class_count": 2,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/models/residual_calibration.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/models/scprc.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/models/timemixer.py",
+        "old_class_count": 19,
+        "new_class_count": 19,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/project_paths.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/charged_rule_baselines/build_charged_rule_baselines_18fold.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/nbeats_graph.py",
+        "old_class_count": 3,
+        "new_class_count": 3,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/phase_relations.py",
+        "old_class_count": 2,
+        "new_class_count": 2,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/prepare_jiaxing_scprc_external.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/prepare_mp_evdata_external_scprc.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/relation_attenuation.py",
+        "old_class_count": 2,
+        "new_class_count": 2,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_charged_covariate_hptn_phaseformer_loco.py",
+        "old_class_count": 2,
+        "new_class_count": 2,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_charged_linear_loco.py",
+        "old_class_count": 3,
+        "new_class_count": 3,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_charged_patchtst_2var_loco.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_charged_patchtst_volume_only_loco.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_charged_relation_controls.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_charged_timemixer_matched.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_jiaxing_external_scprc.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_mp_evdata_external_scprc.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/run_urbanev_external_scprc.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/scprc_training_support.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/source_calibration_support.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/train_scprc.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/training_protocol.py",
+        "old_class_count": 1,
+        "new_class_count": 1,
+        "numeric_and_self_attributes_unchanged": true
+      },
+      {
+        "path": "scprc/training/urbanev_rule_baselines/build_urbanev_locked_rule_baselines.py",
+        "old_class_count": 0,
+        "new_class_count": 0,
+        "numeric_and_self_attributes_unchanged": true
+      }
+    ]
+  },
+  "artifact_resolution": {
+    "checkpoint_rows": 534,
+    "references_checked": 1602,
+    "all_resolve_inside_new_checkout": true,
+    "existing_checkpoint_files": 534,
+    "path_traversal_and_unrelated_absolute_paths_rejected": true
+  },
+  "source_writes_frozen": true,
+  "completed_at_utc": "2026-11-21T09:56:40.999229+00:00",
+  "import_summary": {
+    "nonvendor_modules": 74,
+    "passed": 74,
+    "source_server_imports": 0
+  },
+  "source_server_untouched": {
+    "confirmed_by_mutation_scope": true,
+    "writes_outside_checkout": false,
+    "backup_used_read_only": true,
+    "original_code_migration_audit_unchanged": true,
+    "original_code_migration_audit_sha256": "f82eb3f686c02b5e8dd5544c5e363113ef81f1d82a2afd11fc614b35582323eb",
+    "note": "No original source-server tree was modified. Original source paths and source hashes remain in CODE_MIGRATION_AUDIT.json; runtime source imports were checked to stay in this checkout."
+  },
+  "write_scope": {
+    "python": [
+      "scprc/**/*.py",
+      "experiments/**/*.py"
+    ],
+    "additional_authorized_file": "scprc/training/scprc_matched_protocol.json (restored original frozen bytes)",
+    "audit": "manifests/SOURCE_NAMING_VALIDATION.json",
+    "other_manifest_or_docs_or_results_or_checkpoint_or_zip_writes": false
+  },
+  "runtime_handoff": {
+    "source_hashes_final": true,
+    "requires_rebinding_after_source_repairs": true,
+    "checkpoint_payloads_modified": false,
+    "training_performed": false,
+    "user_reported_checkpoint_validation_success_count": 534
+  },
+  "known_boundaries": [
+    "Historical unselected TimeMixer lazy branches remain outside the released dependency closure recorded in CODE_MIGRATION_AUDIT.json.",
+    "Historical residual-calibrator fitting helpers absent from the original release remain out of scope; canonical training/support imports use the retained constants compatibility path.",
+    "External raw datasets and omitted prediction arrays were not regenerated or evaluated."
+  ]
+}

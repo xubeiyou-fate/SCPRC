@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "model_identities": 16,
+  "folds": 18,
+  "postprocesses": 2,
+  "aligned_inputs": 288,
+  "fold_metric_rows": 576,
+  "origin_rows": 415296,
+  "core_metrics_finite": true,
+  "origin_fold_reaggregation_max_abs_error": 8.731149137020111e-11,
+  "capacity_rows": 4608,
+  "capacity_proxy_decomposition_max_abs_error": 2.1316282072803006e-14,
+  "uncertainty_rows": 336,
+  "paired_origin_grid_complete": true,
+  "strict_training_folds": 18,
+  "time_boundary_last_label_start": "2023-08-31 00:00:00",
+  "time_boundary_final_target_end": "2023-08-31 23:00:00",
+  "target_start_vs_issue_rule": "issue=start-1h",
+  "no_independent_origin_significance_claim": true,
+  "strict_checkpoint_audit_status": "PASS_WITH_PROVENANCE_AND_CAUSAL_LIMITATIONS",
+  "strict_checkpoints_passed": 72,
+  "same_initialization_and_pcgrad_function": true
+}

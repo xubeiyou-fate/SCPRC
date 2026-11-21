@@ -1,0 +1,81 @@
+{
+  "finished": "2026-10-24T21:11:08+0800",
+  "records": [
+    {
+      "elapsed_seconds": 415.667,
+      "log": "experiments/supplementary/logs/external_jiaxing_13.log",
+      "name": "external_jiaxing_13",
+      "result": "experiments/supplementary/external_current_20261024/jiaxing/seed_13/result.json",
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "elapsed_seconds": 419.921,
+      "log": "experiments/supplementary/logs/external_jiaxing_17.log",
+      "name": "external_jiaxing_17",
+      "result": "experiments/supplementary/external_current_20261024/jiaxing/seed_17/result.json",
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "elapsed_seconds": 368.639,
+      "log": "experiments/supplementary/logs/external_shanghai_13.log",
+      "name": "external_shanghai_13",
+      "result": "experiments/supplementary/external_current_20261024/shanghai/seed13/result.json",
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "elapsed_seconds": 447.968,
+      "log": "experiments/supplementary/logs/external_jiaxing_29.log",
+      "name": "external_jiaxing_29",
+      "result": "experiments/supplementary/external_current_20261024/jiaxing/seed_29/result.json",
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "elapsed_seconds": 350.971,
+      "log": "experiments/supplementary/logs/external_shanghai_17.log",
+      "name": "external_shanghai_17",
+      "result": "experiments/supplementary/external_current_20261024/shanghai/seed17/result.json",
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "elapsed_seconds": 332.158,
+      "log": "experiments/supplementary/logs/external_shanghai_29.log",
+      "name": "external_shanghai_29",
+      "result": "experiments/supplementary/external_current_20261024/shanghai/seed29/result.json",
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "elapsed_seconds": 314.867,
+      "log": "experiments/supplementary/logs/external_urbanev_13.log",
+      "name": "external_urbanev_13",
+      "result": "experiments/supplementary/external_current_20261024/urbanev/seed_13/result.json",
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "elapsed_seconds": 297.39,
+      "log": "experiments/supplementary/logs/external_urbanev_17.log",
+      "name": "external_urbanev_17",
+      "result": "experiments/supplementary/external_current_20261024/urbanev/seed_17/result.json",
+      "returncode": 0,
+      "status": "completed"
+    },
+    {
+      "elapsed_seconds": 233.597,
+      "log": "experiments/supplementary/logs/external_urbanev_29.log",
+      "name": "external_urbanev_29",
+      "result": "experiments/supplementary/external_current_20261024/urbanev/seed_29/result.json",
+      "returncode": 0,
+      "status": "completed"
+    }
+  ],
+  "started": "2026-10-24T20:43:00+0800",
+  "status": "completed",
+  "updated": "2026-10-24T21:11:08+0800",
+  "workers": 2
+}

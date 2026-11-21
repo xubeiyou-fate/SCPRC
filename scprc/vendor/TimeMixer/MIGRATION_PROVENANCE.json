@@ -1,0 +1,10 @@
+{
+  "path": "scprc/vendor/TimeMixer",
+  "copied_source": 6,
+  "commit": "e24610583b36fdd8c76cc17a8df4e65759a5f460",
+  "remote": "https://github.com/kwuking/TimeMixer.git",
+  "licenses": [
+    "scprc/vendor/TimeMixer/LICENSE"
+  ],
+  "license_status": "preserved"
+}

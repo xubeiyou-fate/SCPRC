@@ -1,0 +1,31 @@
+{
+  "gate_definition": {
+    "exact": {
+      "use_peer_gate": false,
+      "use_scale_gate": false,
+      "use_source_disagreement_gate": false
+    },
+    "full": {
+      "use_peer_gate": true,
+      "use_scale_gate": true,
+      "use_source_disagreement_gate": true
+    },
+    "peer_only": {
+      "use_peer_gate": true,
+      "use_scale_gate": false,
+      "use_source_disagreement_gate": false
+    },
+    "scale_only": {
+      "use_peer_gate": false,
+      "use_scale_gate": true,
+      "use_source_disagreement_gate": false
+    },
+    "source_disagreement_only": {
+      "use_peer_gate": false,
+      "use_scale_gate": false,
+      "use_source_disagreement_gate": true
+    }
+  },
+  "protocol_id": "scpcr-matched-baseline-20261023",
+  "protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5"
+}

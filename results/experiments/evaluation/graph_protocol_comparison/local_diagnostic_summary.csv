@@ -1,0 +1,3 @@
+scope,model,fold_count,cities,seeds,context_hours,horizon_hours,training_window,evaluation_window,optimizer,output_type,rmse_mean,mae_mean,parameter_count,retrospective,faithful_named_paper_reproduction
+independent_local_diagnostic,N-BEATS-style-history-behavior-graph-residual,18,AMS|JHB|LOA|MEL|SPO|SZH,13|17|29,168,24,April-July 2023 source-only five-city LOCO,August 2023 721 rolling origins per city,AdamW + source-city PCGrad,point,64.26451370829118,12.430887796429046,362905,true,false
+independent_local_diagnostic,PhaseFormer-Exact-reference,18,AMS|JHB|LOA|MEL|SPO|SZH,13|17|29,168,24,April-July 2023 source-only five-city LOCO,August 2023 721 rolling origins per city,AdamW + source-city PCGrad,point,35.89558140143509,8.402842185804465,36360,true,false

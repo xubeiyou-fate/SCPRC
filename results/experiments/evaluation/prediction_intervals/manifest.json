@@ -1,0 +1,31 @@
+{
+  "claim_boundary": "empirical retrospective coverage for the locked target-history calibration protocol; no distribution-free guarantee",
+  "counts": {
+    "capacity_rows": 594,
+    "coverage_rows": 324,
+    "folds": 18,
+    "point_rows": 36,
+    "wis_rows": 108
+  },
+  "environment": {
+    "device": "cuda",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+    "torch": "2.7.1+cu118"
+  },
+  "experiment": "U1 Original PhaseFormer vs Full SCPRC coverage/WIS/capacity alignment",
+  "root_write_scope": "experiments/evaluation/u1_original_coverage",
+  "script": {
+    "path": "experiments/evaluation/prediction_intervals/run_u1_original_coverage.py",
+    "sha256": "98e68b2d34d5f5657df3d45395494d9636b08117fc2a8bf838bbfdee53a84030"
+  },
+  "sources": {
+    "full_root": "experiments/forecasting/canonical_h24_anchor",
+    "original_root": "experiments/forecasting/p2_no_pcgrad_phaseformer",
+    "protocol_file": "scprc/training/scprc_matched_protocol.json",
+    "protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5"
+  },
+  "status": "completed"
+}

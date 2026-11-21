@@ -1,0 +1,101 @@
+{
+  "frozen_protocol_file": "scprc/training/scprc_matched_protocol.json",
+  "frozen_protocol": {
+    "protocol_id": "scpcr-matched-baseline-20261023",
+    "status": "frozen_for_retrospective_august_audit",
+    "purpose": "Fair architecture diagnostics under the SCPRC source-only CHARGED protocol",
+    "input": {
+      "dataset": "CHARGED v3",
+      "features": [
+        "volume"
+      ],
+      "target": "volume",
+      "context_hours": 168,
+      "forecast_horizon_hours": 24,
+      "duration_input": false,
+      "coordinates_input": false,
+      "target_city_identifier_input": false
+    },
+    "data_split": {
+      "cities": [
+        "AMS",
+        "JHB",
+        "LOA",
+        "MEL",
+        "SPO",
+        "SZH"
+      ],
+      "source_window": "2023-04-01 through 2023-07-31, indices [0, 2928)",
+      "evaluation_window": "2023-08-01 through 2023-08-31, label origins [2928, 3672)",
+      "evaluation_origins_per_city": 721,
+      "target_adaptation_steps": 0,
+      "september_values_materialized": false,
+      "interpretation": "retrospective; August was exposed during prior development"
+    },
+    "normalization": {
+      "scaler": "source-only equal-city weighted global volume mean/std",
+      "target_city_data_used_for_scaler": false
+    },
+    "training_budget": {
+      "source_minibatches_total": 2048,
+      "batch_size_windows": 4,
+      "effective_source_windows": 8192,
+      "budget_matching_unit": "effective source windows; optimizer-step counts are reported separately",
+      "source_schedule": "round-robin over the five source cities; PCGrad aggregates one task batch per source city per round",
+      "pcgrad_parameter_updates": "ceil(2048 / 5) = 410 rounds for five source cities",
+      "single_task_parameter_updates": 2048,
+      "seeds": [
+        13,
+        17,
+        29
+      ],
+      "learning_rate": 0.001,
+      "parameter_optimizer": "AdamW",
+      "weight_decay": 0.0001,
+      "loss": "standardized volume MSE + 0.15 multi-resolution consistency at factors 2,3,4,6,12",
+      "gradient_aggregation": "PCGrad for multi-source SCPRC and matched baseline runs unless a baseline-specific control is explicitly labelled"
+    },
+    "measurement": {
+      "primary_metrics": [
+        "RMSE",
+        "MAE"
+      ],
+      "reporting_unit": "same 721 rolling origins per city and city x seed fold",
+      "required_artifacts": [
+        "protocol.json",
+        "command.txt",
+        "environment.json",
+        "per-fold result.json",
+        "predictions.npz",
+        "trained checkpoint",
+        "summary.json"
+      ],
+      "uncertainty": "paired 168-hour moving-block bootstrap; city x seed is the outer repetition unit",
+      "claim_boundary": "No blind-confirmation claim; all August results are retrospective"
+    }
+  },
+  "runner": {
+    "model": "official vendored TimeMixer channel-dependent route",
+    "input": "volume-only",
+    "target": "volume",
+    "target_city_adaptation_steps": 0,
+    "august_role": "retrospective evaluation only",
+    "september_values_materialized": false,
+    "target_city": "JHB",
+    "seed": 29,
+    "microbatch_windows": 4,
+    "inference_batch_windows": 1,
+    "torch_threads": 2,
+    "device": "cuda"
+  },
+  "budget_accounting": {
+    "source_minibatches_total": 2048,
+    "batch_windows_per_source_minibatch": 4,
+    "effective_source_windows": 8192,
+    "physical_microbatch_windows": 4,
+    "gradient_accumulation_steps": 1,
+    "parameter_updates_total": 2048,
+    "parameter_update_semantics": "one TimeMixer optimizer.step after one source minibatch of four windows",
+    "pcgrad_comparison_note": "PCGrad five-source training aggregates approximately 410 city-gradient rounds; this single-model TimeMixer baseline performs 2048 parameter updates. The matched unit is source minibatches/effective windows, not optimizer-update count."
+  }
+}

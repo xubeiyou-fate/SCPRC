@@ -1,0 +1,22 @@
+{
+  "parity_passed": true,
+  "max_abs_difference": 4.4779153540730476e-07,
+  "protocol": "station-level max(raw,0), sum stations, frozen10%margin/penalty10; native units",
+  "units": "native hourly energy amount; no kW conversion or money",
+  "denominator": "realized 24h city peak; max(peak,1e-12)",
+  "baselines_retained": [
+    "Seasonal naive 24 h",
+    "Seasonal naive 168 h",
+    "Oracle actual peak"
+  ],
+  "sources": [
+    {
+      "path": "/home/cwadmin/exports/SCPRC_Review_Evidence_Export_20261102/07_Operational_Diagnostics/reanalysis/operational_metrics_per_fold.csv",
+      "sha256": "dc94bda3c17af0f0d3860bd3fdb64e21d4e04fd80f663f4c2fbee004fd53d18d"
+    },
+    {
+      "path": "/home/cwadmin/exports/SCPRC_Review_Evidence_Export_20261102/07_Operational_Diagnostics/reanalysis/capacity_reserve_risk_per_fold.csv",
+      "sha256": "63b4697cb3d5d4816227f1e8540b15b261655b27595c9c424cec24c5312b15e2"
+    }
+  ]
+}

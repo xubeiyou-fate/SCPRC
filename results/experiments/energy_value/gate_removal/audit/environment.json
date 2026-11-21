@@ -1,0 +1,33 @@
+{
+  "record_type": "audit_time_environment_not_training_attestation",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+  "executable": "/home/cwadmin/anaconda3/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "torch": "2.7.1+cu118",
+    "pytorch-lightning": null,
+    "lightning": null,
+    "scipy": "1.13.1",
+    "einops": "0.8.2"
+  },
+  "torch_cuda_build": "11.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "cudnn_version": 90100,
+  "deterministic_algorithms": false,
+  "cudnn_deterministic": false,
+  "cudnn_benchmark": false,
+  "cuda_matmul_allow_tf32": false,
+  "torch_threads": 2,
+  "selected_env": {
+    "PYTHONHASHSEED": null,
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "OMP_NUM_THREADS": null
+  },
+  "runs_path": "/data/TimeMixer/experiments/energy_value_20261104/agent_strict_gap/runs",
+  "runs_is_symlink": true,
+  "runs_resolved": "/home/cwadmin/exports/SCPRC_Energy_Value_20261104_strict_runs"
+}

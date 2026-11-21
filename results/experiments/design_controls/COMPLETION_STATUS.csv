@@ -1,0 +1,9 @@
+matrix_item,experiment,completed,expected,status,evidence
+A4 / EV11,严格相位共享,18,18,已完成,audit/completed_runs_audit.json
+A5 / EV12,同容量逐站适配器,18,18,已完成,audit/completed_runs_audit.json
+A6 / EV13,拼接＋投影,18,18,已完成,audit/completed_runs_audit.json
+Reference,同批Full,18,18,已完成,audit/completed_runs_audit.json
+Energy metrics,raw/clip逐折与逐起点统计,72,72,已完成,analysis/manifest.json
+Independent audit,配置预算lineage预测校验,72,72,通过,audit/completed_runs_audit.json
+Frozen efficiency,72个checkpoint × 3种batch,216,216,通过,efficiency/manifest.json
+Matrices,主矩阵与能源矩阵,2,2,已加入,../../MAIN_EXPERIMENT_MATRIX.md

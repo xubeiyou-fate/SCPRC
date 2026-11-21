@@ -1,0 +1,14 @@
+item,paper_side,local_side,match_status,allowed_boundary
+backbone,N-BEATS strong temporal backbone with base quantiles,generic shared station-wise N-BEATS-style blocks,partial,local N-BEATS-style diagnostic only
+graph_role,gated dynamic behavior-graph residual,history-conditioned query/key graph with bounded centered peer correction,partial,"conceptually related, implementation differs"
+static_prior,static priors fused with sample-specific graph,no verified paper-matched static prior,missing,do not claim static-prior scprc
+quantiles,base quantile forecasts,point output only,missing,no local Pinball/WIS80 claim
+peak_risk,companion peak-risk head and loss-weight trade-off,no peak labels or risk head,missing,no peak-risk scprc
+dataset,UrbanEV primary plus six CHARGED transfer datasets,CHARGED v3 six-city LOCO only,mismatch,local CHARGED diagnostic
+UrbanEV_split,chronological 60/20/20 over 275 stations,not implemented,missing,no UrbanEV faithful comparison
+horizons,four horizons,h=24 only,mismatch,no multi-horizon scprc
+seeds,five random seeds,"three seeds: 13,17,29",mismatch,three-seed local uncertainty only
+metrics,MAE RMSE Pinball WIS80 and risk metrics,raw-volume RMSE and MAE,partial,point diagnostics only
+training_protocol,paper-specific chronological protocol and loss weights,April-July source-only LOCO; AdamW plus PCGrad; MSE plus multiresolution consistency,mismatch,do not call protocol matched
+blindness,chronological evaluation; release policy not available,August previously exposed to development,mismatch,"retrospective, not blind confirmation"
+official_code,paper-specific code/protocol package,not present in checkout,missing,faithful scprc unavailable

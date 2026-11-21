@@ -1,0 +1,329 @@
+{
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "completed_fold_count": 18,
+  "expected_combined_rows": 216,
+  "expected_original_rows": 108,
+  "experiment": "U2 Original PhaseFormer vs Full SCPRC clean-gated robustness",
+  "files": {
+    "combined_results_all_folds": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/original_vs_full_all_folds.csv",
+    "original_results_all_folds": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/original_results_all_folds.csv",
+    "summary": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/original_vs_full_summary.csv"
+  },
+  "fold_results": [
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_ams_seed13",
+      "result_row_count": 6,
+      "seed": 13,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "AMS"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_ams_seed17",
+      "result_row_count": 6,
+      "seed": 17,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "AMS"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_ams_seed29",
+      "result_row_count": 6,
+      "seed": 29,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "AMS"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_jhb_seed13",
+      "result_row_count": 6,
+      "seed": 13,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "JHB"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_jhb_seed17",
+      "result_row_count": 6,
+      "seed": 17,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "JHB"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_jhb_seed29",
+      "result_row_count": 6,
+      "seed": 29,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "JHB"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_loa_seed13",
+      "result_row_count": 6,
+      "seed": 13,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "LOA"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_loa_seed17",
+      "result_row_count": 6,
+      "seed": 17,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "LOA"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_loa_seed29",
+      "result_row_count": 6,
+      "seed": 29,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "LOA"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_mel_seed13",
+      "result_row_count": 6,
+      "seed": 13,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "MEL"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_mel_seed17",
+      "result_row_count": 6,
+      "seed": 17,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "MEL"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_mel_seed29",
+      "result_row_count": 6,
+      "seed": 29,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "MEL"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_spo_seed13",
+      "result_row_count": 6,
+      "seed": 13,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "SPO"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_spo_seed17",
+      "result_row_count": 6,
+      "seed": 17,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "SPO"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_spo_seed29",
+      "result_row_count": 6,
+      "seed": 29,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "SPO"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_szh_seed13",
+      "result_row_count": 6,
+      "seed": 13,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "SZH"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_szh_seed17",
+      "result_row_count": 6,
+      "seed": 17,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "SZH"
+    },
+    {
+      "completed_scenarios": [
+        "gaussian_noise_sigma10pct_source_std",
+        "point_missing_10pct_mean_impute",
+        "positive_spike_1pct_x3",
+        "scale_shift_plus20pct",
+        "site_outage_10pct_mean_impute",
+        "temporal_block_missing_24h_mean_impute"
+      ],
+      "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness/target_szh_seed29",
+      "result_row_count": 6,
+      "seed": 29,
+      "stage": "complete",
+      "status": "passed",
+      "target_city": "SZH"
+    }
+  ],
+  "generated_at_utc": "2026-10-30T17:18:29.471919+00:00",
+  "observed_combined_rows": 216,
+  "observed_original_rows": 108,
+  "old_reference_root": "/data/TimeMixer/experiments/forecasting/p1_canonical_robustness",
+  "output_root": "/data/TimeMixer/experiments/evaluation/u2_original_robustness",
+  "runner": "/data/TimeMixer/experiments/evaluation/robustness/run_u2_original_robustness.py",
+  "scenario_names": [
+    "point_missing_10pct_mean_impute",
+    "temporal_block_missing_24h_mean_impute",
+    "site_outage_10pct_mean_impute",
+    "scale_shift_plus20pct",
+    "gaussian_noise_sigma10pct_source_std",
+    "positive_spike_1pct_x3"
+  ],
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "status": "completed"
+}

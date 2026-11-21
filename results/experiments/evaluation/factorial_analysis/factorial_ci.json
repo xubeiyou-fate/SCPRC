@@ -1,0 +1,281 @@
+{
+  "status": "completed",
+  "experiment": "formal paired Exact-PCGrad versus Full and 2x2 factorial interaction",
+  "arms": {
+    "original": "relation off, PCGrad off",
+    "exact": "relation off, PCGrad on",
+    "full_no_pcgrad": "relation on, PCGrad off",
+    "full": "relation on, PCGrad on"
+  },
+  "folds": 18,
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "protocol_id": "scpcr-matched-baseline-20261023",
+  "retrospective": true,
+  "comparisons": {
+    "exact_vs_full": {
+      "rmse": {
+        "left": "exact",
+        "right": "full",
+        "metric": "rmse",
+        "left_point": 32.54171440812607,
+        "right_point": 32.19073886758903,
+        "difference_right_minus_left": -0.3509755405370356,
+        "difference_ci95": [
+          -0.8000731827058427,
+          -0.03683184806393246
+        ],
+        "relative_change_percent": -1.0785404116551156,
+        "relative_change_ci95_percent": [
+          -2.078695698894513,
+          -0.18994163736606953
+        ],
+        "right_better_folds": 13,
+        "folds": 18,
+        "bootstrap_replicates": 10000,
+        "unit": "paired city x seed fold"
+      },
+      "mae": {
+        "left": "exact",
+        "right": "full",
+        "metric": "mae",
+        "left_point": 7.02266682226042,
+        "right_point": 7.049821351273473,
+        "difference_right_minus_left": 0.027154529013053263,
+        "difference_ci95": [
+          -0.047233181685334656,
+          0.10919935660046264
+        ],
+        "relative_change_percent": 0.3866697609372416,
+        "relative_change_ci95_percent": [
+          -0.9357440394493801,
+          1.2313156688204596
+        ],
+        "right_better_folds": 11,
+        "folds": 18,
+        "bootstrap_replicates": 10000,
+        "unit": "paired city x seed fold"
+      }
+    },
+    "original_vs_exact": {
+      "rmse": {
+        "left": "original",
+        "right": "exact",
+        "metric": "rmse",
+        "left_point": 35.06752552111527,
+        "right_point": 32.54171440812607,
+        "difference_right_minus_left": -2.525811112989203,
+        "difference_ci95": [
+          -4.298370931941618,
+          -1.0546733396187793
+        ],
+        "relative_change_percent": -7.202706993022168,
+        "relative_change_ci95_percent": [
+          -10.81841569952334,
+          -4.114397512670067
+        ],
+        "right_better_folds": 18,
+        "folds": 18,
+        "bootstrap_replicates": 10000,
+        "unit": "paired city x seed fold"
+      },
+      "mae": {
+        "left": "original",
+        "right": "exact",
+        "metric": "mae",
+        "left_point": 8.28172249132807,
+        "right_point": 7.02266682226042,
+        "difference_right_minus_left": -1.2590556690676502,
+        "difference_ci95": [
+          -1.8675519902747195,
+          -0.753867279326957
+        ],
+        "relative_change_percent": -15.202823692607769,
+        "relative_change_ci95_percent": [
+          -23.68097591290747,
+          -9.888023574873278
+        ],
+        "right_better_folds": 17,
+        "folds": 18,
+        "bootstrap_replicates": 10000,
+        "unit": "paired city x seed fold"
+      }
+    },
+    "original_vs_full_no_pcgrad": {
+      "rmse": {
+        "left": "original",
+        "right": "full_no_pcgrad",
+        "metric": "rmse",
+        "left_point": 35.06752552111527,
+        "right_point": 36.04689096543658,
+        "difference_right_minus_left": 0.97936544432131,
+        "difference_ci95": [
+          -1.407192542414182,
+          4.039220799652174
+        ],
+        "relative_change_percent": 2.79279883529735,
+        "relative_change_ci95_percent": [
+          -4.320856655345498,
+          11.13164397782033
+        ],
+        "right_better_folds": 9,
+        "folds": 18,
+        "bootstrap_replicates": 10000,
+        "unit": "paired city x seed fold"
+      },
+      "mae": {
+        "left": "original",
+        "right": "full_no_pcgrad",
+        "metric": "mae",
+        "left_point": 8.28172249132807,
+        "right_point": 8.21548358947689,
+        "difference_right_minus_left": -0.06623890185118064,
+        "difference_ci95": [
+          -0.46131758085296226,
+          0.3466109065709268
+        ],
+        "relative_change_percent": -0.7998203504227641,
+        "relative_change_ci95_percent": [
+          -7.23675809137134,
+          4.049978792999661
+        ],
+        "right_better_folds": 10,
+        "folds": 18,
+        "bootstrap_replicates": 10000,
+        "unit": "paired city x seed fold"
+      }
+    },
+    "full_no_pcgrad_vs_full": {
+      "rmse": {
+        "left": "full_no_pcgrad",
+        "right": "full",
+        "metric": "rmse",
+        "left_point": 36.04689096543658,
+        "right_point": 32.19073886758903,
+        "difference_right_minus_left": -3.8561520978475485,
+        "difference_ci95": [
+          -7.601869062169494,
+          -0.933309567953958
+        ],
+        "relative_change_percent": -10.697599694644966,
+        "relative_change_ci95_percent": [
+          -18.02144643893261,
+          -3.9455188886757933
+        ],
+        "right_better_folds": 18,
+        "folds": 18,
+        "bootstrap_replicates": 10000,
+        "unit": "paired city x seed fold"
+      },
+      "mae": {
+        "left": "full_no_pcgrad",
+        "right": "full",
+        "metric": "mae",
+        "left_point": 8.21548358947689,
+        "right_point": 7.049821351273473,
+        "difference_right_minus_left": -1.1656622382034163,
+        "difference_ci95": [
+          -1.8077264667305761,
+          -0.5999874586133609
+        ],
+        "relative_change_percent": -14.188601626525044,
+        "relative_change_ci95_percent": [
+          -21.22502731369539,
+          -8.984938492062515
+        ],
+        "right_better_folds": 16,
+        "folds": 18,
+        "bootstrap_replicates": 10000,
+        "unit": "paired city x seed fold"
+      }
+    }
+  },
+  "interaction": {
+    "rmse": {
+      "point": -1.3303409848583456,
+      "ci95": [
+        -4.261120940178409,
+        0.8842674925179506
+      ],
+      "unit": "paired city x seed fold",
+      "interpretation": "PCGrad x relation interaction; negative means PCGrad contributes more when relation is enabled"
+    },
+    "mae": {
+      "point": 0.09339343086423248,
+      "ci95": [
+        -0.3015078924274227,
+        0.4806912841435498
+      ],
+      "unit": "paired city x seed fold",
+      "interpretation": "PCGrad x relation interaction; negative means PCGrad contributes more when relation is enabled"
+    }
+  },
+  "input_hashes": {
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_ams_seed13/predictions.npz": "96ef4ef6c2e8a5916059a5f218a81e0bd68fb513f03dc546f9f9605458013753",
+    "experiments/forecasting/canonical_h24_anchor/target_ams_seed13/predictions.npz": "cec24ee3a6d60f61e20a10a7b63bdc6e085a217f24673069738828c64258c596",
+    "experiments/evaluation/scprc_mean_gradient/target_ams_seed13/predictions.npz": "b71f3ccad91b14db240814f935190068afb22ef0a88067b1bcb02ddfe8bf586f",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_ams_seed17/predictions.npz": "13d1e9c101ece026964e54c87c8ed8d58bffc4bb12febdc1bdaf8a51699cea12",
+    "experiments/forecasting/canonical_h24_anchor/target_ams_seed17/predictions.npz": "2844f7a4197f7ce903da33908a5dfd03029504074dc7da0599b5d6ed68201a46",
+    "experiments/evaluation/scprc_mean_gradient/target_ams_seed17/predictions.npz": "244326f620dbdc63374d7699708229e7935a58e985c24ddbcc592dce9d2a2e0b",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_ams_seed29/predictions.npz": "81075eb05c547e66082572d2fd38020cd73208e7052ef6d8feb30836ba417495",
+    "experiments/forecasting/canonical_h24_anchor/target_ams_seed29/predictions.npz": "6a9dc7da351a1e211275822d72db399dd80e53c8922e79af75bc6102f6fb0be8",
+    "experiments/evaluation/scprc_mean_gradient/target_ams_seed29/predictions.npz": "c60453a4173eef58760c81f271394ee9c91008d93d164541526f418c96256c49",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_jhb_seed13/predictions.npz": "f733982c394d610e87028b4d6777656b3b1e24dd1cbd565e44a22a1ef436462f",
+    "experiments/forecasting/canonical_h24_anchor/target_jhb_seed13/predictions.npz": "a8f6a0b8c27e53331101434a6f4a866c61e2a4023d82f5764554732d22e8eae6",
+    "experiments/evaluation/scprc_mean_gradient/target_jhb_seed13/predictions.npz": "6e66c1403cc52dae2e3ebfd3c1d4a57571b349fe77fdc2bbfdbdac06fc6317c6",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_jhb_seed17/predictions.npz": "0513e56b4ac8184aca8da4d01f90a385223392d5290d5c140a13c7f4f5b136b5",
+    "experiments/forecasting/canonical_h24_anchor/target_jhb_seed17/predictions.npz": "bee404ece01bd0cb04565a1ab01939721ab384dddeda1d370b4120384846b7c3",
+    "experiments/evaluation/scprc_mean_gradient/target_jhb_seed17/predictions.npz": "fc5c02a2aa24273a5a95882b0237980367fb3e23e4670f1cc649efd75c6d4ad1",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_jhb_seed29/predictions.npz": "3010d963064de64be77114ede6d6ea83f74a1207e03e6b58dba1d5b25ed91e6e",
+    "experiments/forecasting/canonical_h24_anchor/target_jhb_seed29/predictions.npz": "ae7dd6ec256b8691b718498896ff76945661a003b83b06a437c5c5db2c10dfed",
+    "experiments/evaluation/scprc_mean_gradient/target_jhb_seed29/predictions.npz": "2a10b8d81174ef5eba5b6604d75c82102f941a05b563584e283bc16e9b6c84a1",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_loa_seed13/predictions.npz": "b80c69fa15b7a6109240dda8919bc230e892d0e7fb4ba5a5519119cb7df401e7",
+    "experiments/forecasting/canonical_h24_anchor/target_loa_seed13/predictions.npz": "ec8ce8ba0502ff323e23da8a4b88df0e0ce65a21dd037dbb14c026bcd6a21604",
+    "experiments/evaluation/scprc_mean_gradient/target_loa_seed13/predictions.npz": "a3e4e3a05dab7dbbb2cb887b6beb85167dc6848756f30308f04d13c9257120f0",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_loa_seed17/predictions.npz": "4ecabe155b54fc04583de107a4f9a1ea0e0fa469f30d5dcd21ed59c695cf8b89",
+    "experiments/forecasting/canonical_h24_anchor/target_loa_seed17/predictions.npz": "b537ac74db1d5d428767abcef0a50e67f6e1b49520a4215f7bc295b950871657",
+    "experiments/evaluation/scprc_mean_gradient/target_loa_seed17/predictions.npz": "b607aa1876eb4f0fef9f62b2ab38da9b4378e86949b4e5b129043532f3045aa1",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_loa_seed29/predictions.npz": "e2374e983296215e0e0043f9710dd60412018a4a744208fb805cb5904d7bc129",
+    "experiments/forecasting/canonical_h24_anchor/target_loa_seed29/predictions.npz": "9c987f510348d2ace9111f83c66ae3c44dd0dc57021b0df1fc31b1e80500be6e",
+    "experiments/evaluation/scprc_mean_gradient/target_loa_seed29/predictions.npz": "de0ea897e1c8c281915ca3ffef8cb141a5c206341b226a30aaf7e24bc16c0a7b",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_mel_seed13/predictions.npz": "375687de727099b40d7008077f770984ecae40e5d275dea374df27f88586eb55",
+    "experiments/forecasting/canonical_h24_anchor/target_mel_seed13/predictions.npz": "b1a8d92575593c3f926fe5fdc4e19e2735cc85c8e95a5daae9368e680ed4ab1a",
+    "experiments/evaluation/scprc_mean_gradient/target_mel_seed13/predictions.npz": "bc9ebb221a27c08411ff52b77acbb72c637430cb0f448b51f1c2b8c5f832316f",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_mel_seed17/predictions.npz": "8a37dba1ca256d189d51f275b49fabb3a27f898ce958c35e2789f857ff5cd6cf",
+    "experiments/forecasting/canonical_h24_anchor/target_mel_seed17/predictions.npz": "cd03aa177d235a3b6ee2ec308094731e8b62638c1f9ed021513e1136efb75582",
+    "experiments/evaluation/scprc_mean_gradient/target_mel_seed17/predictions.npz": "90a62ee85833333779cfc2b5291d70335f08b12d6f6ef0ead3ca370144a5c358",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_mel_seed29/predictions.npz": "7364b77ebfc5dd94b5d1bf5ee50c1be861b6c94469255782587a5037ae01414a",
+    "experiments/forecasting/canonical_h24_anchor/target_mel_seed29/predictions.npz": "cb39cd4d0954789038f5c7121e7bd06fb3c9771f93254ee723e67ea7cdb8ce66",
+    "experiments/evaluation/scprc_mean_gradient/target_mel_seed29/predictions.npz": "0f92ea67b1ff6df8da1faba92f38e10a5d93977b6a102bf028fcf4bc2b80da19",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_spo_seed13/predictions.npz": "88808ccdee1c49dff734018820dcf53fe9b40e5b6597efdd83ca9ab1c6f831d6",
+    "experiments/forecasting/canonical_h24_anchor/target_spo_seed13/predictions.npz": "15d03f3fe016ac7a830a262a5bcd81994bacce28bb9089cd7b93fdd3cc9ec4a7",
+    "experiments/evaluation/scprc_mean_gradient/target_spo_seed13/predictions.npz": "4706a89c87216c2e3c97f1cbc7a67b97c25da231aed283737a0d2215281b98cd",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_spo_seed17/predictions.npz": "e8174d5e7ef2755e53bacebff446774a155854c938dadfa57014517980efe7a1",
+    "experiments/forecasting/canonical_h24_anchor/target_spo_seed17/predictions.npz": "32d978cc56d64ff4dc2f0de5b8b0e68c3b572601b855d0b35a22e2e8d153c2ad",
+    "experiments/evaluation/scprc_mean_gradient/target_spo_seed17/predictions.npz": "935ff5c2864177598b873f4f5c4cc1c1090cd3fd5953e4baed03325b2cba30b4",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_spo_seed29/predictions.npz": "36aecd280376291d5ac5fafbe2ab1b1e699f872b6a1fcd478a14ccc2b5496b66",
+    "experiments/forecasting/canonical_h24_anchor/target_spo_seed29/predictions.npz": "4ee27e6977cc84bcd30f6df017c92ff6d8f2a27113c0fa7a4f4787e6ad514548",
+    "experiments/evaluation/scprc_mean_gradient/target_spo_seed29/predictions.npz": "a3fbe0365d6a6b839247768e2d535d33549b91c407dfb353ecb27e016dcc9554",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_szh_seed13/predictions.npz": "6f44780ef41a80045ba6bb45330fdd793fe1cfbe7d1d0f3b0698ee0187ff8d31",
+    "experiments/forecasting/canonical_h24_anchor/target_szh_seed13/predictions.npz": "59f398cd8abce82fc8bcbca166c97e890503b6430573d5ea306ea75f6da296af",
+    "experiments/evaluation/scprc_mean_gradient/target_szh_seed13/predictions.npz": "b87c75ff37c96932bf35c2020ddef8445bb9a8dbcb282474aa0b155f88bf56ea",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_szh_seed17/predictions.npz": "e650783196101252ab2fa9753d3c2aa2a6de78c9d3256fcc52871e1764d120f3",
+    "experiments/forecasting/canonical_h24_anchor/target_szh_seed17/predictions.npz": "beb8c4b70dcfd943f642c8fac615edfd76a2de743492fb50c2062c3f9cdf4371",
+    "experiments/evaluation/scprc_mean_gradient/target_szh_seed17/predictions.npz": "0add65ccb103de26536921382c18a582a2d3ec2de931676cfbde7fb608d5c2a9",
+    "experiments/forecasting/p2_no_pcgrad_phaseformer/target_szh_seed29/predictions.npz": "abb9fad6040551700e33055878f314168c4cac7c6a8951d94d20b2cdb7f2dde6",
+    "experiments/forecasting/canonical_h24_anchor/target_szh_seed29/predictions.npz": "65f883c795ebb5866f6f5229129f9f87b580bc92076fb69ce8a057cf4a793553",
+    "experiments/evaluation/scprc_mean_gradient/target_szh_seed29/predictions.npz": "27373dfaa9fd59971a812d4558df757f6c13cb48e399f781461a68cf79434a5f"
+  },
+  "claim_boundary": "conditional on six observed cities, three fixed seeds, frozen checkpoints and retrospective origins; not a causal optimizer theorem"
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "paper_primary_baseline": "Original PhaseFormer (mean-gradient training)",
+  "paper_primary_method": "SCPRC",
+  "mechanism_control": "PhaseFormer + PCGrad",
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "context_hours": 168,
+  "primary_horizon_hours": 24,
+  "additional_horizon_hours": 48,
+  "data_policy": "official_links_only_no_dataset_payload",
+  "data_sources": "DATA_SOURCES.md",
+  "checkpoint_manifest": "manifests/CHECKPOINTS.csv",
+  "inference_metadata": "manifests/INFERENCE_METADATA.json",
+  "release_asset_manifest": "manifests/RELEASE_ASSETS.csv",
+  "historical_model_weights_included": false,
+  "retrospective_evaluation": true,
+  "method_package": "scprc",
+  "experiment_package": "experiments"
+}

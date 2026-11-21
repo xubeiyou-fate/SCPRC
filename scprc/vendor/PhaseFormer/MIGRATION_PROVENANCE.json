@@ -1,0 +1,8 @@
+{
+  "path": "scprc/vendor/PhaseFormer",
+  "copied_source": 7,
+  "commit": "ff14c16fab136aef60048b20f2ef0d3bc6d86fc7",
+  "remote": "https://github.com/neumyor/PhaseFormer.git",
+  "licenses": [],
+  "license_status": "missing_in_source; upstream verification unavailable (coordinator reported TLS failures); no license inferred"
+}

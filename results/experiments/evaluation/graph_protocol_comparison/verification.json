@@ -1,0 +1,48 @@
+{
+  "artifact_counts": {
+    "predictions_npz": 18,
+    "result_json": 18,
+    "trained_checkpoint_pt": 18
+  },
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "expected_cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "expected_fold_count": 18,
+  "expected_seeds": [
+    13,
+    17,
+    29
+  ],
+  "fold_count": 18,
+  "named_paper_boundary": {
+    "faithful_reproduction": false,
+    "reason": "official code, paper-matched protocol, quantile heads, and peak-risk assets are unavailable locally"
+  },
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "source_hashes": {
+    "audit": "9763a295b65e1809c575d0f13924d99c16bbec6377becb948e19705facb2964e",
+    "comparison": "bf51bdfbb0bbeac811df512fb851d09f6290ab01ef4e44ee09c1015432ecabe2",
+    "model": "d9deffd50b9993f3183031e7a53e2b488bee6ec6389a96f915321cc3a2ef81eb",
+    "runner": "6a4e28b25cc184fc4eb0b65417d1ea2b7a8a9fe38f400cbc7be29c392cc3de4c"
+  },
+  "status": "passed",
+  "training_started": false,
+  "weights_or_data_copied": false
+}

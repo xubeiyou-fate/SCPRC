@@ -1,0 +1,46 @@
+{
+  "status": "watching",
+  "reservations": {
+    "JHB_seed13": {
+      "source": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/parallel_jhb13/target_jhb_seed13",
+      "state": "consolidated",
+      "destination": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/full_volume_only/target_jhb_seed13",
+      "result_sha256": "55e7bb8f20a07307f530ddd7dba368d6860aad1b4f14924fc5540c9604bbe601",
+      "prediction_sha256": "0fe0a8119a60642f9c8e6e74d35085d60bf044159a7319ca60c1f00b4881e9c3"
+    },
+    "LOA_seed13": {
+      "source": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/parallel_loa13/target_loa_seed13",
+      "state": "consolidated",
+      "destination": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/full_volume_only/target_loa_seed13",
+      "result_sha256": "147dfbe859769dd9078bbc102b68075e0e7fd3d71a5d662402c885d63f2a9611",
+      "prediction_sha256": "d6a0636d8814591c6d8210602dcc82c7c82b2b1d645371ede664208ba1166d29"
+    },
+    "JHB_seed17": {
+      "source": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/parallel_jhb17/target_jhb_seed17",
+      "destination": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/full_volume_only/target_jhb_seed17",
+      "state": "destination_hash_mismatch",
+      "checked_at": "2026-11-12T20:01:50+0800"
+    },
+    "LOA_seed17": {
+      "source": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/parallel_loa17/target_loa_seed17",
+      "destination": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/full_volume_only/target_loa_seed17",
+      "state": "consolidated",
+      "checked_at": "2026-10-31T16:56:16+0800",
+      "consolidated_at": "2026-10-31T16:56:31+0800",
+      "source_hashes": {
+        "result.json": "57127a628c9445820e18e4f3be340a6da2defbf42c838d1b4736369619e6b080",
+        "predictions.npz": "7cc110973bdb76377835ae10690fa6a48b54f8c024f1539be6ac31f599b4caee",
+        "state.pt": "31ece76dd02334ff801ac2bf9e1cfbfc3db33801801041f43c25c91e4596adf8"
+      },
+      "destination_hashes": {
+        "result.json": "57127a628c9445820e18e4f3be340a6da2defbf42c838d1b4736369619e6b080",
+        "predictions.npz": "7cc110973bdb76377835ae10690fa6a48b54f8c024f1539be6ac31f599b4caee",
+        "state.pt": "31ece76dd02334ff801ac2bf9e1cfbfc3db33801801041f43c25c91e4596adf8"
+      },
+      "manifest_copy": "/data/TimeMixer/experiments/evaluation/r10_spatial_baselines/full_volume_only/reservation_manifests/LOA_seed17_manifest.json"
+    }
+  },
+  "updated_at": "2026-11-12T20:01:50+0800",
+  "completed_folds_in_target": 18,
+  "expected_folds": 18
+}

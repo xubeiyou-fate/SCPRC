@@ -1,0 +1,9 @@
+postprocess,metric,definition,interaction,city_cluster_ci95_low,city_cluster_ci95_high,cities,folds
+raw,peak_magnitude_mae,(Full-Exact)-(Full_no_PCGrad-Original); negative means larger error reduction with PCGrad,-1111.6425381780812,-3999.5219491590774,627.9905474906697,6,18
+raw,ramp_mae,(Full-Exact)-(Full_no_PCGrad-Original); negative means larger error reduction with PCGrad,-59.34685602165247,-171.73481493754298,0.20707378982617977,6,18
+raw,total_24h_mae,(Full-Exact)-(Full_no_PCGrad-Original); negative means larger error reduction with PCGrad,1472.758208571807,-10949.809863436136,16022.711842415714,6,18
+raw,peak_timing_mae_hours,(Full-Exact)-(Full_no_PCGrad-Original); negative means larger error reduction with PCGrad,0.0615657266142703,-0.06187394051471722,0.16743720141778404,6,18
+nonnegative_clip,peak_magnitude_mae,(Full-Exact)-(Full_no_PCGrad-Original); negative means larger error reduction with PCGrad,-1230.8617328882397,-3998.0615875539843,276.91422531232956,6,18
+nonnegative_clip,ramp_mae,(Full-Exact)-(Full_no_PCGrad-Original); negative means larger error reduction with PCGrad,-59.289192471245364,-171.61443876943943,-0.03731648926427846,6,18
+nonnegative_clip,total_24h_mae,(Full-Exact)-(Full_no_PCGrad-Original); negative means larger error reduction with PCGrad,-1355.7033941117147,-10953.876781931174,7614.874194000014,6,18
+nonnegative_clip,peak_timing_mae_hours,(Full-Exact)-(Full_no_PCGrad-Original); negative means larger error reduction with PCGrad,0.06002465711203585,-0.06033287101248247,0.17222222222222194,6,18

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-21",
+  "files": 1035,
+  "total_bytes": 395620217,
+  "weight_files": 534,
+  "release_zip_files": 14,
+  "data_or_size_violations": [],
+  "secret_pattern_findings": [],
+  "python_compile_errors": [],
+  "symlinks": [],
+  "scope": "extension/size/symlink/known-secret-pattern and Python syntax checks; not a full license or scientific audit",
+  "passed": true
+}

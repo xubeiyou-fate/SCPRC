@@ -1,0 +1,17 @@
+{
+  "batch_size_windows": 4,
+  "context_hours": 168,
+  "gradient_aggregation": "ordinary arithmetic mean of source-city gradients",
+  "horizon_hours": 24,
+  "independent_retraining": true,
+  "method_id": "full_scpcr_no_pcgrad",
+  "old_artifacts_read": false,
+  "optimizer": "AdamW",
+  "pcgrad_enabled": false,
+  "protocol_id": "scpcr-matched-baseline-20261023",
+  "protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5",
+  "relation_structure": "Full SCPRC scale + peer + source-disagreement + phase relation",
+  "source_city_training": true,
+  "source_minibatches": 2048,
+  "source_windows": 8192
+}

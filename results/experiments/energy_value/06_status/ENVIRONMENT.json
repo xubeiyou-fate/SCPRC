@@ -1,0 +1,17 @@
+{
+  "captured_at": "2026-11-05 after training; audit runtime snapshot, not original training environment capture",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+  "executable": "/home/cwadmin/anaconda3/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "torch": "2.7.1+cu118",
+    "matplotlib": "3.9.2",
+    "seaborn": "0.13.2",
+    "PyMuPDF": "1.28.2",
+    "pytest": "7.4.4"
+  },
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER, 595.80, 32760 MiB"
+}

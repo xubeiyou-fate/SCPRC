@@ -1,0 +1,18 @@
+{
+  "task": "R13_strict_temporal_extrapolation",
+  "status": "completed_no_blind_test",
+  "smoke_started": false,
+  "full_run_started": false,
+  "reason": "August was historically inspected and September was historically read; archive ends at September 2023.",
+  "outputs": [
+    "raw_time_axis.csv",
+    "evidence_index.csv",
+    "audit_report.json",
+    "audit_report.md",
+    "protocol.json",
+    "manifest.json",
+    "status.json",
+    "README.md"
+  ],
+  "main_matrix_modified": false
+}

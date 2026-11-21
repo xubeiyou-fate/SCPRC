@@ -1,0 +1,10 @@
+{
+  "path": "scprc/vendor/PatchTST",
+  "copied_source": 4,
+  "commit": "204c21efe0b39603ad6e2ca640ef5896646ab1a9",
+  "remote": "https://github.com/yuqinie98/PatchTST.git",
+  "licenses": [
+    "scprc/vendor/PatchTST/LICENSE"
+  ],
+  "license_status": "preserved"
+}

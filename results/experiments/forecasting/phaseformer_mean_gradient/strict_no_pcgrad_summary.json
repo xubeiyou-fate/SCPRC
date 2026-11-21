@@ -1,0 +1,118 @@
+{
+  "status": "completed",
+  "experiment": "strict ablation: Original PhaseFormer without PCGrad",
+  "protocol_id": "scpcr-matched-baseline-20261023",
+  "fold_count": 18,
+  "folds": [
+    {
+      "target_city": "AMS",
+      "seed": 13,
+      "rmse": 2.7409873599894383,
+      "mae": 2.1453550732474724
+    },
+    {
+      "target_city": "AMS",
+      "seed": 17,
+      "rmse": 2.1693021013895626,
+      "mae": 1.2444286079270337
+    },
+    {
+      "target_city": "AMS",
+      "seed": 29,
+      "rmse": 3.5799936219820925,
+      "mae": 3.086417827350224
+    },
+    {
+      "target_city": "JHB",
+      "seed": 13,
+      "rmse": 4.369377444082969,
+      "mae": 2.4324370479679835
+    },
+    {
+      "target_city": "JHB",
+      "seed": 17,
+      "rmse": 4.773508254440106,
+      "mae": 3.1068958719922923
+    },
+    {
+      "target_city": "JHB",
+      "seed": 29,
+      "rmse": 4.871652701312165,
+      "mae": 3.153929256745805
+    },
+    {
+      "target_city": "LOA",
+      "seed": 13,
+      "rmse": 4.1840002912017455,
+      "mae": 2.6269813368837767
+    },
+    {
+      "target_city": "LOA",
+      "seed": 17,
+      "rmse": 4.3618287544279495,
+      "mae": 2.699725440198473
+    },
+    {
+      "target_city": "LOA",
+      "seed": 29,
+      "rmse": 4.587153684903082,
+      "mae": 3.016437303385675
+    },
+    {
+      "target_city": "MEL",
+      "seed": 13,
+      "rmse": 85.94363729316332,
+      "mae": 23.471833547363822
+    },
+    {
+      "target_city": "MEL",
+      "seed": 17,
+      "rmse": 95.83940679329118,
+      "mae": 26.922819368801058
+    },
+    {
+      "target_city": "MEL",
+      "seed": 29,
+      "rmse": 90.33469244372328,
+      "mae": 25.753805180625644
+    },
+    {
+      "target_city": "SPO",
+      "seed": 13,
+      "rmse": 4.16451553190876,
+      "mae": 2.144763481222638
+    },
+    {
+      "target_city": "SPO",
+      "seed": 17,
+      "rmse": 4.605453364799386,
+      "mae": 2.275675715570336
+    },
+    {
+      "target_city": "SPO",
+      "seed": 29,
+      "rmse": 5.138277766262943,
+      "mae": 2.870055763048147
+    },
+    {
+      "target_city": "SZH",
+      "seed": 13,
+      "rmse": 99.65022989889144,
+      "mae": 13.514007368709855
+    },
+    {
+      "target_city": "SZH",
+      "seed": 17,
+      "rmse": 112.69178759514729,
+      "mae": 15.226307675240317
+    },
+    {
+      "target_city": "SZH",
+      "seed": 29,
+      "rmse": 97.20965447915817,
+      "mae": 13.379128977624713
+    }
+  ],
+  "mean_rmse": 35.06752552111527,
+  "mean_mae": 8.28172249132807
+}

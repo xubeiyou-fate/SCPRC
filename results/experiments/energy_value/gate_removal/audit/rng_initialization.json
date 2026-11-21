@@ -1,0 +1,153 @@
+{
+  "checks": [
+    {
+      "seed": 13,
+      "arm": "full_drop_scale",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "8e6e8da6de6e59882fc1ed2f7d5c7d190c0a47f46cba602096aed82697b1b5cd",
+      "canonical_initial_state_sha256": "8e6e8da6de6e59882fc1ed2f7d5c7d190c0a47f46cba602096aed82697b1b5cd",
+      "correction_zero": true
+    },
+    {
+      "seed": 13,
+      "arm": "full_drop_peer",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "8e6e8da6de6e59882fc1ed2f7d5c7d190c0a47f46cba602096aed82697b1b5cd",
+      "canonical_initial_state_sha256": "8e6e8da6de6e59882fc1ed2f7d5c7d190c0a47f46cba602096aed82697b1b5cd",
+      "correction_zero": true
+    },
+    {
+      "seed": 13,
+      "arm": "full_drop_source_envelope",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "8e6e8da6de6e59882fc1ed2f7d5c7d190c0a47f46cba602096aed82697b1b5cd",
+      "canonical_initial_state_sha256": "8e6e8da6de6e59882fc1ed2f7d5c7d190c0a47f46cba602096aed82697b1b5cd",
+      "correction_zero": true
+    },
+    {
+      "seed": 13,
+      "arm": "daily_full_attenuation",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "8e6e8da6de6e59882fc1ed2f7d5c7d190c0a47f46cba602096aed82697b1b5cd",
+      "canonical_initial_state_sha256": "8e6e8da6de6e59882fc1ed2f7d5c7d190c0a47f46cba602096aed82697b1b5cd",
+      "correction_zero": true
+    },
+    {
+      "seed": 17,
+      "arm": "full_drop_scale",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "87814a80caf7a96d2e08b116a7048b6964181286a6397fc593ad133a575eecab",
+      "canonical_initial_state_sha256": "87814a80caf7a96d2e08b116a7048b6964181286a6397fc593ad133a575eecab",
+      "correction_zero": true
+    },
+    {
+      "seed": 17,
+      "arm": "full_drop_peer",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "87814a80caf7a96d2e08b116a7048b6964181286a6397fc593ad133a575eecab",
+      "canonical_initial_state_sha256": "87814a80caf7a96d2e08b116a7048b6964181286a6397fc593ad133a575eecab",
+      "correction_zero": true
+    },
+    {
+      "seed": 17,
+      "arm": "full_drop_source_envelope",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "87814a80caf7a96d2e08b116a7048b6964181286a6397fc593ad133a575eecab",
+      "canonical_initial_state_sha256": "87814a80caf7a96d2e08b116a7048b6964181286a6397fc593ad133a575eecab",
+      "correction_zero": true
+    },
+    {
+      "seed": 17,
+      "arm": "daily_full_attenuation",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "87814a80caf7a96d2e08b116a7048b6964181286a6397fc593ad133a575eecab",
+      "canonical_initial_state_sha256": "87814a80caf7a96d2e08b116a7048b6964181286a6397fc593ad133a575eecab",
+      "correction_zero": true
+    },
+    {
+      "seed": 29,
+      "arm": "full_drop_scale",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "ddb43d48ae63f359eadeced73367f0cc11aaa5671b132816dad8b8732de727a2",
+      "canonical_initial_state_sha256": "ddb43d48ae63f359eadeced73367f0cc11aaa5671b132816dad8b8732de727a2",
+      "correction_zero": true
+    },
+    {
+      "seed": 29,
+      "arm": "full_drop_peer",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "ddb43d48ae63f359eadeced73367f0cc11aaa5671b132816dad8b8732de727a2",
+      "canonical_initial_state_sha256": "ddb43d48ae63f359eadeced73367f0cc11aaa5671b132816dad8b8732de727a2",
+      "correction_zero": true
+    },
+    {
+      "seed": 29,
+      "arm": "full_drop_source_envelope",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "ddb43d48ae63f359eadeced73367f0cc11aaa5671b132816dad8b8732de727a2",
+      "canonical_initial_state_sha256": "ddb43d48ae63f359eadeced73367f0cc11aaa5671b132816dad8b8732de727a2",
+      "correction_zero": true
+    },
+    {
+      "seed": 29,
+      "arm": "daily_full_attenuation",
+      "n_sites_probe": 11,
+      "initial_state_equal_canonical_full": true,
+      "post_construction_rng_equal": true,
+      "initial_state_sha256": "ddb43d48ae63f359eadeced73367f0cc11aaa5671b132816dad8b8732de727a2",
+      "canonical_initial_state_sha256": "ddb43d48ae63f359eadeced73367f0cc11aaa5671b132816dad8b8732de727a2",
+      "correction_zero": true
+    }
+  ],
+  "training_function_identity": true,
+  "training_function_file": "/data/TimeMixer/scprc/training/train_scprc.py",
+  "training_function_sha256": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+  "seed_functions_ast_equal": true,
+  "scope": "CPU construction for all three seeds and four arms at 11 probe sites; same site-independent shared parameter architecture. No optimizer/backward/training call.",
+  "source_drop_threshold": {
+    "metadata": null,
+    "model_attribute": 1.0,
+    "source_gate": false,
+    "fold_shared_estimation": true,
+    "estimated_for_other_three_arms": true,
+    "interpretation": "not_estimated_gate_disabled describes arm-local non-use; it does not mean no threshold was computed anywhere in the fold."
+  },
+  "schedule": {
+    "window_rng": "np.random.default_rng(seed)",
+    "pcgrad_order_rng": "np.random.default_rng(seed ^ 0x5C2C)",
+    "threshold_rng": "np.random.default_rng(seed + 7001)",
+    "reset_before_model": true,
+    "reset_again_on_training_entry": true,
+    "source_minibatches": 2048,
+    "batch_size": 4,
+    "effective_windows": 8192,
+    "optimizer_rounds": 410,
+    "pcgrad_ordered_pairs": 8186,
+    "training_start_range_inclusive": [
+      168,
+      2904
+    ]
+  }
+}

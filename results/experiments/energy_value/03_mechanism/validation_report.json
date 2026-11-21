@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "paired_origin_rows": 25956,
+  "complete_fold_settings": 36,
+  "strata_origin_conservation": true,
+  "phase_origin_conservation": true,
+  "weighted_strata_and_phase_recombine_to_fold": true,
+  "issue_hour_counts_per_fold": "hour23=31; other hours=30",
+  "all_nonpositive_gains_retained": true
+}

@@ -1,0 +1,1313 @@
+{
+  "audit_timestamp_utc": "2026-10-29T18:41:02.182371+00:00",
+  "canonical_primary_protocol": {
+    "context_hours": 168,
+    "evaluation_origins": 721,
+    "evaluation_window": "2023-08-01 through 2023-08-31, label origins [2928, 3672)",
+    "horizon_hours": 24,
+    "manifest_protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5",
+    "protocol_id": "scpcr-matched-baseline-20261023",
+    "protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5",
+    "source_cities": [
+      "AMS",
+      "JHB",
+      "LOA",
+      "MEL",
+      "SPO",
+      "SZH"
+    ],
+    "source_scaler": "source-only equal-city weighted global volume mean/std",
+    "source_schedule": "round-robin over the five source cities; PCGrad aggregates one task batch per source city per round"
+  },
+  "current_core_hashes": {
+    "adapter": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+    "external_generic_runner": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+    "jiaxing_runner": "0e0fe93aa7e7c50100dd7d43e70ed17814048e98762894d767e9dffbbf5fdc22",
+    "pcgrad_runner": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+    "phase_protocol": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+    "shanghai_runner": "439a3013a8e25a34659342479d145a7496e2643af8f6dfd385996428f4dd0245",
+    "urbanev_runner": "13fddf7455ea4c8134172fd5a7174ff502913e3a647955295637516b7a74bb5c"
+  },
+  "datasets": {
+    "jiaxing": {
+      "seeds": {
+        "13": {
+          "array_checks": {
+            "expected_shape": [
+              2185,
+              24,
+              13
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "pred_daily_mean": [
+                2185,
+                24,
+                13
+              ],
+              "pred_patchtst_two_variable_source_only": [
+                2185,
+                24,
+                13
+              ],
+              "pred_persistence": [
+                2185,
+                24,
+                13
+              ],
+              "pred_phaseformer_exact": [
+                2185,
+                24,
+                13
+              ],
+              "pred_scpcr_v22_pcgrad_candidate_diagnostic": [
+                2185,
+                24,
+                13
+              ],
+              "pred_scpcr_v22_pcgrad_strict_release": [
+                2185,
+                24,
+                13
+              ],
+              "pred_weekly_naive": [
+                2185,
+                24,
+                13
+              ],
+              "truth_kwh": [
+                2185,
+                24,
+                13
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "16f02e98892e6e876d3f3aa6ca769193cbd5df6037658cb23332f4ea3e9514a2",
+                "expected": "16f02e98892e6e876d3f3aa6ca769193cbd5df6037658cb23332f4ea3e9514a2",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_13/patchtst_source_state.pt",
+                "pass": true
+              },
+              {
+                "actual": "87055756483701494b051556c81c3586721b2c9368db21364022794186a8d564",
+                "expected": "87055756483701494b051556c81c3586721b2c9368db21364022794186a8d564",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_13/phaseformer_source_state.pt",
+                "pass": true
+              },
+              {
+                "actual": "7e1e7a3621ece9c3570a796dab4c3058e60ab0434d2a6efd3b76b75da841f3ba",
+                "expected": "7e1e7a3621ece9c3570a796dab4c3058e60ab0434d2a6efd3b76b75da841f3ba",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_13/scpcr_source_state.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "4e4e9bc2efc01011627170c9765ab09b3630114aba9a828e41c873cc510e682a",
+              "expected": "4e4e9bc2efc01011627170c9765ab09b3630114aba9a828e41c873cc510e682a",
+              "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_13/predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/jiaxing/seed_13/predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "freeze_artifact_present": true,
+            "horizon_hours": 24,
+            "origins": 2185,
+            "protocol_freeze_sha256": "21f1014549c432eea208229746d9179f218f2ff577f263a442746b5ac724bf9d",
+            "protocol_id": "jiaxing_external_freeze_20261021",
+            "scaler": "none; fixed CHARGED source-only scaler",
+            "sites": 13,
+            "source_window": "CHARGED v3 all six cities, source Apr-Jul only, 2048 optimizer updates per seed",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "transaction-derived hourly kWh proxy",
+            "test_window": "2021-07-01 00:00:00 through 2021-09-30 23:00:00"
+          },
+          "release_selected": "scpcr_v22_pcgrad_strict_release",
+          "result": "experiments/supplementary/external_current_20261024/jiaxing/seed_13/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "0e0fe93aa7e7c50100dd7d43e70ed17814048e98762894d767e9dffbbf5fdc22",
+            "file": "scprc/training/run_jiaxing_external_scprc.py",
+            "pass": null,
+            "recorded_sha256": null
+          }
+        },
+        "17": {
+          "array_checks": {
+            "expected_shape": [
+              2185,
+              24,
+              13
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "pred_daily_mean": [
+                2185,
+                24,
+                13
+              ],
+              "pred_patchtst_two_variable_source_only": [
+                2185,
+                24,
+                13
+              ],
+              "pred_persistence": [
+                2185,
+                24,
+                13
+              ],
+              "pred_phaseformer_exact": [
+                2185,
+                24,
+                13
+              ],
+              "pred_scpcr_v22_pcgrad_candidate_diagnostic": [
+                2185,
+                24,
+                13
+              ],
+              "pred_scpcr_v22_pcgrad_strict_release": [
+                2185,
+                24,
+                13
+              ],
+              "pred_weekly_naive": [
+                2185,
+                24,
+                13
+              ],
+              "truth_kwh": [
+                2185,
+                24,
+                13
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "3b217f1f1755ee259df5c99c1d95ac7a024781798f733fc7d05f1eca4a77db4b",
+                "expected": "3b217f1f1755ee259df5c99c1d95ac7a024781798f733fc7d05f1eca4a77db4b",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_17/patchtst_source_state.pt",
+                "pass": true
+              },
+              {
+                "actual": "b64de5172d12f3666eedc39951158a40595bd0d2548d14198cb967ce67d7bf68",
+                "expected": "b64de5172d12f3666eedc39951158a40595bd0d2548d14198cb967ce67d7bf68",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_17/phaseformer_source_state.pt",
+                "pass": true
+              },
+              {
+                "actual": "282233471096f325daa66c3acd3239866d6f34a480e0ca06cba5e9f10604bc4d",
+                "expected": "282233471096f325daa66c3acd3239866d6f34a480e0ca06cba5e9f10604bc4d",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_17/scpcr_source_state.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "3dcb9c5b1f50cb4d19ee3599b3f5c30d9d02d1b50f70d4095bd5941b25b6ada0",
+              "expected": "3dcb9c5b1f50cb4d19ee3599b3f5c30d9d02d1b50f70d4095bd5941b25b6ada0",
+              "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_17/predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/jiaxing/seed_17/predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "freeze_artifact_present": true,
+            "horizon_hours": 24,
+            "origins": 2185,
+            "protocol_freeze_sha256": "21f1014549c432eea208229746d9179f218f2ff577f263a442746b5ac724bf9d",
+            "protocol_id": "jiaxing_external_freeze_20261021",
+            "scaler": "none; fixed CHARGED source-only scaler",
+            "sites": 13,
+            "source_window": "CHARGED v3 all six cities, source Apr-Jul only, 2048 optimizer updates per seed",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "transaction-derived hourly kWh proxy",
+            "test_window": "2021-07-01 00:00:00 through 2021-09-30 23:00:00"
+          },
+          "release_selected": "scpcr_v22_pcgrad_strict_release",
+          "result": "experiments/supplementary/external_current_20261024/jiaxing/seed_17/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "0e0fe93aa7e7c50100dd7d43e70ed17814048e98762894d767e9dffbbf5fdc22",
+            "file": "scprc/training/run_jiaxing_external_scprc.py",
+            "pass": null,
+            "recorded_sha256": null
+          }
+        },
+        "29": {
+          "array_checks": {
+            "expected_shape": [
+              2185,
+              24,
+              13
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "pred_daily_mean": [
+                2185,
+                24,
+                13
+              ],
+              "pred_patchtst_two_variable_source_only": [
+                2185,
+                24,
+                13
+              ],
+              "pred_persistence": [
+                2185,
+                24,
+                13
+              ],
+              "pred_phaseformer_exact": [
+                2185,
+                24,
+                13
+              ],
+              "pred_scpcr_v22_pcgrad_candidate_diagnostic": [
+                2185,
+                24,
+                13
+              ],
+              "pred_scpcr_v22_pcgrad_strict_release": [
+                2185,
+                24,
+                13
+              ],
+              "pred_weekly_naive": [
+                2185,
+                24,
+                13
+              ],
+              "truth_kwh": [
+                2185,
+                24,
+                13
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "f730f9f999ce38cb33d747b12b7ce42c40ca5dc27a6413a934bff9d19e983b4f",
+                "expected": "f730f9f999ce38cb33d747b12b7ce42c40ca5dc27a6413a934bff9d19e983b4f",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_29/patchtst_source_state.pt",
+                "pass": true
+              },
+              {
+                "actual": "13954adffd630006c64021bc60d2225e329e7ed2db9e35f8789ebbd1de6e8e5d",
+                "expected": "13954adffd630006c64021bc60d2225e329e7ed2db9e35f8789ebbd1de6e8e5d",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_29/phaseformer_source_state.pt",
+                "pass": true
+              },
+              {
+                "actual": "bb73d75411c666c8cb14e9683941a7c5d3a00c57bd263ebae0291b1f03e97a0b",
+                "expected": "bb73d75411c666c8cb14e9683941a7c5d3a00c57bd263ebae0291b1f03e97a0b",
+                "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_29/scpcr_source_state.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "251216421762b99d9dd339cb2eb5cb8ed2db13236f8dcab28df48795e147fdaa",
+              "expected": "251216421762b99d9dd339cb2eb5cb8ed2db13236f8dcab28df48795e147fdaa",
+              "file": "experiments/supplementary/external_current_20261024/jiaxing/seed_29/predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/jiaxing/seed_29/predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "freeze_artifact_present": true,
+            "horizon_hours": 24,
+            "origins": 2185,
+            "protocol_freeze_sha256": "21f1014549c432eea208229746d9179f218f2ff577f263a442746b5ac724bf9d",
+            "protocol_id": "jiaxing_external_freeze_20261021",
+            "scaler": "none; fixed CHARGED source-only scaler",
+            "sites": 13,
+            "source_window": "CHARGED v3 all six cities, source Apr-Jul only, 2048 optimizer updates per seed",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "transaction-derived hourly kWh proxy",
+            "test_window": "2021-07-01 00:00:00 through 2021-09-30 23:00:00"
+          },
+          "release_selected": "scpcr_v22_pcgrad_strict_release",
+          "result": "experiments/supplementary/external_current_20261024/jiaxing/seed_29/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "0e0fe93aa7e7c50100dd7d43e70ed17814048e98762894d767e9dffbbf5fdc22",
+            "file": "scprc/training/run_jiaxing_external_scprc.py",
+            "pass": null,
+            "recorded_sha256": null
+          }
+        }
+      },
+      "source_scope": "CHARGED six cities (AMS/JHB/LOA/MEL/SPO/SZH), source-all external transfer",
+      "unit": "kWh/hour proxy"
+    },
+    "shanghai": {
+      "seeds": {
+        "13": {
+          "array_checks": {
+            "expected_shape": [
+              2185,
+              24,
+              7
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "pred_daily_mean_7d_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_patchtst_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_persistence_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_phaseformer_exact_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_scpcr_candidate_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_scpcr_frozen_release_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_weekly_naive_kw": [
+                2185,
+                24,
+                7
+              ],
+              "truth_kw": [
+                2185,
+                24,
+                7
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "7d84c12783950f90207fb1b2a1388630e549b75990912a3ec57483dd3661ad73",
+                "expected": "7d84c12783950f90207fb1b2a1388630e549b75990912a3ec57483dd3661ad73",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed13/patchtst.pt",
+                "pass": true
+              },
+              {
+                "actual": "442c23d00287c98aa168904ec68db20e69d2f7b6b93681f52a6dc18b69e8dd41",
+                "expected": "442c23d00287c98aa168904ec68db20e69d2f7b6b93681f52a6dc18b69e8dd41",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed13/phaseformer_exact.pt",
+                "pass": true
+              },
+              {
+                "actual": "6251b0ee10bc07c0bceb750a6e5b6bca10466ac8c4e14cd80bec2fca150caee1",
+                "expected": "6251b0ee10bc07c0bceb750a6e5b6bca10466ac8c4e14cd80bec2fca150caee1",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed13/scpcr_candidate.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "bc58729f0047f3e220a6d44c533a50fa4cf11fadaa3498a79c48a7e39c90b2ab",
+              "expected": "bc58729f0047f3e220a6d44c533a50fa4cf11fadaa3498a79c48a7e39c90b2ab",
+              "file": "experiments/supplementary/external_current_20261024/shanghai/seed13/q4_predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/shanghai/seed13/q4_predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "freeze_artifact_present": true,
+            "freeze_copy_matches_reference": true,
+            "horizon_hours": 24,
+            "origins": 2185,
+            "protocol_freeze_sha256": "870ee3f982fd70e50a315410c8c97f42cd330ae7a4a836177d22ccae07dc12a5",
+            "protocol_id": "mp_evdata_external_freeze_20261021",
+            "scaler": "fixed CHARGED source-only scaler; target training/scaling false",
+            "sites": 7,
+            "source_window": "2024-01-01 00:00:00 through 2024-09-30 23:00:00",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "hourly electrical power (kW), as published; no session reallocation",
+            "test_window": "2024-10-01 00:00:00 through 2024-12-31 23:00:00"
+          },
+          "release_selected": "phaseformer_exact",
+          "result": "experiments/supplementary/external_current_20261024/shanghai/seed13/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "439a3013a8e25a34659342479d145a7496e2643af8f6dfd385996428f4dd0245",
+            "file": "scprc/training/run_mp_evdata_external_scprc.py",
+            "pass": null,
+            "recorded_sha256": null
+          }
+        },
+        "17": {
+          "array_checks": {
+            "expected_shape": [
+              2185,
+              24,
+              7
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "pred_daily_mean_7d_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_patchtst_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_persistence_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_phaseformer_exact_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_scpcr_candidate_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_scpcr_frozen_release_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_weekly_naive_kw": [
+                2185,
+                24,
+                7
+              ],
+              "truth_kw": [
+                2185,
+                24,
+                7
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "f4a03c71db4cbd42ec962d69b62799ef52b6194c981f7635f829b9319b27664b",
+                "expected": "f4a03c71db4cbd42ec962d69b62799ef52b6194c981f7635f829b9319b27664b",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed17/patchtst.pt",
+                "pass": true
+              },
+              {
+                "actual": "f853e51f415925b16055f23e761d71abf3c7a677ca8794916040c3c7880e0e0e",
+                "expected": "f853e51f415925b16055f23e761d71abf3c7a677ca8794916040c3c7880e0e0e",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed17/phaseformer_exact.pt",
+                "pass": true
+              },
+              {
+                "actual": "cd0f50c4817025627f69ee58a6430cec5dc5e1bfc3f7140a94dae4dfb00a3a2e",
+                "expected": "cd0f50c4817025627f69ee58a6430cec5dc5e1bfc3f7140a94dae4dfb00a3a2e",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed17/scpcr_candidate.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "017d3a735b469e546de3fd83f0037a0a58cb6dddd80e482521f88c5b942cfc51",
+              "expected": "017d3a735b469e546de3fd83f0037a0a58cb6dddd80e482521f88c5b942cfc51",
+              "file": "experiments/supplementary/external_current_20261024/shanghai/seed17/q4_predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/shanghai/seed17/q4_predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "freeze_artifact_present": true,
+            "freeze_copy_matches_reference": true,
+            "horizon_hours": 24,
+            "origins": 2185,
+            "protocol_freeze_sha256": "870ee3f982fd70e50a315410c8c97f42cd330ae7a4a836177d22ccae07dc12a5",
+            "protocol_id": "mp_evdata_external_freeze_20261021",
+            "scaler": "fixed CHARGED source-only scaler; target training/scaling false",
+            "sites": 7,
+            "source_window": "2024-01-01 00:00:00 through 2024-09-30 23:00:00",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "hourly electrical power (kW), as published; no session reallocation",
+            "test_window": "2024-10-01 00:00:00 through 2024-12-31 23:00:00"
+          },
+          "release_selected": "phaseformer_exact",
+          "result": "experiments/supplementary/external_current_20261024/shanghai/seed17/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "439a3013a8e25a34659342479d145a7496e2643af8f6dfd385996428f4dd0245",
+            "file": "scprc/training/run_mp_evdata_external_scprc.py",
+            "pass": null,
+            "recorded_sha256": null
+          }
+        },
+        "29": {
+          "array_checks": {
+            "expected_shape": [
+              2185,
+              24,
+              7
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "pred_daily_mean_7d_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_patchtst_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_persistence_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_phaseformer_exact_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_scpcr_candidate_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_scpcr_frozen_release_kw": [
+                2185,
+                24,
+                7
+              ],
+              "pred_weekly_naive_kw": [
+                2185,
+                24,
+                7
+              ],
+              "truth_kw": [
+                2185,
+                24,
+                7
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "1a72e69c2f0ce522dabbfd59e50c5eeb85f065478294aac0419f6c9004ce7d2e",
+                "expected": "1a72e69c2f0ce522dabbfd59e50c5eeb85f065478294aac0419f6c9004ce7d2e",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed29/patchtst.pt",
+                "pass": true
+              },
+              {
+                "actual": "d95e3d849fed0bcb7b5f98d83e6df32f5502806e413ce8d5de7ba21d80d93cd2",
+                "expected": "d95e3d849fed0bcb7b5f98d83e6df32f5502806e413ce8d5de7ba21d80d93cd2",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed29/phaseformer_exact.pt",
+                "pass": true
+              },
+              {
+                "actual": "9f9eb8f25429c8ca4b72d8374c7411a44fd4548b031eb2c1ca1e83ed5906a97a",
+                "expected": "9f9eb8f25429c8ca4b72d8374c7411a44fd4548b031eb2c1ca1e83ed5906a97a",
+                "file": "experiments/supplementary/external_current_20261024/shanghai/seed29/scpcr_candidate.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "7ee06c0d3baa25dbc1437aac45a4bc38b918499cd246704a13477859a33942c0",
+              "expected": "7ee06c0d3baa25dbc1437aac45a4bc38b918499cd246704a13477859a33942c0",
+              "file": "experiments/supplementary/external_current_20261024/shanghai/seed29/q4_predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/shanghai/seed29/q4_predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "freeze_artifact_present": true,
+            "freeze_copy_matches_reference": true,
+            "horizon_hours": 24,
+            "origins": 2185,
+            "protocol_freeze_sha256": "870ee3f982fd70e50a315410c8c97f42cd330ae7a4a836177d22ccae07dc12a5",
+            "protocol_id": "mp_evdata_external_freeze_20261021",
+            "scaler": "fixed CHARGED source-only scaler; target training/scaling false",
+            "sites": 7,
+            "source_window": "2024-01-01 00:00:00 through 2024-09-30 23:00:00",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "hourly electrical power (kW), as published; no session reallocation",
+            "test_window": "2024-10-01 00:00:00 through 2024-12-31 23:00:00"
+          },
+          "release_selected": "phaseformer_exact",
+          "result": "experiments/supplementary/external_current_20261024/shanghai/seed29/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "439a3013a8e25a34659342479d145a7496e2643af8f6dfd385996428f4dd0245",
+            "file": "scprc/training/run_mp_evdata_external_scprc.py",
+            "pass": null,
+            "recorded_sha256": null
+          }
+        }
+      },
+      "source_scope": "CHARGED six cities (AMS/JHB/LOA/MEL/SPO/SZH), source-all external transfer",
+      "unit": "kW mean hourly station load"
+    },
+    "urbanev": {
+      "seeds": {
+        "13": {
+          "array_checks": {
+            "expected_shape": [
+              649,
+              24,
+              275
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "february__scpcr_v22_pcgrad_strict_release_source_scale": [
+                649,
+                24,
+                275
+              ],
+              "february__volume_11kw__scpcr_v22_pcgrad_strict_release_source_scale": [
+                649,
+                24,
+                275
+              ],
+              "january__scpcr_v22_pcgrad_strict_release_source_scale": [
+                721,
+                24,
+                275
+              ],
+              "january__volume_11kw__scpcr_v22_pcgrad_strict_release_source_scale": [
+                721,
+                24,
+                275
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "b3caaabb94a9102a82ea3f966694a2261b840d914f9dcfd163c17bc170e3b04e",
+                "expected": "b3caaabb94a9102a82ea3f966694a2261b840d914f9dcfd163c17bc170e3b04e",
+                "file": "experiments/supplementary/external_current_20261024/urbanev/seed_13/phaseformer_exact_source_all.pt",
+                "pass": true
+              },
+              {
+                "actual": "cc607376f32785957a922cb25b228503b246d34d37e7df9f9c2492ca26053b15",
+                "expected": "cc607376f32785957a922cb25b228503b246d34d37e7df9f9c2492ca26053b15",
+                "file": "experiments/supplementary/external_current_20261024/urbanev/seed_13/scpcr_v22_pcgrad_candidate_diagnostic.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "d622716c3e6a9cc8033a76cd9214117f59897b7e7c0b1d4c0d584d24cd67b021",
+              "expected": "d622716c3e6a9cc8033a76cd9214117f59897b7e7c0b1d4c0d584d24cd67b021",
+              "file": "experiments/supplementary/external_current_20261024/urbanev/seed_13/predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/urbanev/seed_13/predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "development_window": "2023-01-01 00:00 through 2023-01-31 23:00",
+            "freeze_artifact_present": false,
+            "horizon_hours": 24,
+            "origins": 649,
+            "protocol_freeze_sha256": null,
+            "protocol_id": "urbanev_external_freeze_embedded_in_result",
+            "scaler": "source-global strict track; target-prefix scaling stored as sensitivity only",
+            "sites": 275,
+            "source_window": "2022-09-01 00:00 through 2022-12-31 23:00",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "zone-level volume derived from rated power",
+            "test_window": "2023-02-01 00:00 through 2023-02-28 23:00"
+          },
+          "release_selected": 0.0,
+          "result": "experiments/supplementary/external_current_20261024/urbanev/seed_13/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "13fddf7455ea4c8134172fd5a7174ff502913e3a647955295637516b7a74bb5c",
+            "file": "scprc/training/run_urbanev_external_scprc.py",
+            "pass": true,
+            "recorded_sha256": "13fddf7455ea4c8134172fd5a7174ff502913e3a647955295637516b7a74bb5c"
+          }
+        },
+        "17": {
+          "array_checks": {
+            "expected_shape": [
+              649,
+              24,
+              275
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "february__scpcr_v22_pcgrad_strict_release_source_scale": [
+                649,
+                24,
+                275
+              ],
+              "february__volume_11kw__scpcr_v22_pcgrad_strict_release_source_scale": [
+                649,
+                24,
+                275
+              ],
+              "january__scpcr_v22_pcgrad_strict_release_source_scale": [
+                721,
+                24,
+                275
+              ],
+              "january__volume_11kw__scpcr_v22_pcgrad_strict_release_source_scale": [
+                721,
+                24,
+                275
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "e656e4a6c9e3cd836c30226695bc6794e7bd033850d8c9b3e2b4744ca0938b86",
+                "expected": "e656e4a6c9e3cd836c30226695bc6794e7bd033850d8c9b3e2b4744ca0938b86",
+                "file": "experiments/supplementary/external_current_20261024/urbanev/seed_17/phaseformer_exact_source_all.pt",
+                "pass": true
+              },
+              {
+                "actual": "a150d4b0d60850b76a9250f3cf3ecc1ac613d740050ca769c057bb20e069c148",
+                "expected": "a150d4b0d60850b76a9250f3cf3ecc1ac613d740050ca769c057bb20e069c148",
+                "file": "experiments/supplementary/external_current_20261024/urbanev/seed_17/scpcr_v22_pcgrad_candidate_diagnostic.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "39e24a8d583d02b087bc5086fa0fe432d5bf391fcdd0a942d7a985432c09e639",
+              "expected": "39e24a8d583d02b087bc5086fa0fe432d5bf391fcdd0a942d7a985432c09e639",
+              "file": "experiments/supplementary/external_current_20261024/urbanev/seed_17/predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/urbanev/seed_17/predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "development_window": "2023-01-01 00:00 through 2023-01-31 23:00",
+            "freeze_artifact_present": false,
+            "horizon_hours": 24,
+            "origins": 649,
+            "protocol_freeze_sha256": null,
+            "protocol_id": "urbanev_external_freeze_embedded_in_result",
+            "scaler": "source-global strict track; target-prefix scaling stored as sensitivity only",
+            "sites": 275,
+            "source_window": "2022-09-01 00:00 through 2022-12-31 23:00",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "zone-level volume derived from rated power",
+            "test_window": "2023-02-01 00:00 through 2023-02-28 23:00"
+          },
+          "release_selected": 0.0,
+          "result": "experiments/supplementary/external_current_20261024/urbanev/seed_17/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "13fddf7455ea4c8134172fd5a7174ff502913e3a647955295637516b7a74bb5c",
+            "file": "scprc/training/run_urbanev_external_scprc.py",
+            "pass": true,
+            "recorded_sha256": "13fddf7455ea4c8134172fd5a7174ff502913e3a647955295637516b7a74bb5c"
+          }
+        },
+        "29": {
+          "array_checks": {
+            "expected_shape": [
+              649,
+              24,
+              275
+            ],
+            "finite_all_arrays": true,
+            "key_shapes": {
+              "february__scpcr_v22_pcgrad_strict_release_source_scale": [
+                649,
+                24,
+                275
+              ],
+              "february__volume_11kw__scpcr_v22_pcgrad_strict_release_source_scale": [
+                649,
+                24,
+                275
+              ],
+              "january__scpcr_v22_pcgrad_strict_release_source_scale": [
+                721,
+                24,
+                275
+              ],
+              "january__volume_11kw__scpcr_v22_pcgrad_strict_release_source_scale": [
+                721,
+                24,
+                275
+              ]
+            },
+            "shape_pass": true
+          },
+          "difference_reasons": [
+            "external case uses six source cities (source-all); canonical main matrix uses five source cities per LOCO target fold",
+            "external target windows/origin counts and native units differ from the CHARGED August canonical matrix",
+            "external release layer includes source-support gate/fallback; canonical primary matrix reports offline candidate without release gate"
+          ],
+          "external_runner": {
+            "current_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+            "file": "experiments/commands/run_scprc_external_fold.py",
+            "pass": true,
+            "recorded_sha256": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8"
+          },
+          "hash_checks": {
+            "all_checkpoint_hashes_pass": true,
+            "all_core_hashes_pass": true,
+            "checkpoints": [
+              {
+                "actual": "3d1261e13d42c6605e30ba430ebbbf3ebadcf23c11c9526b04aefee07c0fd141",
+                "expected": "3d1261e13d42c6605e30ba430ebbbf3ebadcf23c11c9526b04aefee07c0fd141",
+                "file": "experiments/supplementary/external_current_20261024/urbanev/seed_29/phaseformer_exact_source_all.pt",
+                "pass": true
+              },
+              {
+                "actual": "6f553a4000e1fbca075c4c2796578e541b79f63ab70dcd9c28ca87bf359ff81e",
+                "expected": "6f553a4000e1fbca075c4c2796578e541b79f63ab70dcd9c28ca87bf359ff81e",
+                "file": "experiments/supplementary/external_current_20261024/urbanev/seed_29/scpcr_v22_pcgrad_candidate_diagnostic.pt",
+                "pass": true
+              }
+            ],
+            "code": [
+              {
+                "actual": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "component": "phase_protocol",
+                "expected": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb",
+                "file": "scprc/training/training_protocol.py",
+                "pass": true
+              },
+              {
+                "actual": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "component": "pcgrad_runner",
+                "expected": "912d77341c3d4c68a8c624e4b4f9327c617031abfc4a66a313220010836a3ef1",
+                "file": "scprc/training/train_scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "component": "adapter",
+                "expected": "a0134de2327662a00c7da1a345b995a866d8db227fa5c75a3d2814ec5027e7af",
+                "file": "scprc/models/scprc.py",
+                "pass": true
+              },
+              {
+                "actual": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "component": "supplement_runner",
+                "expected": "297cb2770fa717c385f6e0de83e4050c77023ef4ed2a0c9309554e639a6c88b8",
+                "file": "experiments/commands/run_scprc_external_fold.py",
+                "pass": true
+              }
+            ],
+            "prediction": {
+              "actual": "93b78c0d87f1c03bdc7c4da567374979ac88892b78c9dc23d385d5091e37d458",
+              "expected": "93b78c0d87f1c03bdc7c4da567374979ac88892b78c9dc23d385d5091e37d458",
+              "file": "experiments/supplementary/external_current_20261024/urbanev/seed_29/predictions.npz",
+              "pass": true
+            }
+          },
+          "metric_recompute_pass": true,
+          "prediction": "experiments/supplementary/external_current_20261024/urbanev/seed_29/predictions.npz",
+          "protocol": {
+            "context_hours": 168,
+            "development_window": "2023-01-01 00:00 through 2023-01-31 23:00",
+            "freeze_artifact_present": false,
+            "horizon_hours": 24,
+            "origins": 649,
+            "protocol_freeze_sha256": null,
+            "protocol_id": "urbanev_external_freeze_embedded_in_result",
+            "scaler": "source-global strict track; target-prefix scaling stored as sensitivity only",
+            "sites": 275,
+            "source_window": "2022-09-01 00:00 through 2022-12-31 23:00",
+            "target_labels_used_for_training_or_tuning": false,
+            "target_unit": "zone-level volume derived from rated power",
+            "test_window": "2023-02-01 00:00 through 2023-02-28 23:00"
+          },
+          "release_selected": 0.0,
+          "result": "experiments/supplementary/external_current_20261024/urbanev/seed_29/result.json",
+          "underlying_legacy_runner": {
+            "current_sha256": "13fddf7455ea4c8134172fd5a7174ff502913e3a647955295637516b7a74bb5c",
+            "file": "scprc/training/run_urbanev_external_scprc.py",
+            "pass": true,
+            "recorded_sha256": "13fddf7455ea4c8134172fd5a7174ff502913e3a647955295637516b7a74bb5c"
+          }
+        }
+      },
+      "source_scope": "CHARGED six cities (AMS/JHB/LOA/MEL/SPO/SZH), source-all external transfer",
+      "unit": "rated-power-derived Shenzhen zone volume"
+    }
+  },
+  "read_only_existing_artifacts": true,
+  "scope": "Jiaxing, Shanghai MP-EVData, UrbanEV Shenzhen external Exact/SCPRC artifacts"
+}

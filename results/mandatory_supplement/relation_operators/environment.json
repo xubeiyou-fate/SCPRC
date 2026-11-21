@@ -1,0 +1,12 @@
+{
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 4080 SUPER",
+  "device": "cuda",
+  "execution_note": "City-seed folds run in isolated spawn-based processes with fold seeds reset inside each runner; no model state or RNG is shared between workers.",
+  "parallel_workers": 2,
+  "protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5",
+  "python": "3.12.7",
+  "torch": "2.7.1+cu118",
+  "torch_cuda_build": "11.8",
+  "torch_threads_per_worker": 2
+}

@@ -1,0 +1,82 @@
+dataset,model,seed,rmse,mae,unit,status,origins,horizon,sites,training_seconds,checkpoint
+jiaxing,PhaseFormer Exact (legacy external matrix),13,28.97215448590875,21.580475767106897,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,SCPRC candidate (v2.2 legacy external matrix),13,24.66202705510562,18.0176625825674,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Persistence / last-value rule (legacy external matrix),13,46.957056166126435,33.71335932536347,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Daily-mean rule (legacy external matrix),13,33.9683043232081,26.011891924820343,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Weekly-naive rule (legacy external matrix),13,32.400387564522944,22.760305228361858,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,DLINEAR,13,26.115762063898092,19.34399962050923,kWh proxy,recomputed_from_new_predictions,2185,24,13,,experiments/supplementary/external_strong_baselines_20261028/dlinear/jiaxing/seed_13/checkpoint.pt
+jiaxing,PATCHTST,13,27.220508034043302,20.13448210498956,kWh proxy,recomputed_from_new_predictions,2185,24,13,34.61916574300267,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/jiaxing/seed_13/checkpoint.pt
+jiaxing,TIMEMIXER,13,27.34175538841096,20.252751836972248,kWh proxy,recomputed_from_new_predictions,2185,24,13,955.3891119679902,experiments/supplementary/external_strong_baselines_20261028/timemixer/jiaxing/seed_13/checkpoint.pt
+jiaxing,NBEATS_GRAPH,13,26.925071913240384,20.090530113960543,kWh proxy,recomputed_from_new_predictions,2185,24,13,28.082856147084385,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_13/checkpoint.pt
+jiaxing,PhaseFormer Exact (legacy external matrix),17,25.275448572497083,18.305413527124397,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,SCPRC candidate (v2.2 legacy external matrix),17,25.374420030483808,18.778430215742766,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Persistence / last-value rule (legacy external matrix),17,46.957056166126435,33.71335932536347,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Daily-mean rule (legacy external matrix),17,33.9683043232081,26.011891924820343,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Weekly-naive rule (legacy external matrix),17,32.400387564522944,22.760305228361858,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,DLINEAR,17,26.10667893090013,19.245152913423233,kWh proxy,recomputed_from_new_predictions,2185,24,13,,experiments/supplementary/external_strong_baselines_20261028/dlinear/jiaxing/seed_17/checkpoint.pt
+jiaxing,PATCHTST,17,27.13751612111038,20.070146877493308,kWh proxy,recomputed_from_new_predictions,2185,24,13,50.842841024976224,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/jiaxing/seed_17/checkpoint.pt
+jiaxing,TIMEMIXER,17,26.766680445142097,19.714525224212192,kWh proxy,recomputed_from_new_predictions,2185,24,13,956.7805369291455,experiments/supplementary/external_strong_baselines_20261028/timemixer/jiaxing/seed_17/checkpoint.pt
+jiaxing,NBEATS_GRAPH,17,27.11227555742303,19.466089875449676,kWh proxy,recomputed_from_new_predictions,2185,24,13,28.191297478042543,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_17/checkpoint.pt
+jiaxing,PhaseFormer Exact (legacy external matrix),29,24.984448109924116,18.007978800620755,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,SCPRC candidate (v2.2 legacy external matrix),29,25.11410166610816,18.32479121345106,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Persistence / last-value rule (legacy external matrix),29,46.957056166126435,33.71335932536347,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Daily-mean rule (legacy external matrix),29,33.9683043232081,26.011891924820343,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,Weekly-naive rule (legacy external matrix),29,32.400387564522944,22.760305228361858,kWh proxy,recomputed_from_existing_predictions,,,,,
+jiaxing,DLINEAR,29,25.999228432660644,19.143571714790088,kWh proxy,recomputed_from_new_predictions,2185,24,13,,experiments/supplementary/external_strong_baselines_20261028/dlinear/jiaxing/seed_29/checkpoint.pt
+jiaxing,PATCHTST,29,27.478652226197603,20.35523447116506,kWh proxy,recomputed_from_new_predictions,2185,24,13,51.196895278058946,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/jiaxing/seed_29/checkpoint.pt
+jiaxing,TIMEMIXER,29,25.748798943406012,18.98396672414102,kWh proxy,recomputed_from_new_predictions,2185,24,13,955.1387277541216,experiments/supplementary/external_strong_baselines_20261028/timemixer/jiaxing/seed_29/checkpoint.pt
+jiaxing,NBEATS_GRAPH,29,26.672455352450367,19.77018717420223,kWh proxy,recomputed_from_new_predictions,2185,24,13,28.30258028092794,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_29/checkpoint.pt
+shanghai,PhaseFormer Exact (legacy external matrix),13,489.1706902524475,291.23032429254687,kW,recomputed_from_existing_predictions,,,,,
+shanghai,SCPRC candidate (v2.2 legacy external matrix),13,321.3586202770773,181.0730829570343,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Persistence / last-value rule (legacy external matrix),13,1328.534025142866,501.51450052437264,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Daily-mean rule (legacy external matrix),13,175.46738278363787,82.83845022360562,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Weekly-naive rule (legacy external matrix),13,225.3903665423479,105.02374369059811,kW,recomputed_from_existing_predictions,,,,,
+shanghai,DLINEAR,13,288.7152961848119,158.20987933594975,kW,recomputed_from_new_predictions,2185,24,7,,experiments/supplementary/external_strong_baselines_20261028/dlinear/shanghai/seed_13/checkpoint.pt
+shanghai,PATCHTST,13,306.96801805740387,171.15328589269023,kW,recomputed_from_new_predictions,2185,24,7,50.91438831319101,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/shanghai/seed_13/checkpoint.pt
+shanghai,TIMEMIXER,13,351.1313604169586,182.6808927601687,kW,recomputed_from_new_predictions,2185,24,7,957.8172936420888,experiments/supplementary/external_strong_baselines_20261028/timemixer/shanghai/seed_13/checkpoint.pt
+shanghai,NBEATS_GRAPH,13,609.2427010153225,307.4700096258686,kW,recomputed_from_new_predictions,2185,24,7,28.082856147084385,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_13/checkpoint.pt
+shanghai,PhaseFormer Exact (legacy external matrix),17,377.28984236578805,175.97627527124777,kW,recomputed_from_existing_predictions,,,,,
+shanghai,SCPRC candidate (v2.2 legacy external matrix),17,354.6710875266971,208.62166573975057,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Persistence / last-value rule (legacy external matrix),17,1328.534025142866,501.51450052437264,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Daily-mean rule (legacy external matrix),17,175.46738278363787,82.83845022360562,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Weekly-naive rule (legacy external matrix),17,225.3903665423479,105.02374369059811,kW,recomputed_from_existing_predictions,,,,,
+shanghai,DLINEAR,17,308.13838815607795,170.04592398203863,kW,recomputed_from_new_predictions,2185,24,7,,experiments/supplementary/external_strong_baselines_20261028/dlinear/shanghai/seed_17/checkpoint.pt
+shanghai,PATCHTST,17,323.0032682642192,180.07837761184425,kW,recomputed_from_new_predictions,2185,24,7,50.60727236699313,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/shanghai/seed_17/checkpoint.pt
+shanghai,TIMEMIXER,17,347.5265074625411,179.5274925775336,kW,recomputed_from_new_predictions,2185,24,7,957.9837951438967,experiments/supplementary/external_strong_baselines_20261028/timemixer/shanghai/seed_17/checkpoint.pt
+shanghai,NBEATS_GRAPH,17,598.0796738921948,298.5953813404225,kW,recomputed_from_new_predictions,2185,24,7,28.191297478042543,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_17/checkpoint.pt
+shanghai,PhaseFormer Exact (legacy external matrix),29,316.9690468189078,122.48306457536214,kW,recomputed_from_existing_predictions,,,,,
+shanghai,SCPRC candidate (v2.2 legacy external matrix),29,323.0392187411715,175.65387229757303,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Persistence / last-value rule (legacy external matrix),29,1328.534025142866,501.51450052437264,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Daily-mean rule (legacy external matrix),29,175.46738278363787,82.83845022360562,kW,recomputed_from_existing_predictions,,,,,
+shanghai,Weekly-naive rule (legacy external matrix),29,225.3903665423479,105.02374369059811,kW,recomputed_from_existing_predictions,,,,,
+shanghai,DLINEAR,29,268.9251286970249,146.07434717413744,kW,recomputed_from_new_predictions,2185,24,7,,experiments/supplementary/external_strong_baselines_20261028/dlinear/shanghai/seed_29/checkpoint.pt
+shanghai,PATCHTST,29,323.02381867076275,178.72376032485775,kW,recomputed_from_new_predictions,2185,24,7,35.05757433990948,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/shanghai/seed_29/checkpoint.pt
+shanghai,TIMEMIXER,29,383.93587909820224,183.83126467035976,kW,recomputed_from_new_predictions,2185,24,7,956.2442015651613,experiments/supplementary/external_strong_baselines_20261028/timemixer/shanghai/seed_29/checkpoint.pt
+shanghai,NBEATS_GRAPH,29,573.9709924572535,292.51210749193,kW,recomputed_from_new_predictions,2185,24,7,28.30258028092794,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_29/checkpoint.pt
+urbanev,PhaseFormer Exact (legacy external matrix),13,257.9950642888128,68.10892114981394,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,SCPRC candidate (v2.2 legacy external matrix),13,198.54443765945513,52.65239171674874,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Persistence / last-value rule (legacy external matrix),13,591.3483568533223,133.16693702449524,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Daily-mean rule (legacy external matrix),13,426.9105560873605,106.74124709194425,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Weekly-naive rule (legacy external matrix),13,322.2412913505822,77.13257492279419,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,DLINEAR,13,209.69690127856114,56.50926962081347,native volume,recomputed_from_new_predictions,649,24,275,,experiments/supplementary/external_strong_baselines_20261028/dlinear/urbanev/seed_13/checkpoint.pt
+urbanev,PATCHTST,13,216.06687997789385,57.06373736130167,native volume,recomputed_from_new_predictions,649,24,275,50.688642336055636,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/urbanev/seed_13/checkpoint.pt
+urbanev,TIMEMIXER,13,236.99115272695835,64.50430773013107,native volume,recomputed_from_new_predictions,649,24,275,954.1851171699818,experiments/supplementary/external_strong_baselines_20261028/timemixer/urbanev/seed_13/checkpoint.pt
+urbanev,NBEATS_GRAPH,13,269.1512364538716,72.10237422018456,native volume,recomputed_from_new_predictions,649,24,275,28.082856147084385,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_13/checkpoint.pt
+urbanev,PhaseFormer Exact (legacy external matrix),17,224.05575631587917,57.06315247900735,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,SCPRC candidate (v2.2 legacy external matrix),17,203.98290249861043,53.731932292514564,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Persistence / last-value rule (legacy external matrix),17,591.3483568533223,133.16693702449524,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Daily-mean rule (legacy external matrix),17,426.9105560873605,106.74124709194425,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Weekly-naive rule (legacy external matrix),17,322.2412913505822,77.13257492279419,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,DLINEAR,17,211.57326889326404,56.24546757738647,native volume,recomputed_from_new_predictions,649,24,275,,experiments/supplementary/external_strong_baselines_20261028/dlinear/urbanev/seed_17/checkpoint.pt
+urbanev,PATCHTST,17,221.64420869153676,59.534750965718864,native volume,recomputed_from_new_predictions,649,24,275,50.62953718309291,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/urbanev/seed_17/checkpoint.pt
+urbanev,TIMEMIXER,17,237.12124180753085,63.36071007778434,native volume,recomputed_from_new_predictions,649,24,275,959.098362398101,experiments/supplementary/external_strong_baselines_20261028/timemixer/urbanev/seed_17/checkpoint.pt
+urbanev,NBEATS_GRAPH,17,255.07326154696463,66.25568284290772,native volume,recomputed_from_new_predictions,649,24,275,28.191297478042543,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_17/checkpoint.pt
+urbanev,PhaseFormer Exact (legacy external matrix),29,210.62458262617622,55.47839027158678,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,SCPRC candidate (v2.2 legacy external matrix),29,204.00044991760848,53.574917993333656,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Persistence / last-value rule (legacy external matrix),29,591.3483568533223,133.16693702449524,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Daily-mean rule (legacy external matrix),29,426.9105560873605,106.74124709194425,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,Weekly-naive rule (legacy external matrix),29,322.2412913505822,77.13257492279419,native volume,recomputed_from_existing_predictions,,,,,
+urbanev,DLINEAR,29,203.94234805869849,54.912536620362616,native volume,recomputed_from_new_predictions,649,24,275,,experiments/supplementary/external_strong_baselines_20261028/dlinear/urbanev/seed_29/checkpoint.pt
+urbanev,PATCHTST,29,216.52309335209728,57.59176782924283,native volume,recomputed_from_new_predictions,649,24,275,50.8833411950618,/data/TimeMixer/experiments/supplementary/external_strong_baselines_20261028/patchtst/urbanev/seed_29/checkpoint.pt
+urbanev,TIMEMIXER,29,219.2410595731969,58.16142015823293,native volume,recomputed_from_new_predictions,649,24,275,955.305358190788,experiments/supplementary/external_strong_baselines_20261028/timemixer/urbanev/seed_29/checkpoint.pt
+urbanev,NBEATS_GRAPH,29,241.85884118925966,64.27399365491017,native volume,recomputed_from_new_predictions,649,24,275,28.30258028092794,experiments/supplementary/external_strong_baselines_20261028/nbeats_graph/checkpoints/seed_29/checkpoint.pt

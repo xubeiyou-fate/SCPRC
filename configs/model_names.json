@@ -1,0 +1,15 @@
+{
+  "method": "SCPRC",
+  "main_baseline": "Original PhaseFormer (mean-gradient training)",
+  "optimizer_control": "PhaseFormer + PCGrad",
+  "stored_key_aliases": {
+    "scpcr_candidate": "SCPRC",
+    "full_scpcr": "SCPRC",
+    "exact_pcgrad": "PhaseFormer + PCGrad",
+    "phaseformer_no_pcgrad": "Original PhaseFormer (mean-gradient training)",
+    "full_same_run": "SCPRC (paired design reference)",
+    "full": "SCPRC (independent-gate reference)",
+    "full_no_pcgrad": "SCPRC without PCGrad"
+  },
+  "scope": "Display aliases only. Stored checkpoint keys, upstream method identities and source run identifiers remain unchanged."
+}

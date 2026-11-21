@@ -1,0 +1,105 @@
+{
+  "all_numeric_outputs_finite": true,
+  "allow_partial": false,
+  "block_length_origins": 168,
+  "bootstrap_replicates": 10000,
+  "bootstrap_rng_seed": 20261117,
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "complete_paired_comparisons": [
+    "phase_shared_strict",
+    "stationwise_matched",
+    "concat_project"
+  ],
+  "eligible_completed_runs": 72,
+  "evaluated_runs": 72,
+  "evaluation_completed": true,
+  "evaluator_sha256": "35acca90b419f7eb2d49942b8670a90fe10f46b4698965d1acdc120b87470d65",
+  "expected_folds_per_variant": 18,
+  "expected_runs": 72,
+  "finished_at_utc": "2026-11-16T18:50:13.612789+00:00",
+  "fold_metric_rows": 144,
+  "input_files_modified": false,
+  "interval_interpretation": "exploratory pointwise conditional sensitivity; no causal or familywise claims",
+  "interval_rows": 132,
+  "invalid_runs": 0,
+  "origin_metric_rows": 103824,
+  "output_sha256": {
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/main_paired_raw_energy.pdf": "275b36715195c3bf3f17661f10c6092b6ef28ad1cdcaddb9aaa367416289ec8d",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/main_paired_raw_energy.png": "c848a90951e9aacc45c8ecc63d4196db9b20d37e81df8bc7efd87c09c9d6ef9c",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/main_paired_raw_energy.svg": "b9fc562c1a7c82cba35009c1a4dd59c2542588929f1cb8e1339d2756edd30e1d",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/paired_per_fold.csv": "8c5452cf0a6dccf71b2a5b8ba7016a4828f4c847cdec6e416723591000f4975b",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/paired_summary.csv": "c81ec323f3261eecf326d45e871ea8ae1c159fce3cd51915ee6cdf7a176f62d9",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/per_fold.csv": "94657fb01061957fa76ad9415acf3291a66f3979cf0e4ec9859998dae7193bf8",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/per_origin.csv.gz": "804e785a1789ae8a4234d303f1e11fb62361de5b0ea65ace22e648131c265e9a",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/summaries.csv": "aca56e0d38352f580ce0a614f1ef601d5b1df04d38850979fffe44d1de542330",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/tradeoff_raw_clip.pdf": "d8e54c5132e9bc55486804913f3bce0de0e73da2aced382bdde4273558f8b2e4",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/tradeoff_raw_clip.png": "74f833a050e89d084b27ec19893dcd5935455bab87f0aa0b1b62fbb3ab031158",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/tradeoff_raw_clip.svg": "5c626b4cc5e613eca22dc6d9118e84d634870b94f682b12b036d9c6f62b1653c",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/uncertainty.csv": "787e15762f84e64e201b2e93d94d9cd955e19fa56eed6a6e3d3335b8e9b8f631"
+  },
+  "outputs": [
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/per_fold.csv",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/per_origin.csv.gz",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/summaries.csv",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/paired_per_fold.csv",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/paired_summary.csv",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/uncertainty.csv",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/main_paired_raw_energy.pdf",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/main_paired_raw_energy.svg",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/main_paired_raw_energy.png",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/tradeoff_raw_clip.pdf",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/tradeoff_raw_clip.svg",
+    "/data/TimeMixer/experiments/supplementary_design_controls_20261117/analysis/tradeoff_raw_clip.png"
+  ],
+  "paired_difference": "control minus Full; positive favors Full",
+  "pending_runs": 0,
+  "postprocesses": [
+    "raw",
+    "nonnegative_clip"
+  ],
+  "precision": "native float32 truth; FP64 arithmetic and reductions",
+  "primary_estimator": "equal mean of 18 fold metrics",
+  "primary_postprocess": "raw",
+  "reference": {
+    "path": "/data/TimeMixer/experiments/energy_value/run_energy_evaluation.py",
+    "pure_functions_only": [
+      "origin_scores",
+      "metric_rows"
+    ],
+    "sha256": "596a6e2ecc56d167ad2ef0691532ba8b65733308a13542b02c7d57e92a27cfea"
+  },
+  "schema_version": 1,
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "software": {
+    "numpy": "1.26.4",
+    "python": "3.12.7"
+  },
+  "started_at_utc": "2026-11-16T18:49:41.881173+00:00",
+  "status": "complete",
+  "training_invoked": false,
+  "variants": [
+    "full_same_run",
+    "phase_shared_strict",
+    "stationwise_matched",
+    "concat_project"
+  ],
+  "warnings": [],
+  "_migration": {
+    "representation": "curated metadata projection; not the full original JSON",
+    "source_path": "/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/analysis/manifest.json",
+    "source_sha256": "83891ac8be219eaa6a4ba18390fb81ce88360de4481573367c735eebe1fa20d4",
+    "artifact_paths_are_index_only": true,
+    "original_audit_not_rerun": true
+  }
+}

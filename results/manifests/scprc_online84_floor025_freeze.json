@@ -1,0 +1,42 @@
+{
+  "status": "frozen_before_paper2_rescore",
+  "generated": "2026-10-24",
+  "policy_name": "SCPRC-Online(84,.25)",
+  "policy": {
+    "block_origins": 84,
+    "horizon_hours": 24,
+    "eta": 0.1,
+    "max_alpha": 0.25,
+    "tail_power": 8,
+    "minimum_exact_weight": 0.25,
+    "fallback_patience": 2,
+    "fallback_on_either_metric": false,
+    "strict_metric_safety": true,
+    "warmup_exact": true
+  },
+  "experts": [
+    "exact",
+    "fixed_cap_0.25_power_1",
+    "fixed_cap_0.25_power_8"
+  ],
+  "metrics": {
+    "primary": "city-macro relative RMSE versus PhaseFormer exact",
+    "joint_safety": "relative MAE versus PhaseFormer exact",
+    "uncertainty": "paired non-circular moving-block bootstrap",
+    "temporal_unit": "forecast-origin blocks; rolling origins are not independent"
+  },
+  "code_hashes_sha256": {
+    "scprc/online_strict_release.py": "ed68c76c852480c94a55632f210eef83d2ba9e5d7b0ded66c6c2bb9327421d4f",
+    "experiments/commands/audit_primary_online84_floor025.py": "27f73dd9fa3c6d7b6586069cae3a155cc80f7b67935b9e886df338cc6602da35",
+    "experiments/commands/audit_deployment_ablations_online84.py": "e867872bd3d3621b762a1792c471d4714ad4b1fc24e9bc20b8bbd21a60398d79",
+    "experiments/support/00_protocol_freeze.md": "a6d14170518a9f634f247e05ccdad9ead7c88f1b57b59d41f5e964a606bc36ab",
+    "experiments/support/01_model_algorithm.md": "7d5a45a043d567929d4c7a46359973cd22f13a3fa2045dac45280e62a874e972"
+  },
+  "documentation_hashes_at_initial_freeze_sha256": {
+    "experiments/support/00_protocol_freeze.md": "5ad71d05955ca708ef1e97af57d4c10394585e0d111e5c63142bfa2b300e7dac",
+    "experiments/support/01_model_algorithm.md": "fb3fbb9087e75aacdc1c98ecc80cd2cc4296c577024b7b3ccea08d3792bb7f2b"
+  },
+  "data_boundary": "Existing August, September, Jiaxing, Shanghai, and UrbanEV labels were previously inspected; all scores are retrospective until a genuinely untouched window is available.",
+  "independent_city_count": 8,
+  "urbanev_note": "UrbanEV and CHARGED-SZH are both Shenzhen and are not counted as independent cities."
+}

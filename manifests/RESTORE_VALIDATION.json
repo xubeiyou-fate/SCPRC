@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checkpoint_count": 534,
+  "written": 534,
+  "already_identical": 0,
+  "bytes": 205166628,
+  "output_root": "temporary verification directory, removed after complete hash verification",
+  "asset_coverage": {
+    "asset_count": 14,
+    "stored_unique_checkpoints": 528,
+    "restored_aliases": 6,
+    "covered_checkpoint_paths": 534
+  },
+  "scope": "All renamed ZIP assets and aliases restored to a separate temporary directory; original checkpoint tree not modified."
+}

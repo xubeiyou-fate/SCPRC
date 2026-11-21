@@ -1,0 +1,168 @@
+{
+  "status": "completed",
+  "training": false,
+  "output_directory": "/data/TimeMixer/experiments/energy_value_20261104/03_mechanism",
+  "completed_utc": "2026-11-04T17:50:15.821692+00:00",
+  "args": {
+    "energy": null,
+    "gates": "/home/cwadmin/exports/SCPRC_Review_Evidence_Export_20261102/04_Gate_Diagnostics/per_origin_gate_summary.csv",
+    "archive": "/data/TimeMixer/scprc/data_adapters/charged/Hourly.zip",
+    "lineage": "canonical_four_arm",
+    "full_model": "full_scpcr",
+    "exact_model": "exact_pcgrad",
+    "postprocess": null,
+    "history": "on",
+    "wait_seconds": 0
+  },
+  "software": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2"
+  },
+  "sources": [
+    {
+      "role": "analysis_script",
+      "path": "/data/TimeMixer/experiments/energy_value/03_mechanism/analyze_mechanism.py",
+      "bytes": 43944,
+      "sha256": "c25f8994e1aa48c3c5583230dbfa6c20a56ae2b389a0fb9b6a957ae53ac26f89"
+    },
+    {
+      "role": "per_origin_gate_diagnostics",
+      "path": "/home/cwadmin/exports/SCPRC_Review_Evidence_Export_20261102/04_Gate_Diagnostics/per_origin_gate_summary.csv",
+      "bytes": 4839063,
+      "sha256": "8a224e60a887188b43f05ee480aa2bae4133b8ab08a68f4552ad861f994e0473"
+    },
+    {
+      "role": "gate_lineage_or_exporter",
+      "path": "/home/cwadmin/exports/SCPRC_Review_Evidence_Export_20261102/04_Gate_Diagnostics/frozen_inference_lineage.json",
+      "bytes": 37571,
+      "sha256": "46cf9ecaddfe22ed54e0de3f27c7fc73de276ee422f8d3ac099905f96304f561"
+    },
+    {
+      "role": "gate_lineage_or_exporter",
+      "path": "/home/cwadmin/exports/SCPRC_Review_Evidence_Export_20261102/04_Gate_Diagnostics/export_frozen_gate_diagnostics.py",
+      "bytes": 14991,
+      "sha256": "345eea3251db4e82f327d80d104d79748252d64d8d11de3898d23b68b4c5808b"
+    },
+    {
+      "role": "per_origin_energy_metrics",
+      "path": "/data/TimeMixer/experiments/energy_value_20261104/01_metrics/per_origin_energy_metrics.csv.gz",
+      "bytes": 50916071,
+      "sha256": "cc3cf3aaf8dc4d3938a2e00e50fcb682b1f7281311abc6ed6ec58389a903c636"
+    },
+    {
+      "role": "raw_CHARGED_archive",
+      "path": "/data/TimeMixer/scprc/data_adapters/charged/Hourly.zip",
+      "bytes": 268720500,
+      "sha256": "1ec9c9513b64f3f492fe73261bf08a5955c268dfb876ef0fe283d05cc5a02fab"
+    },
+    {
+      "role": "fixed_data_protocol",
+      "path": "/data/TimeMixer/scprc/training/training_protocol.py",
+      "bytes": 18935,
+      "sha256": "0f96c2dad3b9659670103012f42ba5818c8fa4cc88a8a0bc16997b4ce0c018eb"
+    }
+  ],
+  "features": [
+    "a_i_mean",
+    "b_i_mean",
+    "composite_mean",
+    "a_i_attenuated_fraction",
+    "b_i_attenuated_fraction",
+    "bS_source_window_gate",
+    "window_peer_disagreement",
+    "source_trust_attenuated",
+    "input_acf24",
+    "input_power_24h_fraction",
+    "input_power_168h_fraction"
+  ],
+  "metrics": [
+    "peak_magnitude_mae",
+    "ramp_mae",
+    "total_24h_mae",
+    "peak_timing_mae_hours"
+  ],
+  "join_checks": "passed; exact 18x721 grid for every postprocess",
+  "history": {
+    "status": "computed_input_only",
+    "city_prefixes": [
+      {
+        "city": "AMS",
+        "site_count": 2449,
+        "prefix_rows": 3648,
+        "prefix_sha256": "1ec101812347751df3d41cf6871d9f06bfedbe5f0d379af7a70af53a7e945595",
+        "archive_member": "AMS/volume.csv",
+        "site_ids_sha256": "58ba8b949d2eee0b51a21e7a0821eb9b8e09a963d3728d459795fe7366c4a59f"
+      },
+      {
+        "city": "JHB",
+        "site_count": 47,
+        "prefix_rows": 3648,
+        "prefix_sha256": "1b3d3cc869ac510d9d9cd9fd784b74a2240b33de819defdf6247767dcdc26078",
+        "archive_member": "JHB/volume.csv",
+        "site_ids_sha256": "d74afff5f7aaccca683fdc84ec622b13b2dfa1a2cdccc8908467c304ee35cfeb"
+      },
+      {
+        "city": "LOA",
+        "site_count": 229,
+        "prefix_rows": 3648,
+        "prefix_sha256": "27b358ac543afed5163597444173196b8949b3b484de75638e32fe1b092413ca",
+        "archive_member": "LOA/volume.csv",
+        "site_ids_sha256": "c3410b63fcc5dd0389cf67c8961363b765abcb1ae38409c44a76ae00870ec52b"
+      },
+      {
+        "city": "MEL",
+        "site_count": 63,
+        "prefix_rows": 3648,
+        "prefix_sha256": "82b45c77596bedd9dac56a4549da5281b5b532589e4e4d90a4f3f346d73ebdeb",
+        "archive_member": "MEL/volume.csv",
+        "site_ids_sha256": "824c776a39e41b4a91292e3c88b5e4a43ab442861324d507b2aa904e1b086b7b"
+      },
+      {
+        "city": "SPO",
+        "site_count": 47,
+        "prefix_rows": 3648,
+        "prefix_sha256": "4347d5e33a55c76260467a4d370f4c1aac67def8412ca63d2f0877033e9dd5f9",
+        "archive_member": "SPO/volume.csv",
+        "site_ids_sha256": "d74afff5f7aaccca683fdc84ec622b13b2dfa1a2cdccc8908467c304ee35cfeb"
+      },
+      {
+        "city": "SZH",
+        "site_count": 1445,
+        "prefix_rows": 3648,
+        "prefix_sha256": "6def7225f0c1150534c2d9ce97b3b75591b8af39c8dd9749034442e20b14376f",
+        "archive_member": "SZH/volume.csv",
+        "site_ids_sha256": "6399437718e7bff4e8fd64fe7ba7b649cf98f08b9302a5f2605e91a5dd33dc92"
+      }
+    ],
+    "lag168_autocorrelation": "not_identifiable_with_only_168_history_hours",
+    "no_target_window_cells_used_for_origin_features": true,
+    "reader": "AST extraction of _read_volume_prefix/_member_prefix_sha256 from fixed protocol; VAL_END shortened to 3648, no protocol import or model execution"
+  },
+  "rank_definition": "(average_rank-0.5)/n; fixed thresholds .25/.50/.75; ties together; constants explicit",
+  "inference": "descriptive within-fold Spearman; no independent-origin p-values; no causal claim",
+  "origin_exclusions": 0,
+  "protected_gate_summaries_unchanged": {
+    "/data/TimeMixer/experiments/energy_value_20261104/03_mechanism/gate_fold_summary.csv": "92c76c223fffaa1b4619dd7a18b481e5b17f417e9aee79f0cb85851ffda181e7",
+    "/data/TimeMixer/experiments/energy_value_20261104/03_mechanism/gate_equal_fold_summary.csv": "264df48d24e03331c73346875013c99927e7af82b8d228f35f9cfd0e3f0e3a5e"
+  },
+  "output_hashes": {
+    "per_fold_correlations.csv": "0a989518106590d9aaec645947574536c96b601ef68e7bd0273c832e864c0773",
+    "correlation_equal_fold_summary.csv": "4ac81e1effb6be295866dba66674b2ed89f1b450a920d667784e8d85411475a9",
+    "per_fold_strata.csv": "3ada58e6a5114b7dabb2fe5ac6125f8f90a61f0b6bbf482708c8480e755dd248",
+    "strata_all18fold_summary.csv": "fb8c2dbfccb38ceb91a0473b06dd834eb3f108662676e8aedd0b8e6769f56281",
+    "rank_quartile_thresholds.csv": "b363b684e364b6a6ec13ada26d7cdcab89fc93f12684ebeb91d06e8b64af2c3c",
+    "phase24_per_fold.csv": "938f2e2b6821c99fe01d167141c3d46e1a45ea3ee9d9cbe6bd7f85d6c26e7d73",
+    "phase24_all18fold_summary.csv": "83b517eaff3349c2fa13fff1230ee7adea8a0f5f579aae5099b5c542b86a4203",
+    "paired_fold_gain_summary.csv": "080322ed3edce8cf6ace2b99aa34ccd6f050f6f6261ae4c61c226ea476c5c3bb",
+    "paired_origin_gate_energy.csv.gz": "051172d0cfab6810640af1fc98a6cdb8085363d678e876965b8c0ab54d987d7f",
+    "README.md": "d94227b5aae2ebe1f1ed52011172897c979e1ba51783876e947dacbce961601a",
+    "join_qc.csv": "ad6baa8a310c731022dc24f88a896927a4279f92203a2537ada716b91d273051",
+    "join_qc.json": "a67ab885ba53e6bd6fdd53c3641e4a1d7aaa97b14fa2dcb669abab1e3c1d5c67",
+    "source_hashes.csv": "fb6e10ef2e85c728cd61d585ccb434593ba7f72ce9bca08e609f3c6a6d0a9004",
+    "validation_report.json": "cc5519146ebf7a37b9b1176cae5ff8e4233f2b05f8f3fc66a189a115d1b386f8",
+    "lineage_parity_check.csv": "87a00923cabda859f3849e1e80f4d391e225887245a1a04cb0544675349510f4",
+    "lineage_parity_check.json": "d6f053cd38e0703cc1f7d747a86d236d03ad06f2eb4a2566fa9fdee866d24cec",
+    "input_periodicity_per_origin.csv.gz": "52b47c505eeb35529f5f80f5bc70b27f4f04a970d086475a20eba42759e541dc"
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "status": "passed",
+  "result_tables": 71,
+  "numeric_cells_verified": 114039,
+  "errors": [],
+  "tables": [
+    {
+      "path": "results/mandatory_supplement/online_evaluation/current_online84_per_case.csv",
+      "rows": 28,
+      "numeric_cells_verified": 972
+    },
+    {
+      "path": "results/mandatory_supplement/relation_operators/per_fold_audit.csv",
+      "rows": 19,
+      "numeric_cells_verified": 378
+    },
+    {
+      "path": "results/mandatory_supplement/current_strong_baseline_audit/current_charged_strong_baselines_per_fold.csv",
+      "rows": 19,
+      "numeric_cells_verified": 648
+    },
+    {
+      "path": "results/mandatory_supplement/component_ablation/component_ablation_summary.csv",
+      "rows": 7,
+      "numeric_cells_verified": 42
+    },
+    {
+      "path": "results/mandatory_supplement/current_matched_ablation_homogeneous/per_fold.csv",
+      "rows": 19,
+      "numeric_cells_verified": 306
+    },
+    {
+      "path": "results/mandatory_supplement/energy_scenario/capacity_scenario_equal_fold_summary.csv",
+      "rows": 65,
+      "numeric_cells_verified": 1344
+    },
+    {
+      "path": "results/mandatory_supplement/energy_scenario/capacity_scenario_primary.csv",
+      "rows": 6,
+      "numeric_cells_verified": 105
+    },
+    {
+      "path": "results/mandatory_supplement/external_version_audit/external_exact_full_final.csv",
+      "rows": 10,
+      "numeric_cells_verified": 90
+    },
+    {
+      "path": "results/mandatory_supplement/external_version_audit/external_protocol_audit.csv",
+      "rows": 10,
+      "numeric_cells_verified": 45
+    },
+    {
+      "path": "results/mandatory_supplement/external_baselines/paired_block_bootstrap_168origin.csv",
+      "rows": 25,
+      "numeric_cells_verified": 360
+    },
+    {
+      "path": "results/mandatory_supplement/external_baselines/summary_by_dataset.csv",
+      "rows": 28,
+      "numeric_cells_verified": 135
+    },
+    {
+      "path": "results/mandatory_supplement/external_baselines/verified_metrics_by_seed.csv",
+      "rows": 82,
+      "numeric_cells_verified": 378
+    },
+    {
+      "path": "results/strong_baselines/patchtst_timemixer/per_city_seed.csv",
+      "rows": 37,
+      "numeric_cells_verified": 342
+    },
+    {
+      "path": "results/experiments/design_controls/COMPLETION_STATUS.csv",
+      "rows": 9,
+      "numeric_cells_verified": 16
+    },
+    {
+      "path": "results/experiments/evaluation/phaseformer_h48/summary.csv",
+      "rows": 19,
+      "numeric_cells_verified": 90
+    },
+    {
+      "path": "results/experiments/evaluation/robustness/original_vs_full_all_folds.csv",
+      "rows": 217,
+      "numeric_cells_verified": 2160
+    },
+    {
+      "path": "results/experiments/evaluation/robustness/original_vs_full_summary.csv",
+      "rows": 13,
+      "numeric_cells_verified": 108
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/point_metrics_by_fold.csv",
+      "rows": 37,
+      "numeric_cells_verified": 108
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/calibration_lineage.csv",
+      "rows": 37,
+      "numeric_cells_verified": 36
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/capacity_per_fold.csv",
+      "rows": 595,
+      "numeric_cells_verified": 8370
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/coverage_by_fold.csv",
+      "rows": 325,
+      "numeric_cells_verified": 1944
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/wis_equal_fold_summary.csv",
+      "rows": 7,
+      "numeric_cells_verified": 30
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/point_equal_fold_summary.csv",
+      "rows": 3,
+      "numeric_cells_verified": 6
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/paired_fold_uncertainty.csv",
+      "rows": 99,
+      "numeric_cells_verified": 952
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/capacity_equal_fold_summary.csv",
+      "rows": 34,
+      "numeric_cells_verified": 249
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/coverage_equal_fold_summary.csv",
+      "rows": 19,
+      "numeric_cells_verified": 108
+    },
+    {
+      "path": "results/experiments/evaluation/prediction_intervals/wis_by_fold.csv",
+      "rows": 109,
+      "numeric_cells_verified": 540
+    },
+    {
+      "path": "results/experiments/evaluation/graph_protocol_comparison/protocol_comparison.csv",
+      "rows": 14,
+      "numeric_cells_verified": 0
+    },
+    {
+      "path": "results/experiments/evaluation/graph_protocol_comparison/local_diagnostic_summary.csv",
+      "rows": 3,
+      "numeric_cells_verified": 12
+    },
+    {
+      "path": "results/experiments/evaluation/scprc_mean_gradient/summary.csv",
+      "rows": 19,
+      "numeric_cells_verified": 126
+    },
+    {
+      "path": "results/experiments/evaluation/energy_diagnostics/capacity_reserve_risk_equal_fold.csv",
+      "rows": 81,
+      "numeric_cells_verified": 1680
+    },
+    {
+      "path": "results/experiments/evaluation/energy_diagnostics/capacity_reserve_risk_primary_equal_fold.csv",
+      "rows": 6,
+      "numeric_cells_verified": 105
+    },
+    {
+      "path": "results/experiments/evaluation/energy_diagnostics/operational_metrics_per_fold.csv",
+      "rows": 145,
+      "numeric_cells_verified": 3312
+    },
+    {
+      "path": "results/experiments/evaluation/energy_diagnostics/operational_metrics_equal_fold.csv",
+      "rows": 9,
+      "numeric_cells_verified": 168
+    },
+    {
+      "path": "results/experiments/evaluation/factorial_analysis/factorial_fold_metrics.csv",
+      "rows": 19,
+      "numeric_cells_verified": 216
+    },
+    {
+      "path": "results/experiments/evaluation/efficiency_and_uncertainty/efficiency_three_models.csv",
+      "rows": 163,
+      "numeric_cells_verified": 1944
+    },
+    {
+      "path": "results/experiments/evaluation/efficiency_and_uncertainty/paired_fold_metrics.csv",
+      "rows": 19,
+      "numeric_cells_verified": 360
+    },
+    {
+      "path": "results/experiments/energy_value/04_capacity/reference_capacity_reserve_risk_equal_fold.csv",
+      "rows": 7,
+      "numeric_cells_verified": 222
+    },
+    {
+      "path": "results/experiments/energy_value/04_capacity/capacity_equal_fold_sensitivity.csv",
+      "rows": 257,
+      "numeric_cells_verified": 3584
+    },
+    {
+      "path": "results/experiments/energy_value/04_capacity/reference_parity_checks.csv",
+      "rows": 25,
+      "numeric_cells_verified": 48
+    },
+    {
+      "path": "results/experiments/energy_value/04_capacity/reference_operational_metrics_equal_fold.csv",
+      "rows": 11,
+      "numeric_cells_verified": 330
+    },
+    {
+      "path": "results/experiments/energy_value/04_capacity/proxy_grid_pairwise_tradeoffs.csv",
+      "rows": 113,
+      "numeric_cells_verified": 560
+    },
+    {
+      "path": "results/experiments/energy_value/02_paired_stats/leave_one_city_out_sensitivity.csv",
+      "rows": 337,
+      "numeric_cells_verified": 1008
+    },
+    {
+      "path": "results/experiments/energy_value/02_paired_stats/factorial_energy_interaction.csv",
+      "rows": 9,
+      "numeric_cells_verified": 40
+    },
+    {
+      "path": "results/experiments/energy_value/02_paired_stats/paired_energy_uncertainty.csv",
+      "rows": 337,
+      "numeric_cells_verified": 4032
+    },
+    {
+      "path": "results/experiments/energy_value/02_paired_stats/full_repeat_run_sensitivity.csv",
+      "rows": 9,
+      "numeric_cells_verified": 32
+    },
+    {
+      "path": "results/experiments/energy_value/02_paired_stats/paired_fold_differences_bootstrap.csv",
+      "rows": 81,
+      "numeric_cells_verified": 640
+    },
+    {
+      "path": "results/experiments/energy_value/01_metrics/energy_main_table.csv",
+      "rows": 33,
+      "numeric_cells_verified": 128
+    },
+    {
+      "path": "results/experiments/energy_value/01_metrics/city_and_equal_fold_summary.csv",
+      "rows": 225,
+      "numeric_cells_verified": 4480
+    },
+    {
+      "path": "results/experiments/energy_value/01_metrics/per_fold_energy_metrics.csv",
+      "rows": 577,
+      "numeric_cells_verified": 13248
+    },
+    {
+      "path": "results/experiments/energy_value/06_status/MISSING_AND_BOUNDARIES.csv",
+      "rows": 14,
+      "numeric_cells_verified": 0
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/phase24_all18fold_summary.csv",
+      "rows": 193,
+      "numeric_cells_verified": 11328
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/strata_all18fold_summary.csv",
+      "rows": 529,
+      "numeric_cells_verified": 9952
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/correlation_equal_fold_summary.csv",
+      "rows": 89,
+      "numeric_cells_verified": 616
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/per_fold_correlations.csv",
+      "rows": 1585,
+      "numeric_cells_verified": 10204
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/paired_fold_gain_summary.csv",
+      "rows": 145,
+      "numeric_cells_verified": 1440
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/gate_fold_summary.csv",
+      "rows": 19,
+      "numeric_cells_verified": 666
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/source_hashes.csv",
+      "rows": 8,
+      "numeric_cells_verified": 7
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/lineage_parity_check.csv",
+      "rows": 19,
+      "numeric_cells_verified": 54
+    },
+    {
+      "path": "results/experiments/energy_value/03_mechanism/gate_equal_fold_summary.csv",
+      "rows": 34,
+      "numeric_cells_verified": 165
+    },
+    {
+      "path": "results/experiments/energy_value/gate_removal/audit/audit.csv",
+      "rows": 73,
+      "numeric_cells_verified": 990
+    },
+    {
+      "path": "results/experiments/forecasting/h48_framework/fold_metrics.csv",
+      "rows": 37,
+      "numeric_cells_verified": 108
+    },
+    {
+      "path": "results/experiments/forecasting/h24_framework/fold_metrics.csv",
+      "rows": 73,
+      "numeric_cells_verified": 216
+    },
+    {
+      "path": "results/experiments/design_controls/efficiency/per_fold_efficiency.csv",
+      "rows": 217,
+      "numeric_cells_verified": 8424
+    },
+    {
+      "path": "results/experiments/design_controls/efficiency/summary.csv",
+      "rows": 13,
+      "numeric_cells_verified": 252
+    },
+    {
+      "path": "results/experiments/design_controls/analysis/paired_summary.csv",
+      "rows": 67,
+      "numeric_cells_verified": 594
+    },
+    {
+      "path": "results/experiments/design_controls/analysis/uncertainty.csv",
+      "rows": 133,
+      "numeric_cells_verified": 1122
+    },
+    {
+      "path": "results/experiments/design_controls/analysis/paired_per_fold.csv",
+      "rows": 1189,
+      "numeric_cells_verified": 5940
+    },
+    {
+      "path": "results/experiments/design_controls/analysis/same_batch_full_vs_canonical.csv",
+      "rows": 145,
+      "numeric_cells_verified": 576
+    },
+    {
+      "path": "results/experiments/design_controls/analysis/per_fold.csv",
+      "rows": 145,
+      "numeric_cells_verified": 4464
+    },
+    {
+      "path": "results/experiments/design_controls/analysis/summaries.csv",
+      "rows": 57,
+      "numeric_cells_verified": 784
+    }
+  ],
+  "scope": "Saved result CSV values unchanged; publication names and paths only"
+}

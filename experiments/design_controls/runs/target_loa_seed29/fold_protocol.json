@@ -1,0 +1,57 @@
+{
+  "archive_sha256": "1ec9c9513b64f3f492fe73261bf08a5955c268dfb876ef0fe283d05cc5a02fab",
+  "context": 168,
+  "data_provenance": {
+    "archive_md5_published": "099a592653ca74fa1f1051e9c23d6456",
+    "archive_path": "/data/TimeMixer/research/urbanev_timemixer/external_data/charged/Hourly.zip",
+    "archive_size_bytes": 268720500,
+    "city_prefix_sha256": {
+      "AMS": "ee7567450387bb7ab7a24e2ee9ad9176a1a77c9e4cb3dc7a9b111758f73c5a28",
+      "JHB": "c1d0711c3243ae725c001ff51c39dcada996b8ebcb98e5f18620900066105197",
+      "LOA": "7d5d40f100f65c7e3605ef0a41ed34b1453beea92b36cd4e0b147899342b78bb",
+      "MEL": "8ce810a6a57e4188b7a7d7c6b058b545c5a54435674d146b56b4e3fa99d09ec1",
+      "SPO": "5278d5891d3d8aab3be24b1346b4cb3a2045d33d3e0d57a9eaef7b91cf7e0586",
+      "SZH": "55e219c9655cdec4aa036a5b8569ab832cdbff9eefead521f58bb0fcfa17a30a"
+    },
+    "dataset": "CHARGED v3 standard hourly archive; remove_zero=False",
+    "dataset_doi": "10.5281/zenodo.15814263",
+    "last_timestamp_materialized": "2023-08-31 23:00:00",
+    "license": "CC BY 4.0",
+    "rows_materialized_per_city": 3672,
+    "september_values_materialized": false,
+    "target": "volume only (kWh per site per local hour)"
+  },
+  "evaluation_label_starts": [
+    2928,
+    3649
+  ],
+  "evaluation_origin_count": 721,
+  "fold_data_sha256": "a23739e981bc1bbb5d373f4d4da8682c6af60330972dcd42aade85e1d18d5645",
+  "horizon": 24,
+  "retrospective": true,
+  "seed": 29,
+  "september_materialized": false,
+  "source_cities": [
+    "AMS",
+    "JHB",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "source_relation_threshold": 0.9000295579433442,
+  "source_scaler": {
+    "mean": 45.44504013954945,
+    "std": 949.4172809458162
+  },
+  "source_train_rows": [
+    0,
+    2928
+  ],
+  "support_scale": 1.0,
+  "target_city": "LOA",
+  "target_last_label_time": "2023-08-31 23:00:00",
+  "target_release_gate": false,
+  "target_support_projection": false,
+  "threshold_quantile": 0.9,
+  "threshold_rng_seed": 7030
+}

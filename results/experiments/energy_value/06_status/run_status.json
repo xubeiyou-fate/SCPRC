@@ -1,0 +1,33 @@
+{
+  "run_id": "SCPRC-ENERGY-VALUE-20261104",
+  "evaluation_completed": true,
+  "strict_training_completed": true,
+  "strict_arm_trainings": 72,
+  "folds": 18,
+  "model_identities": 16,
+  "prediction_postprocesses": [
+    "raw",
+    "nonnegative_clip"
+  ],
+  "fold_metric_rows": 576,
+  "aligned_model_fold_rows": 288,
+  "source_archives_modified": false,
+  "primary_point_protocol": "raw unchanged",
+  "operation_protocol": "max(raw,0) unchanged",
+  "retrospective": true,
+  "blind_confirmation": false,
+  "uncertainty": "three explicitly distinct conditional sensitivity schemes; no familywise significance claim",
+  "mechanism_analysis_completed": true,
+  "capacity_parity_passed": true,
+  "main_matrix_parent": "SCPRC-PAPER-20261031-v2",
+  "extension": "SCPRC-ENERGY-VALUE-20261104",
+  "claims": "phase/peak conditional value supported; all-gate necessity unsupported; energy tradeoffs preserved",
+  "final_validation": "passed",
+  "final_validation_file": "06_status/VALIDATION.json",
+  "checkpoint_audit": "PASS_WITH_PROVENANCE_AND_CAUSAL_LIMITATIONS",
+  "figures": "completed_visual_and_automated_QA_passed",
+  "main_figures": 7,
+  "mechanism_figures": 4,
+  "all_extension_stages_completed": true,
+  "training_active": false
+}

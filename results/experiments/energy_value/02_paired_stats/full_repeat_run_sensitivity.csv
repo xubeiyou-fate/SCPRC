@@ -1,0 +1,9 @@
+postprocess,metric,repeat_minus_canonical_mean,repeat_absolute_difference_mean,repeat_max_abs_fold_difference,source_drop_minus_canonical_mean,caution
+nonnegative_clip,peak_magnitude_mae,0.9655956798992607,0.9656972234339192,17.370776838302845,2.3552489146776514,"separate-run observed sensitivity, not formal estimate of training noise"
+nonnegative_clip,ramp_mae,0.04949955789536157,0.049502491245653125,0.8894142226672557,-0.16686699210835332,"separate-run observed sensitivity, not formal estimate of training noise"
+nonnegative_clip,total_24h_mae,-20.32081516017984,20.32108867614891,365.71792133373674,-67.5617822711288,"separate-run observed sensitivity, not formal estimate of training noise"
+nonnegative_clip,peak_timing_mae_hours,0.0,0.0,0.0,-0.00015410695022350436,"separate-run observed sensitivity, not formal estimate of training noise"
+raw,peak_magnitude_mae,0.9658101931305058,0.9659177549979431,17.374688953201257,2.3258289232848375,"separate-run observed sensitivity, not formal estimate of training noise"
+raw,ramp_mae,0.04950115512589153,0.04950412080911645,0.8894437221033513,-0.16823527919605968,"separate-run observed sensitivity, not formal estimate of training noise"
+raw,total_24h_mae,-20.323268973454997,20.323424421927857,365.76089011415024,-68.37334058963626,"separate-run observed sensitivity, not formal estimate of training noise"
+raw,peak_timing_mae_hours,0.0,0.0,0.0,0.0035444598551394157,"separate-run observed sensitivity, not formal estimate of training noise"

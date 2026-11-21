@@ -1,0 +1,20 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "torch": "2.7.1+cu118",
+  "numpy": "1.26.4",
+  "cuda": "11.8",
+  "device": "cuda:0",
+  "torch_num_threads": 2,
+  "torch_num_interop_threads": 2,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": false,
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 4080 SUPER",
+  "device_capability": [
+    8,
+    9
+  ],
+  "device_properties": "_CudaDeviceProperties(name='NVIDIA GeForce RTX 4080 SUPER', major=8, minor=9, total_memory=32230MB, multi_processor_count=80, uuid=495b0aec-a3ff-1b93-3a41-0d3633a93953, L2_cache_size=64MB)",
+  "nvidia_smi": "NVIDIA GeForce RTX 4080 SUPER, 595.80, 32760 MiB"
+}

@@ -1,0 +1,14 @@
+item,status,why,next_step
+Full-drop-scale 18fold,completed_new_training,72 strict arm trainings collectively completed,retain original result identities
+Full-drop-peer 18fold,completed_new_training,strict gate removal differs from old scale-only,report peak/timing versus capacity tradeoff
+Full-drop-source-envelope 18fold,completed_new_training,source effect small compared with dominant scale effects,do not claim necessity
+Daily plus complete attenuation 18fold,completed_new_training,strict phase comparison with gate package controlled,report phase peak benefit conditionally
+Unified sixteen-model energy scoring,completed_reanalysis,all288 model-fold inputs align;raw and clipped separate,report all models and metrics
+Gate and input-periodicity associations,completed_reanalysis,all origins retained;associations weak and many constant,do not treat correlation as causal
+Normalized capacity reserve replay,completed_reanalysis,old R12 parity passes and rule references retained,report all margin/penalty configurations
+Independent blind future validation,needs_new_data,August and September already used during development,freeze future protocol before collecting untouched labels
+Real tariffs and physical dispatch constraints,needs_new_data,no tariff/capacity/queue/grid inputs in this analysis,do not report monetary or grid-safety benefit
+Protocol-matched inductive strong graph baseline,needs_new_training_and_implementation,existing fixed-distance GWN is provisional and not adaptive,keep as pre-existing paper limitation
+Canonical MG Exact Full external comparison,needs_new_training,external evidence remains legacy v2.2,do not mix legacy external scores with canonical CHARGED identity
+Stable weekly autocorrelation from168h input,not_identifiable,only one full weekly cycle in168h,report frequency feature only and no lag168 ACF
+All gates universally necessary,not_supported,strict controls show tradeoffs and weak source-envelope effect,narrow module claims or prospectively validate simplification

@@ -1,0 +1,17 @@
+{
+  "gate": "engineering_reproduction_not_test_score_selection",
+  "fold": "JHB/13",
+  "new_metrics": {
+    "mae": 1.8611459506050103,
+    "rmse": 4.043882570330539
+  },
+  "historical_metrics": {
+    "mae": 1.8611457805487566,
+    "rmse": 4.043882578834009
+  },
+  "rmse_difference": -8.503469928200502e-09,
+  "mae_difference": 1.7005625374544309e-07,
+  "prediction_max_abs_difference": 3.4332275390625e-05,
+  "predictions_bitwise_equal": false,
+  "note": "historical numerical identity is not required; samebatchFull18 is used for newcomparisons"
+}

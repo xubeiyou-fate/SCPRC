@@ -1,0 +1,181 @@
+{
+  "completed_folds": 18,
+  "context_hours": 168,
+  "experiment": "Original PhaseFormer no-PCGrad real h=48",
+  "failed_folds": [],
+  "fold_count": 18,
+  "folds": [
+    {
+      "horizon_hours": 48,
+      "mae": 1.1982030934435237,
+      "rmse": 2.30097517974643,
+      "seed": 13,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "AMS"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 1.0639680236596178,
+      "rmse": 2.1938096421677207,
+      "seed": 17,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "AMS"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 1.555974468392879,
+      "rmse": 2.514858243856636,
+      "seed": 29,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "AMS"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 2.3670538458346013,
+      "rmse": 5.11289329027192,
+      "seed": 13,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "JHB"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 3.1541330312143905,
+      "rmse": 5.0454147917630605,
+      "seed": 17,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "JHB"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 2.741870816094354,
+      "rmse": 5.135971494829273,
+      "seed": 29,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "JHB"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 2.7853640652989773,
+      "rmse": 4.80717664916211,
+      "seed": 13,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "LOA"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 2.5599701425907844,
+      "rmse": 4.415494721718323,
+      "seed": 17,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "LOA"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 2.586890509389346,
+      "rmse": 4.353077301151938,
+      "seed": 29,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "LOA"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 25.905525350843426,
+      "rmse": 90.53534824698032,
+      "seed": 13,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "MEL"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 25.968437232917548,
+      "rmse": 92.18744879935232,
+      "seed": 17,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "MEL"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 25.310819149227985,
+      "rmse": 88.00511870319555,
+      "seed": 29,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "MEL"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 2.5414297378438806,
+      "rmse": 4.9700317435295025,
+      "seed": 13,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "SPO"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 3.869432637430207,
+      "rmse": 5.432069360217657,
+      "seed": 17,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "SPO"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 4.0968054109935625,
+      "rmse": 5.835289562737938,
+      "seed": 29,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "SPO"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 13.700807727297153,
+      "rmse": 97.52506089467832,
+      "seed": 13,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "SZH"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 14.220234712372667,
+      "rmse": 100.18871824169346,
+      "seed": 17,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "SZH"
+    },
+    {
+      "horizon_hours": 48,
+      "mae": 14.485902076759178,
+      "rmse": 107.70364727395895,
+      "seed": 29,
+      "status": "completed",
+      "steps": 2048,
+      "target_city": "SZH"
+    }
+  ],
+  "horizon_hours": 48,
+  "models": {
+    "original_phaseformer_no_pcgrad": {
+      "mae_mean_over_folds": 8.339601223978004,
+      "rmse_mean_over_folds": 34.903466896722854
+    }
+  },
+  "output_root": "/data/TimeMixer/experiments/evaluation/phaseformer_h48",
+  "status": "completed",
+  "steps": 2048
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-21 Asia/Shanghai",
+  "status": "local_release_prepared",
+  "remote_published": false,
+  "training_runs": 0,
+  "data_policy": "official_links_and_hash_metadata_only",
+  "dataset_payload_files_copied": 0,
+  "raw_prediction_or_label_arrays_copied": 0,
+  "source_files_copied": 267,
+  "source_code_bytes": 2038247,
+  "model_and_baseline_groups": 14,
+  "checkpoint_paths": 534,
+  "unique_checkpoint_payloads": 528,
+  "checkpoint_bytes": 205166628,
+  "byte_identical_checkpoint_copies": 516,
+  "dlinear_only_exports": 18,
+  "release_zip_assets": 14,
+  "release_zip_bytes": 174342757,
+  "historical_external_model_checkpoint_paths_excluded": 18,
+  "git_branch": "main",
+  "git_remote_configured": false,
+  "git_committed": false,
+  "validation": {
+    "source_naming": {
+      "status": "completed",
+      "python_files": 92,
+      "imports": {
+        "nonvendor_modules": 74,
+        "passed": 74,
+        "source_server_imports": 0
+      },
+      "protocol": {
+        "sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5",
+        "restored_byte_for_byte_from_backup": true,
+        "historical_payload_identity_retained": true,
+        "accepted_hash_count": 1,
+        "published_protocol_sha256_identifiers": 0,
+        "patchtst_guard": "hashlib.sha256(_protocol_bytes).hexdigest() != FROZEN_PROTOCOL_SHA256"
+      }
+    },
+    "checkpoint_inference": {
+      "status": "passed",
+      "checkpoint_paths_tested": 534,
+      "architecture_groups": 38,
+      "device": "cpu",
+      "binding_matches_current": true,
+      "scope": "Frozen checkpoint loading and CPU synthetic output consistency; not dataset metric reevaluation."
+    },
+    "result_value_parity": {
+      "status": "passed",
+      "result_tables": 71,
+      "numeric_cells_verified": 114039,
+      "errors": [],
+      "scope": "Saved result CSV values unchanged; publication names and paths only"
+    },
+    "original_source_integrity": {
+      "status": "passed",
+      "scope": "Original paper2 files referenced by initial source/evidence/checkpoint manifests; not an all-files pre/post snapshot. Read-only SHA-256 comparison.",
+      "verified_original_files": 790,
+      "missing": [],
+      "changed": []
+    },
+    "zip_restore": {
+      "status": "passed",
+      "checkpoint_count": 534,
+      "written": 534,
+      "already_identical": 0,
+      "bytes": 205166628,
+      "output_root": "temporary verification directory, removed after complete hash verification",
+      "asset_coverage": {
+        "asset_count": 14,
+        "stored_unique_checkpoints": 528,
+        "restored_aliases": 6,
+        "covered_checkpoint_paths": 534
+      },
+      "scope": "All renamed ZIP assets and aliases restored to a separate temporary directory; original checkpoint tree not modified."
+    },
+    "local_document_links": {
+      "status": "passed",
+      "checked": 377,
+      "missing": [],
+      "scope": "Local Markdown links in root, docs and environment; external network links not revalidated."
+    }
+  },
+  "evidence_assets": 175,
+  "limitations": [
+    "No dataset payloads or frozen per-origin arrays are supplied; obtain official data and follow the documented reconstruction scope.",
+    "Legacy external Exact/SCPRC checkpoints excluded by requested scope; the corresponding external rows are summary/provenance evidence, not a complete frozen-inference release.",
+    "R10 fixed-distance graph baseline is not included among accepted main weights; adaptive GWN/MTGNN are not claimed.",
+    "CPU synthetic acceptance passed; CUDA forward parity and real-data metric recomputation were not performed in this migration.",
+    "PhaseFormer license text is absent from the pinned local snapshot and DLinear reference license text remains unverified; resolve public redistribution terms before publishing.",
+    "Original native checkpoint bytes retain embedded optimizer/PRNG states where present, to preserve trusted original hashes; no separate optimizer cache tree is copied."
+  ],
+  "entrypoints": {
+    "readme": "README.md",
+    "upload": "UPLOAD_GUIDE_ZH.md",
+    "matrix": "docs/EXPERIMENT_MATRIX.md",
+    "data_sources": "DATA_SOURCES.md",
+    "weights": "manifests/CHECKPOINTS.csv",
+    "runtime": "manifests/RUNTIME_AUDIT.json"
+  },
+  "initial_copy_validation": {
+    "independent_import_checks": 48,
+    "constructor_forward_checks": 26,
+    "checkpoint_integrity_and_restore": "passed",
+    "checkpoint_inference": {
+      "status": "passed",
+      "checkpoint_paths_tested": 534,
+      "architecture_groups": 32,
+      "device": "cpu",
+      "scope": "synthetic fixed inputs and original/migrated weight parity, not reevaluation of dataset metrics"
+    },
+    "inference_without_original_server": true,
+    "h24_h48_cli_shapes": {
+      "h24_full_raw_shape": [
+        2,
+        24,
+        7
+      ],
+      "h48_full_raw_shape": [
+        2,
+        48,
+        7
+      ],
+      "default_clipping": false,
+      "explicit_clip_min": "passed",
+      "repository_array_output_rejected": "passed",
+      "temporary_external_arrays_removed": true,
+      "source_root_required_for_inference": false
+    },
+    "metadata": {
+      "entries": 534,
+      "h24_h48_horizons_correct": true,
+      "public_scalers_finite_positive_std": true,
+      "payload_scalers_take_precedence": true,
+      "payload_supplied_scaler_entries": 30,
+      "gate_flags": "Checkpoint gate_flags override public metadata; independent/strict named-arm source constructors independently validate forward parity.",
+      "raw_data_fields_found": false,
+      "source_server_metadata_fallback": false
+    },
+    "publication_tree": {
+      "status": "passed",
+      "dataset_or_size_violations": 0,
+      "secret_pattern_findings": 0,
+      "symlinks": 0,
+      "syntax_errors": 0
+    },
+    "local_document_links": {
+      "status": "passed",
+      "local_links_checked": 354,
+      "missing": [],
+      "scope": "root user-facing docs and docs/ local links; upstream network links not revalidated"
+    }
+  },
+  "naming_review": "docs/NAMING_REVIEW_ZH.md",
+  "naming_audit": "manifests/NAMING_AUDIT.json",
+  "record_scope": "Local preparation snapshot before GitHub upload. remote_published, git_remote_configured and git_committed describe that preparation stage; the remote repository, commit history and Releases are authoritative for publication status."
+}

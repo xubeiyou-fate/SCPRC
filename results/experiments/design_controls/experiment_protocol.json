@@ -1,0 +1,57 @@
+{
+  "experiment_id": "SCPRC-DESIGN-CONTROLS-20261117",
+  "variants": [
+    "full_same_run",
+    "phase_shared_strict",
+    "stationwise_matched",
+    "concat_project"
+  ],
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "expected_complete_runs": 72,
+  "history": 168,
+  "horizon": 24,
+  "source_training_period": "2023-04-01 00:00:00 through 2023-07-31 23:00:00",
+  "evaluation_label_start_indices": [
+    2928,
+    3649
+  ],
+  "evaluation_final_target": "2023-08-31 23:00:00",
+  "retrospective": true,
+  "september_materialized": false,
+  "primary_endpoint": "raw city24h peak magnitude MAE; Full vs each of3controls",
+  "secondary_endpoints": [
+    "raw city ramp MAE andRMSE",
+    "raw city24h total MAE",
+    "raw noncircular firstargmax peak timing MAE",
+    "native station RMSE andMAE"
+  ],
+  "sensitivity": "nonnegative clipping is separately named; no change to rawprimary",
+  "aggregation": "arithmetic mean of18foldmetrics; percity3seed means also shown",
+  "uncertainty": "10000citycluster bootstrap draws with3seedskept; paired168-origin noncircular timeblocks sensitivity; exploratory conditional intervals",
+  "analysis_seed": 20261117,
+  "no_favorable_selection": true,
+  "primary_comparison_role": "Original PhaseFormer vs Full; Exact-PCGrad mechanismcontrol",
+  "same_batch_full_role": "reference fornewdesigncontrols; historicalcanonical identity retained",
+  "optimizer": "canonicalFP32PCGrad via unchanged _train_candidate_pcgrad",
+  "source_minibatches": 2048,
+  "batch_size": 4,
+  "source_window_exposures": 8192,
+  "optimizer_updates": 410,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "target_fitting": false,
+  "output_precision": "original float32 predictions;FP64 metricaccumulation",
+  "created_at_unix": 1794850526.633032
+}

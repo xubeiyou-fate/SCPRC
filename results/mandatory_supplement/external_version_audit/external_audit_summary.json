@@ -1,0 +1,25 @@
+{
+  "all_current_core_hashes_match": true,
+  "all_external_runner_hashes_match_current": true,
+  "all_prediction_arrays_finite_and_shape_valid": true,
+  "all_recorded_prediction_and_checkpoint_hashes_match": true,
+  "all_selected_metrics_recomputed_within_tolerance": true,
+  "audit_timestamp_utc": "2026-10-29T18:41:02.182371+00:00",
+  "canonical_primary_protocol": {
+    "id": "scpcr-matched-baseline-20261023",
+    "sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5"
+  },
+  "datasets": {
+    "jiaxing": 3,
+    "shanghai": 3,
+    "urbanev": 3
+  },
+  "external_protocol_identity": "source-all six-city transfer with dataset-specific frozen windows; not canonical LOCO five-city primary matrix",
+  "output_files": [
+    "experiments/supplementary/external_version_audit_20261030/external_protocol_audit.csv",
+    "experiments/supplementary/external_version_audit_20261030/external_metric_recompute_check.csv",
+    "experiments/supplementary/external_version_audit_20261030/external_exact_full_final.csv",
+    "experiments/supplementary/external_version_audit_20261030/external_version_manifest.json"
+  ],
+  "rerun_decision": "No external Exact/Full rerun was launched. Existing artifacts are internally version-consistent with current model/core code; canonical hash mismatch is a protocol-scope difference, not an unresolved code drift. A replacement rerun requires an explicit new external freeze choosing source-all versus LOCO source scope."
+}

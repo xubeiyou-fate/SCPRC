@@ -1,0 +1,245 @@
+{
+  "aggregation": "equal-weight mean of fold-level raw-volume RMSE and MAE",
+  "alignment": "truth arrays, site IDs, and forecast-origin arrays exactly match the canonical four-arm matrix in every fold",
+  "audited_at_unix": 1793036139.1833513,
+  "auditor_sha256": "1dddb2aef4bb097ca70e4aec19d364c32a26a3bcf8df7d50f97ca9f8fa15cc04",
+  "blind_confirmation": false,
+  "bootstrap_scope": "168-origin moving blocks conditional on six fixed cities and three fixed seeds; not city-population, retraining, or prospective uncertainty",
+  "comparisons": {
+    "attention_vs_scpcr": {
+      "mae": {
+        "fold_count": 18,
+        "folds_better": 11,
+        "mean_fold_relative_change_percent": 0.38449484307913434,
+        "ratio_of_equal_fold_mean_metrics_percent": -0.4513543968543532
+      },
+      "rmse": {
+        "fold_count": 18,
+        "folds_better": 10,
+        "mean_fold_relative_change_percent": 0.8071468301444038,
+        "ratio_of_equal_fold_mean_metrics_percent": 1.4758301826023779
+      }
+    },
+    "deepsets_vs_scpcr": {
+      "mae": {
+        "fold_count": 18,
+        "folds_better": 11,
+        "mean_fold_relative_change_percent": -1.408548838426701,
+        "ratio_of_equal_fold_mean_metrics_percent": -0.6652309466164685
+      },
+      "rmse": {
+        "fold_count": 18,
+        "folds_better": 9,
+        "mean_fold_relative_change_percent": 0.5970733441656026,
+        "ratio_of_equal_fold_mean_metrics_percent": 1.1029532468848524
+      }
+    },
+    "scpcr_vs_exact": {
+      "mae": {
+        "fold_count": 18,
+        "folds_better": 11,
+        "mean_fold_relative_change_percent": -0.5184183726714955,
+        "ratio_of_equal_fold_mean_metrics_percent": 0.3866747768918932
+      },
+      "rmse": {
+        "fold_count": 18,
+        "folds_better": 13,
+        "mean_fold_relative_change_percent": -0.6635601662421363,
+        "ratio_of_equal_fold_mean_metrics_percent": -1.0785388721782363
+      }
+    }
+  },
+  "fold_count": 18,
+  "input_sha256": {
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_ams_seed13/attempt_01/predictions.npz": "90f8d50d0059a8d4f9f3bdb5f9ec0690021b4a8e2af7dcf47696425cf322f3c9",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_ams_seed13/attempt_01/result.json": "854bd6261b7cf58ff54a6c86d8edca99caa2c3981a0d4988bbba1f791cb31360",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_ams_seed17/attempt_01/predictions.npz": "4cec5a3d607907ac98b60c81555db8cf7e4590b986168401837a99e3e469b329",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_ams_seed17/attempt_01/result.json": "44d3369967ab8052c56538d7f73418cc8cb1f749ca3609e1d5c34313e283430d",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_ams_seed29/attempt_01/predictions.npz": "b3cdd489fb0efa9bcbf1d1f66f01864261cbe4b27ce3039a55e8b1462b6d531f",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_ams_seed29/attempt_01/result.json": "23780406be651e9ebeeb5194f914fa090f35189e6b5e8fcf566269f0a802ab70",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_jhb_seed13/attempt_01/predictions.npz": "f0eac99a4a0f1107cddf1176e993eec676f71c9bc92d5f65a37d80bfbd3fe372",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_jhb_seed13/attempt_01/result.json": "8cf9fe842fec584e493b925f9465df798334e1bc4f3d1aab550af22e7d72bdc1",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_jhb_seed17/attempt_01/predictions.npz": "cf974f331f717176bd0f1de5708a7d4b18a217d6000940a66f6f86a0fb8e3077",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_jhb_seed17/attempt_01/result.json": "d79594209fe376596fa907deaa68bd31de8b247acc780dfe8b0027efc73a0427",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_jhb_seed29/attempt_01/predictions.npz": "3013e0959f3291713d285c82961eb89ea27c5c322a09d0038706ec59e2181874",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_jhb_seed29/attempt_01/result.json": "366793a8ada3711e967dd5d93050a6ab33f5ef6696a76d6065073431da56f84f",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_loa_seed13/attempt_01/predictions.npz": "2b20fdc2cce1bce5c47fd1ca51f2375e63fe2738e07628aa887cc7d784f3e39c",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_loa_seed13/attempt_01/result.json": "918379ba9a5fa3b9818df07c394954c0657c84ffa00c8a255760f3e148e4caaf",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_loa_seed17/attempt_01/predictions.npz": "38976d63e6d6f24b3695ee5546aad37ea07e3be521284ffc37bc259277121329",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_loa_seed17/attempt_01/result.json": "e2dda1cb89c732bd225fc5c9738d763fa294f3ab3fe77932a155279445b8bc37",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_loa_seed29/attempt_01/predictions.npz": "66c4992f8a4857d468502898e1fe83263d38e048060971a6c8ece93ddee71fe7",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_loa_seed29/attempt_01/result.json": "7a71ec0b1226aa12cb5c4cdfc567a71997a791e62d32b193859024c665ce55d4",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_mel_seed13/attempt_01/predictions.npz": "a0389aa53eaeef7f3ed4b30f49270743bfab0950200066a4997ffe21e5a250e7",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_mel_seed13/attempt_01/result.json": "02eae86de95c93017740224f6d31c5135dc501e65ceab8719116451f041f933c",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_mel_seed17/attempt_01/predictions.npz": "370ad9bf18d3cb5dcc71f1670f9ee915a79a47bb95caac4ec6913b2859b50364",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_mel_seed17/attempt_01/result.json": "6104894311ba8a470a78c63196b650d4a99a80f134a4b13b7454ae43cb8b0500",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_mel_seed29/attempt_01/predictions.npz": "7b33f992918d1e548d0e4245376a5f41d296de52061f40485eeb315da213c315",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_mel_seed29/attempt_01/result.json": "2d3d52091f68a4244ea5f3e391790a8644b9ef3c6641b5cda2226bfa449a712d",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_spo_seed13/attempt_01/predictions.npz": "d9d656d15b0ecb7c00a8a9bc9c519f2025babc2225d86fdf57334406f805d2fd",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_spo_seed13/attempt_01/result.json": "a5dcab331cf3d92b514793475d8eed17773c4f70cc8d7a12a1a3a1b535bc4e68",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_spo_seed17/attempt_01/predictions.npz": "d722d17dcf49f67df0e1a4797d848fda380c681ca313ba8b28c4f7dcc7921958",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_spo_seed17/attempt_01/result.json": "389cc4186df5a92640105e80112fe7367d1245f659d9ff307c2de82f7cbaa3b9",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_spo_seed29/attempt_01/predictions.npz": "3684a239bcc325fbf9e9e4dfbb56a7bcc010760ba56af06db68cefd41377e858",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_spo_seed29/attempt_01/result.json": "54b4f683dcfa6dad8150fcfb25b8ce6e795d04a57cce5adf7b00d3bef5aaddf9",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_szh_seed13/attempt_01/predictions.npz": "b1872e6098853ac8ba3c347016d13c8933058bac6e47aaf8325e170a6f89a19a",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_szh_seed13/attempt_01/result.json": "382da0fd73031b7def5daf88728caf20419bc2798f6abde915bf222cd8f17295",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_szh_seed17/attempt_01/predictions.npz": "445f1942862a8d8ae9093a7da1feed7440ed070be0d162a736c6c2ee503cb2dd",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_szh_seed17/attempt_01/result.json": "84ca1176c949910320cfbad53e6533ee2e3c825cd74862de8886ea9438008bf8",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_szh_seed29/attempt_01/predictions.npz": "5711674b25f441a214b3c3b2f2244e52c9b328e9921c9e064e2c5708b1a51028",
+    "experiments/supplementary/canonical_operator_controls_20261027/deepsets/runs/target_szh_seed29/attempt_01/result.json": "9a25188cd448f781eae3782b20d7bc6f658f0b6a802bb509a830674bd9c2fb18",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_ams_seed13/predictions.npz": "6202dea60dd4ee3df0c776c7fc3498bfba80b08f4fe3c5e867bc8709c14db76c",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_ams_seed13/result.json": "66861935256bcc06ea11b3529609593696214ee022657c935e355e73ba2c3b35",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_ams_seed17/predictions.npz": "b15dd200f09a61e211b6f34f6fc6a7bcc06e01e525f3a9567b4fbda865a609b0",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_ams_seed17/result.json": "c503764d45b2b60dc6c237630b82170c73d74c9087712033dd235c97548e18ee",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_ams_seed29/predictions.npz": "060e96ca87f69e962271fae3f128c5190ce1e4bc2af15f31eab931eae782f0b6",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_ams_seed29/result.json": "2068822eb16165bc097641127cf3a72235d7f779ae9f5d8aa19893bfec200832",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_jhb_seed13/predictions.npz": "b2ba15191612ce1330c3feac36778d7961b9299687e89cb8d7f46e0ca7b68f11",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_jhb_seed13/result.json": "cdb1a84e7ba4dc854370970d428478b1667ac2e6e291530dd6074827112e18ce",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_jhb_seed17/predictions.npz": "473c3647b508ceb4e706d6305cf1eadd44c344554480a52855c130174f9b4728",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_jhb_seed17/result.json": "ab7a355693973b0e7ee04bf3a449dff5fac5d8240a106d3ea2de906d8479b9ec",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_jhb_seed29/predictions.npz": "d6be3560176ad1bd5da379aedc2ac201c052a38307872918c791de003e9fa766",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_jhb_seed29/result.json": "51e52d5fca0cc5e228b844dac0cbe9149e872b3435e993264fca9fde287b5025",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_loa_seed13/predictions.npz": "170a8ce929dd8eac97de158b4d4c8e9ecad979cc6ebd8ef95dc8769314d84204",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_loa_seed13/result.json": "f540146d503d523ced30a16ddcdb7fe0c2f3ddda612c90cf5d4bc940104f3f53",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_loa_seed17/predictions.npz": "b9471435b013217ee98d82c63331eb3bd7aa84955418f7720d1ba5b2f6dfc4ad",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_loa_seed17/result.json": "5ca24c107891e86355a9189c295a92fd4c84eb3576b03d1a650a7264eef04111",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_loa_seed29/predictions.npz": "f0c84e4a3fd6307e867cf10a2fd38411ff4d0bc98920290ee14a381575640bcf",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_loa_seed29/result.json": "1e6d5ee8d6c04a224048ce23e78c799cf2710ee2047928db5d4268e639db96cb",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_mel_seed13/predictions.npz": "0df6967eda75312d2be6ca853bf0cd28fa4873f0128d5357a7a7c8ed0705e8fc",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_mel_seed13/result.json": "37fe30249845c1d574bbf7b405e5082e0c59ff0eb0f8ea877cb5dca1ecd6e6ed",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_mel_seed17/predictions.npz": "be80ee91259074b2f735e202e1ed00207f0c353f5db9b92abc9af2d0df158550",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_mel_seed17/result.json": "3110c331d89dda98b74563e02b3892d464347703fb8d76edafb9cef4455d4fe2",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_mel_seed29/predictions.npz": "d73688c78cc3ff9d6434900245232b1642a7b413a48a5413bb25d08c51f6678b",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_mel_seed29/result.json": "01753efc680f762b6e67a65c801db4c495a9fa9cfa158ddd6fd79fba23ee63a7",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_spo_seed13/predictions.npz": "40b153558de9daff9970c8f8f4c7f3acf8b1f06341566fc647009b8d4c363f94",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_spo_seed13/result.json": "acc96f042d72797fb6712b597fd10249388b5c8da308bd0c9cee2c1c88f7f298",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_spo_seed17/predictions.npz": "3b7c27b17cc5fb1095763e53d5755df706e8c8a00e1b718d35b39333043073c1",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_spo_seed17/result.json": "aa889b488672182d85c039d2579c994a97b25d95b0501fa2c2c4b8f240ef8ac9",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_spo_seed29/predictions.npz": "200e5483320271314917d098f77aa7f4fe80601e85dc644fc261c55d004deaae",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_spo_seed29/result.json": "ee8b04fabe483b0216a1dcba76e1449a36e3f9a94c33c85e5d7dabf32c6664f4",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_szh_seed13/predictions.npz": "e8a2ce908140e06b87f6314f9769ddf7adee061679fb419cd86adab8e3b3bde7",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_szh_seed13/result.json": "61bceaed464556f92872f1528654cd3ffa89aba1ecebe0926abb2b26e50aaffa",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_szh_seed17/predictions.npz": "caf5436ead7935fa05f8b453b9199b48085ed63d5947408f78ca843c92107cb5",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_szh_seed17/result.json": "d0a8470fbfb32f27e76815969a96ac240d024902cca7bf2938d263c60d5709bd",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_szh_seed29/predictions.npz": "3b665df8ef08e8050bb6daeef1d54a3dd2a57d45cdf33f2744db5814bebfc8e7",
+    "experiments/supplementary/canonical_operator_controls_20261027/generic_attention/target_szh_seed29/result.json": "02ab7902479350fb0c9897448e96e6c9b4eb3ce7e891dd558eda4065dfe274b4",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_ams_seed13/predictions.npz": "cec24ee3a6d60f61e20a10a7b63bdc6e085a217f24673069738828c64258c596",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_ams_seed17/predictions.npz": "2844f7a4197f7ce903da33908a5dfd03029504074dc7da0599b5d6ed68201a46",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_ams_seed29/predictions.npz": "6a9dc7da351a1e211275822d72db399dd80e53c8922e79af75bc6102f6fb0be8",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_jhb_seed13/predictions.npz": "57672c6c0f11a04dc2bc5297475aafbe160ba994eec89ff306efdbffabd133f1",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_jhb_seed17/predictions.npz": "673b435b5b52c8ea25f13d5509ed83b960a488c682e3bdff29bb98e5649d09c1",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_jhb_seed29/predictions.npz": "ea922d7b99d0397ecf92a52cb0cf014479e3b8185b6fa2a15a282919cdf5f64a",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_loa_seed13/predictions.npz": "6196a75ea449cb1f7b4323b2197c7c40bd22bb64d08bae2f86586b0b91850c05",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_loa_seed17/predictions.npz": "bd70ab381789365fe3114d0d7f9290ef89add26be15adc6e1da5b72d4e1b0085",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_loa_seed29/predictions.npz": "734e11bce7a615d7986d709ec8993a528f0786d62517146f79837b97f7e5cd28",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_mel_seed13/predictions.npz": "70cabc05351b80859f3b7d198ba04dcbf0942f0b6993c9829bbd9a591dc3c20a",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_mel_seed17/predictions.npz": "ceaeda360525f38590013ad24c901652f00f89687daa4e5f82da86248ae882a2",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_mel_seed29/predictions.npz": "34e9e22a7f603726784a3cb0d14ef4094667d9ceefb8a0c0d4bcc1a65bd11748",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_spo_seed13/predictions.npz": "86d28a9a94f4ddddc9945d17a792e4441699cdfd824726bf987f2030658e561d",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_spo_seed17/predictions.npz": "44d9a03083fe718871fa19b01a6d871f135da87ae60edabfa42b8c28be2e3381",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_spo_seed29/predictions.npz": "f8da945981e3b96060825dfd8044655778c743adfe5a21778d1a10b090d6523d",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_szh_seed13/predictions.npz": "b6dbb42cc2b81be0df9516b082485e8cdc525463ead0c11d652aa621ad827f20",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_szh_seed17/predictions.npz": "ff5e479c48c9587d77b8be8c4b886a86bab4f2b238e8549b7b384a2e26596840",
+    "experiments/supplementary/current_matched_ablation_20261027_homogeneous/target_szh_seed29/predictions.npz": "3af3b0d176724799bd3313adb85b4af0a0940902baf2cc8e6a06b1793f9c6ddb"
+  },
+  "metric_recomputation": "attention and DeepSets fold metrics match their stored result.json values within 1e-6 relative/absolute tolerance",
+  "models": {
+    "attention": {
+      "mae": 7.018002023297994,
+      "rmse": 32.6658200161653
+    },
+    "daily": {
+      "mae": 6.979839706402376,
+      "rmse": 32.20656946500409
+    },
+    "deepsets": {
+      "mae": 7.002924107874109,
+      "rmse": 32.54578817362299
+    },
+    "exact": {
+      "mae": 7.02266682226042,
+      "rmse": 32.54171440812607
+    },
+    "phase": {
+      "mae": 7.038438180858975,
+      "rmse": 32.66241625665581
+    },
+    "scpcr": {
+      "mae": 7.049821703527257,
+      "rmse": 32.1907393685612
+    }
+  },
+  "origins_per_fold": 721,
+  "paired_temporal_block_bootstrap": {
+    "attention_vs_scpcr": {
+      "mae": {
+        "block_length_origins": 168,
+        "bootstrap_mean_percent": -0.540677877298776,
+        "ci95_percentile": [
+          -0.9497613259238132,
+          -0.15586249397254817
+        ],
+        "replicates": 5000,
+        "scope": "temporal-origin uncertainty conditional on the 18 fixed city-seed folds"
+      },
+      "rmse": {
+        "block_length_origins": 168,
+        "bootstrap_mean_percent": 1.485096456378738,
+        "ci95_percentile": [
+          1.2807946425748662,
+          1.7081014328519455
+        ],
+        "replicates": 5000,
+        "scope": "temporal-origin uncertainty conditional on the 18 fixed city-seed folds"
+      }
+    },
+    "deepsets_vs_scpcr": {
+      "mae": {
+        "block_length_origins": 168,
+        "bootstrap_mean_percent": -0.7371610188926211,
+        "ci95_percentile": [
+          -1.0447398932923069,
+          -0.4600571742854518
+        ],
+        "replicates": 5000,
+        "scope": "temporal-origin uncertainty conditional on the 18 fixed city-seed folds"
+      },
+      "rmse": {
+        "block_length_origins": 168,
+        "bootstrap_mean_percent": 1.0723018976975685,
+        "ci95_percentile": [
+          0.9298207615466414,
+          1.224530290368866
+        ],
+        "replicates": 5000,
+        "scope": "temporal-origin uncertainty conditional on the 18 fixed city-seed folds"
+      }
+    },
+    "scpcr_vs_exact": {
+      "mae": {
+        "block_length_origins": 168,
+        "bootstrap_mean_percent": 0.45074031239388224,
+        "ci95_percentile": [
+          0.2022941031551162,
+          0.7375414012655349
+        ],
+        "replicates": 5000,
+        "scope": "temporal-origin uncertainty conditional on the 18 fixed city-seed folds"
+      },
+      "rmse": {
+        "block_length_origins": 168,
+        "bootstrap_mean_percent": -1.0614577034283612,
+        "ci95_percentile": [
+          -1.180474317861918,
+          -0.9385813070987714
+        ],
+        "replicates": 5000,
+        "scope": "temporal-origin uncertainty conditional on the 18 fixed city-seed folds"
+      }
+    }
+  },
+  "protocol_id": "scpcr-matched-baseline-20261023",
+  "protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5",
+  "retrospective": true,
+  "status": "completed_audited_retrospective_operator_comparison"
+}

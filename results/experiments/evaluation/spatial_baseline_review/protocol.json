@@ -1,0 +1,52 @@
+{
+  "experiment_id": "R10-GWN-FIXED-DISTANCE-VOLUME-ONLY-20261031",
+  "status_before_run": "runner_prepared",
+  "model": "Graph WaveNet",
+  "model_label": "fixed-distance Graph WaveNet",
+  "adaptive_graph_claim": false,
+  "inductive_variable_node_claim": false,
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "split": "leave-one-city-out",
+  "context_hours": 168,
+  "horizon_hours": 24,
+  "input_variables": [
+    "volume"
+  ],
+  "target_variable": "volume",
+  "train_end_exclusive": 2928,
+  "validation_end_exclusive": 3672,
+  "validation_month": "2023-08",
+  "validation_windows_per_city": 721,
+  "september_test_values_materialized": false,
+  "source_only_scaler": "equal-city mean and second moment over source prefixes only",
+  "source_optimizer_updates": 2048,
+  "source_city_schedule": "round-robin, one sampled window batch per update",
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_windows_per_update": 4,
+  "microbatch_windows": 1,
+  "target_adaptation_steps": 0,
+  "future_covariates_used": false,
+  "distance_graph": {
+    "source": "CHARGED v3 distance.csv aligned to each city's station order",
+    "rule": "symmetrized top-8 nearest neighbors plus self loop with Gaussian weights",
+    "sigma": "city-specific median positive inter-site distance",
+    "target_geometry_access": "static target geometry is used in the target forward pass",
+    "learned_node_embeddings": false,
+    "addaptadj": false
+  },
+  "upstream_graph_wavenet_commit": "6b162e80c59a1d494809252eca055cff93dc66b1",
+  "claim_boundary": "real spatial baseline; not adaptive Graph WaveNet, MTGNN or DCRNN"
+}

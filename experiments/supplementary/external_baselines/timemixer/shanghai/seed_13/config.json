@@ -1,0 +1,29 @@
+{
+  "model": "official vendored TimeMixer channel-dependent volume-only route",
+  "dataset": "shanghai",
+  "seed": 13,
+  "context_hours": 168,
+  "horizon_hours": 24,
+  "source_cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "target_training_or_tuning": false,
+  "source_minibatches": 2048,
+  "batch_windows": 4,
+  "effective_source_windows": 8192,
+  "optimizer_updates": 2048,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "loss": "source-standardized MSE + 0.15 multi-resolution consistency (2,3,4,6,12)",
+  "city_sampling": "round-robin over all six CHARGED cities",
+  "torch_threads": 1,
+  "device": "cuda",
+  "frozen_protocol": "scprc/training/scprc_matched_protocol.json",
+  "frozen_protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5"
+}

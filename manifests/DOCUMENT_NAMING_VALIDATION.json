@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "checked": 377,
+  "missing": [],
+  "scope": "Local Markdown links in root, docs and environment; external network links not revalidated."
+}

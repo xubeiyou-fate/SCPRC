@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "local_links_checked": 354,
+  "missing": [],
+  "scope": "root user-facing docs and docs/ local links; upstream network links not revalidated"
+}

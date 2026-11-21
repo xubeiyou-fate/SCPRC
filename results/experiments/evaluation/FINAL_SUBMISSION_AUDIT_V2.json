@@ -1,0 +1,234 @@
+{
+  "status": "core_experiments_complete_R10_result_review_pending",
+  "generated_at": "2026-10-31",
+  "primary_baseline": "Original PhaseFormer (no-PCGrad)",
+  "primary_method": "Full SCPRC",
+  "mechanism_control": "Exact-PCGrad",
+  "tasks": {
+    "main_results": {
+      "status": "reused_complete",
+      "source": "experiments/forecasting/canonical_h24_anchor + p2_no_pcgrad_phaseformer"
+    },
+    "strict_ablation": {
+      "status": "reused_complete",
+      "source": "experiments/forecasting/p2_components + p2_no_pcgrad_phaseformer"
+    },
+    "U1_original_coverage_wis_capacity": {
+      "status": "completed",
+      "folds": 18,
+      "lineage_match": true,
+      "source": "experiments/evaluation/u1_original_coverage"
+    },
+    "U2_original_robustness": {
+      "status": "completed",
+      "folds": 18,
+      "original_rows": 108,
+      "combined_rows": 216,
+      "source": "experiments/evaluation/u2_original_robustness"
+    },
+    "H1_original_h48": {
+      "status": "completed",
+      "folds": 18,
+      "summary": {
+        "Original PhaseFormer": {
+          "folds": 18,
+          "rmse_mean": 34.903466896722854,
+          "mae_mean": 8.339601223978004,
+          "rmse_sd": 44.658675597232445,
+          "mae_sd": 9.143490308488817
+        },
+        "Exact-PCGrad": {
+          "folds": 18,
+          "rmse_mean": 33.13447994896659,
+          "mae_mean": 7.461339986702239,
+          "rmse_sd": 42.845154562330805,
+          "mae_sd": 8.78759223367223
+        },
+        "Full SCPRC": {
+          "folds": 18,
+          "rmse_mean": 32.94303188952527,
+          "mae_mean": 7.444830332119434,
+          "rmse_sd": 42.59784247470861,
+          "mae_sd": 8.771896598456852
+        }
+      }
+    },
+    "E1_efficiency": {
+      "status": "completed",
+      "rows": 162,
+      "models": [
+        "Full SCPRC",
+        "Original PhaseFormer",
+        "PhaseFormer Exact-PCGrad"
+      ],
+      "batches": [
+        1,
+        4,
+        16
+      ]
+    },
+    "paired_fold_uncertainty": {
+      "status": "completed",
+      "bootstrap_replicates": 10000,
+      "source": "experiments/evaluation/e1_original_efficiency_stats/paired_fold_ci.md"
+    },
+    "external_datasets": {
+      "status": "reused_complete",
+      "datasets": [
+        "Jiaxing",
+        "Shanghai",
+        "UrbanEV"
+      ],
+      "source": "experiments/supplementary/external_strong_baselines_20261028/summary.md"
+    },
+    "shanghai_daily_mean_negative_result": {
+      "status": "preserved",
+      "source": "experiments/supplementary/external_strong_baselines_20261028/summary.md"
+    },
+    "operation_limits": {
+      "status": "preserved",
+      "source": "experiments/supplementary/energy_scenario_20261030/README.md"
+    },
+    "R8_full_no_pcgrad": {
+      "status": "completed",
+      "folds": 18,
+      "rmse_mean": 36.046890965436575,
+      "mae_mean": 8.215483589476891,
+      "source": "experiments/evaluation/scprc_mean_gradient/summary.json"
+    },
+    "R9_formal_factorial_statistics": {
+      "status": "completed",
+      "folds": 18,
+      "bootstrap_replicates": 10000,
+      "source": "experiments/evaluation/r9_factorial_stats/factorial_ci.json",
+      "headline_exact_vs_full": {
+        "rmse_delta": -0.3509755405370356,
+        "rmse_ci95": [
+          -0.8000731827058427,
+          -0.03683184806393246
+        ],
+        "mae_delta": 0.027154529013053263,
+        "mae_ci95": [
+          -0.047233181685334656,
+          0.10919935660046264
+        ]
+      },
+      "interaction": {
+        "rmse_delta": -1.3303409848583456,
+        "rmse_ci95": [
+          -4.261120940178409,
+          0.8842674925179506
+        ],
+        "mae_delta": 0.09339343086423248,
+        "mae_ci95": [
+          -0.3015078924274227,
+          0.4806912841435498
+        ]
+      }
+    },
+    "R10_fixed_distance_gwn": {
+      "status": "training_complete_result_review_pending",
+      "completed_folds": 18,
+      "expected_folds": 18,
+      "model_label": "fixed-distance Graph WaveNet",
+      "source": "experiments/evaluation/r10_spatial_baselines/POSTRUN_AUDIT_20261101.json + full_volume_only",
+      "adaptive_gwn_completed": false,
+      "mtgnn_completed": false,
+      "dcrnn_completed": false,
+      "completed_fold_labels": [
+        "AMS_seed13",
+        "AMS_seed17",
+        "AMS_seed29",
+        "JHB_seed13",
+        "JHB_seed17",
+        "JHB_seed29",
+        "LOA_seed13",
+        "LOA_seed17",
+        "LOA_seed29",
+        "MEL_seed13",
+        "MEL_seed17",
+        "MEL_seed29",
+        "SPO_seed13",
+        "SPO_seed17",
+        "SPO_seed29",
+        "SZH_seed13",
+        "SZH_seed17",
+        "SZH_seed29"
+      ],
+      "training_completed_at": "2026-10-31T20:18:02+08:00",
+      "postrun_audit": "experiments/evaluation/r10_spatial_baselines/POSTRUN_AUDIT_20261101.json",
+      "artifact_and_alignment_checks": {
+        "complete_fold_grid": true,
+        "all_completed": true,
+        "all_labels_stations_truth_align_to_anchor": true,
+        "all_predictions_and_truth_finite": true,
+        "all_metrics_recomputed_match": true,
+        "all_artifact_hashes_match_manifest": true
+      },
+      "provisional_equal_fold_metrics": {
+        "rmse": 363.5875316627248,
+        "mae": 28.900251291390717
+      },
+      "pending_review": [
+        "JHB/seed17 primary and parallel run discrepancy; exact cause unresolved",
+        "High SZH error; baseline behavior and result interpretation review"
+      ]
+    },
+    "R11_energy_behavior_graph_protocol": {
+      "status": "audit-only",
+      "faithful_reproduction": false,
+      "source": "experiments/evaluation/r11_energy_behavior_graph/README.md"
+    },
+    "R12_energy_diagnostics": {
+      "status": "completed",
+      "folds": 18,
+      "source": "experiments/evaluation/r12_energy_diagnostics/STATUS.json"
+    },
+    "R13_temporal_extrapolation": {
+      "status": "completed_no_blind_test",
+      "source": "experiments/evaluation/r13_temporal_extrapolation/status.json"
+    }
+  },
+  "canonical_results": {
+    "Original_PhaseFormer_h24": {
+      "rmse": 35.0675,
+      "mae": 8.2817
+    },
+    "Full_SCPRC_h24": {
+      "rmse": 32.1907,
+      "mae": 7.0498
+    },
+    "full_relative_change_pct": {
+      "rmse": -8.2036,
+      "mae": -14.8749
+    }
+  },
+  "missing_files": [],
+  "claim_boundaries": [
+    "Coverage is empirical retrospective coverage under the locked target-history calibration protocol; no distribution-free guarantee.",
+    "U2 is clean-gated input robustness under the six fixed perturbations; it does not establish prospective deployment reliability.",
+    "External datasets remain separate by unit and protocol; UrbanEV is same-city cross-dataset evidence.",
+    "The operation replay is normalized native-volume scenario evidence, not monetary savings or grid reliability.",
+    "R8 Full-no-PCGrad is a completed 18-fold relation-on/PCGrad-off arm; its RMSE is worse than Original on the equal-fold mean while MAE is slightly lower.",
+    "R9 Exact-vs-Full formal paired intervals and factorial interaction are conditional on the same 18 retrospective city-seed folds; interaction is descriptive attribution, not a universal causal optimizer theorem.",
+    "R10 is fixed-distance Graph WaveNet only; adaptive GWN, MTGNN and DCRNN remain incomplete.",
+    "R11 is an Energy dynamic behavior-graph protocol audit and local diagnostic, not a faithful scprc or superiority comparison.",
+    "R13 confirms no project-level blind test is available in the current local data."
+  ],
+  "files": {
+    "main_matrix": "experiments/support/MAIN_EXPERIMENT_MATRIX.md",
+    "strict_ablation_summary": "experiments/forecasting/p2_no_pcgrad_phaseformer/strict_no_pcgrad_summary.json",
+    "component_manifest": "experiments/forecasting/p2_components/manifest.json",
+    "u1_results": "experiments/evaluation/u1_original_coverage/u1_results.json",
+    "u2_results": "experiments/evaluation/u2_original_robustness/multifold_summary.json",
+    "h1_results": "experiments/evaluation/phaseformer_h48/summary.json",
+    "efficiency": "experiments/evaluation/e1_original_efficiency_stats/efficiency_three_models.csv",
+    "paired_ci": "experiments/evaluation/e1_original_efficiency_stats/paired_fold_ci.json",
+    "external_matrix": "experiments/supplementary/external_strong_baselines_20261028/summary.md",
+    "scenario": "experiments/supplementary/energy_scenario_20261030/README.md"
+  },
+  "freeze_id": "SCPRC-PAPER-20261031-v2",
+  "matrix_source": "experiments/support/MAIN_EXPERIMENT_MATRIX.md",
+  "preserved_previous_matrix": "experiments/support/MAIN_EXPERIMENT_MATRIX_V1_20261031.md",
+  "status_updated_at": "2026-11-01T20:16:44+08:00"
+}

@@ -1,0 +1,43 @@
+{
+  "arms": {
+    "daily_full_attenuation": {
+      "gates": [
+        true,
+        true,
+        true
+      ],
+      "relation_mode": "phase_agnostic_daily",
+      "threshold_policy": "source_q90"
+    },
+    "full_drop_peer": {
+      "gates": [
+        true,
+        false,
+        true
+      ],
+      "relation_mode": "phase",
+      "threshold_policy": "source_q90"
+    },
+    "full_drop_scale": {
+      "gates": [
+        false,
+        true,
+        true
+      ],
+      "relation_mode": "phase",
+      "threshold_policy": "source_q90"
+    },
+    "full_drop_source_envelope": {
+      "gates": [
+        true,
+        true,
+        false
+      ],
+      "relation_mode": "phase",
+      "threshold_policy": "not_estimated_gate_disabled"
+    }
+  },
+  "protocol_id": "scpcr-matched-baseline-20261023",
+  "protocol_sha256": "dc0cb75e9622b3d92698cfaa69e956e46d00a39f92bf8b848121979c1fd362d5",
+  "threshold_policy": "source q90 is estimated only for arms that apply it"
+}

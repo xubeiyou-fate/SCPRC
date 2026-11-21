@@ -1,0 +1,8 @@
+{
+  "all_state_tensors_bitwise_equal": true,
+  "device": "cpu",
+  "optimizer_updates": 2,
+  "passed": true,
+  "purpose": "observer hooks do not change canonical training math on controlled fixture",
+  "source_minibatches": 7
+}

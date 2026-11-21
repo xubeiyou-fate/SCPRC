@@ -1,0 +1,33 @@
+{
+  "experiment": "R8 Full-no-PCGrad canonical h24 anchor",
+  "method_id": "full_scpcr_no_pcgrad",
+  "protocol_id": "scpcr-matched-baseline-20261023",
+  "context_hours": 168,
+  "horizon_hours": 24,
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "source_minibatches": 2048,
+  "batch_size_windows": 4,
+  "source_windows": 8192,
+  "optimizer_steps": 410,
+  "optimizer": "AdamW",
+  "relation_structure": "Full SCPRC scale + peer + source-disagreement + phase relation",
+  "gradient_aggregation": "ordinary arithmetic mean of source-city gradients",
+  "pcgrad_enabled": false,
+  "source_city_training": true,
+  "leave_one_city_out": true,
+  "independent_retraining": true,
+  "old_artifacts_read": false,
+  "status": "planned_until_full_queue_completes"
+}

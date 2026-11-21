@@ -1,0 +1,88 @@
+{
+  "status": "completed",
+  "experiment": "R12 canonical energy-operation diagnostics",
+  "generated_at_utc": "2026-10-31T06:58:59.794900+00:00",
+  "scope": "experiments/evaluation/r12_energy_diagnostics only",
+  "read_only_postprocessing": true,
+  "lineage": {
+    "original_root": "experiments/forecasting/p2_no_pcgrad_phaseformer",
+    "full_root": "experiments/forecasting/canonical_h24_anchor",
+    "archive": "scprc/data_adapters/charged/Hourly.zip",
+    "protocol": "protocol.json"
+  },
+  "design": {
+    "cities": 6,
+    "seeds": 3,
+    "folds": 18,
+    "origins_per_fold": 721,
+    "horizon_hours": 24,
+    "layers": [
+      "city_total",
+      "station_level"
+    ]
+  },
+  "quality": {
+    "expected_folds_present": true,
+    "numeric_nan_checks_passed": true,
+    "labels_revalidated": true,
+    "no_retraining": true,
+    "capacity_primary_margin_pct": 10.0,
+    "capacity_primary_overload_penalty": 10.0,
+    "capacity_units": "CHARGED native aggregate-volume units",
+    "oracle_is_unavailable_lower_bound": true
+  },
+  "files": {
+    "README.md": {
+      "bytes": 6032,
+      "sha256": "9026c6f81bb1b1d1187729c23ff80b7af4353d8e7abcee006030cbfe2983c9e4"
+    },
+    "STATUS.json": {
+      "bytes": 1576,
+      "sha256": "8ec6724fca684595d002373f7495adb2852250bc5c0f03ef356db66b1dfea964"
+    },
+    "capacity_reserve_risk_equal_fold.csv": {
+      "bytes": 24031,
+      "sha256": "30172361578c15a6985ca2b6afe4f56e23470d11fdc5e188c846b80dfa1e36ef"
+    },
+    "capacity_reserve_risk_per_fold.csv": {
+      "bytes": 443045,
+      "sha256": "3fe58006235b131d6e7a6d5b81c4874c69dd4b2ddf58be69f5099c02b2ca98e0"
+    },
+    "capacity_reserve_risk_per_origin.csv": {
+      "bytes": 231100101,
+      "sha256": "4ba1f7fc78cd0958e42cfe4391b356b358dcc0769262f0f6c7e1ba9cb7496c20"
+    },
+    "capacity_reserve_risk_primary_equal_fold.csv": {
+      "bytes": 1930,
+      "sha256": "57ad01bb78fa03ce7f657de4d8175692f298c78d7359325ecaebd6afc62eb43a"
+    },
+    "operational_metrics_equal_fold.csv": {
+      "bytes": 2754,
+      "sha256": "c25062aad80694d43a8dd6b792a411815bd0a81f585ffa063a1beec79c355f38"
+    },
+    "operational_metrics_per_fold.csv": {
+      "bytes": 46728,
+      "sha256": "4bf15d720958c449a100e2f7ecfdee4a6488f60d152d2f18871025ffb38e1dc6"
+    },
+    "operational_metrics_per_origin_city_total.csv": {
+      "bytes": 13983700,
+      "sha256": "342a813741a57e06a9949e03ef4ce12277be28b1af86ccbcf3cd9b5337dd00cf"
+    },
+    "protocol.json": {
+      "bytes": 12072,
+      "sha256": "85de03a0b3ef5ce7bf1284e32bc87e5a9c127fe90e7d70475b1a56401af5da7f"
+    },
+    "ramp_thresholds_by_city.csv": {
+      "bytes": 713,
+      "sha256": "e972ac593381a69ec1a5a0fc3467db63b6cb114606824fac2b752d52562af6aa"
+    },
+    "run_r12_energy_diagnostics.py": {
+      "bytes": 32541,
+      "sha256": "9fbd7d00089d569fd3966274fc04d0f3aa1f89596508e302e91f63d14dc083ae"
+    },
+    "summary.json": {
+      "bytes": 15660,
+      "sha256": "6d8ea0bbe8da04c9ebb5dc612a33f6b1c580d3c553aa2bf6f744627e9cc10e8e"
+    }
+  }
+}

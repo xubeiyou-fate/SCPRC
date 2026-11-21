@@ -1,0 +1,54 @@
+{
+  "protocol_id": "R13-temporal-extrapolation-20261031",
+  "status": "completed_no_blind_test",
+  "purpose": "Audit strict time extrapolation feasibility without changing the paper matrix.",
+  "write_scope": "experiments/evaluation/r13_temporal_extrapolation/",
+  "raw_archive": "scprc/data_adapters/charged/Hourly.zip",
+  "raw_archive_sha256": "1ec9c9513b64f3f492fe73261bf08a5955c268dfb876ef0fe283d05cc5a02fab",
+  "current_charged_range": "2023-04-01 00:00:00 through 2023-09-30 23:00:00",
+  "current_canonical_split": {
+    "source_train": "2023-04-01 through 2023-07-31",
+    "target_evaluation": "2023-08-01 through 2023-08-31",
+    "context_hours": 168,
+    "horizon_hours": 24,
+    "folds": "6 cities × 3 seeds = 18",
+    "interpretation": "retrospective; August exposed during prior development"
+  },
+  "interval_calibration": {
+    "rule": "target_history_same_fold_checkpoint",
+    "origins": 361,
+    "calendar_interval_in_current_fold_manifest": null,
+    "note": "Do not invent a calendar interval; persist exact origin timestamps in any future rerun."
+  },
+  "label_access_audit": {
+    "august_previously_inspected": true,
+    "september_previously_read": true,
+    "untouched_future_segment_available": false
+  },
+  "execution_decision": {
+    "smoke": "not_started",
+    "full_retraining": "not_started",
+    "reason": "No project-level blind month remains in the current archive."
+  },
+  "future_protocol": {
+    "freeze_before_label_read": true,
+    "train": "early contiguous months",
+    "validation_and_calibration": "next contiguous month",
+    "test": "new later month acquired after freeze",
+    "arms": [
+      "Original PhaseFormer",
+      "Full SCPRC"
+    ],
+    "minimum_folds": 18,
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "peak",
+      "ramp",
+      "total",
+      "capacity risk",
+      "coverage",
+      "WIS"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "scope": "Original paper2 files referenced by initial source/evidence/checkpoint manifests; not an all-files pre/post snapshot. Read-only SHA-256 comparison.",
+  "verified_original_files": 790,
+  "missing": [],
+  "changed": []
+}

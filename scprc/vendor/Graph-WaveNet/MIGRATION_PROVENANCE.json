@@ -1,0 +1,10 @@
+{
+  "path": "scprc/vendor/Graph-WaveNet",
+  "copied_source": 1,
+  "commit": "6b162e80c59a1d494809252eca055cff93dc66b1",
+  "remote": "https://github.com/nnzhan/Graph-WaveNet.git",
+  "licenses": [
+    "scprc/vendor/Graph-WaveNet/LICENSE"
+  ],
+  "license_status": "preserved"
+}

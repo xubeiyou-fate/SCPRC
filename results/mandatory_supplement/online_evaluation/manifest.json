@@ -1,0 +1,141 @@
+{
+  "status": "completed_retrospective_current_model_replay",
+  "retrospective": true,
+  "blind_confirmation": false,
+  "policy": {
+    "block_origins": 84,
+    "horizon_hours": 24,
+    "eta": 0.1,
+    "max_alpha": 0.25,
+    "tail_power": 8,
+    "minimum_exact_weight": 0.25,
+    "fallback_patience": 2,
+    "fallback_on_either_metric": false,
+    "strict_metric_safety": true,
+    "warmup_exact": true
+  },
+  "script_sha256": "92c5b589adc44a5d77a2696187da61fdea512435781ae8c3764a5b17eb10c6a1",
+  "freeze_sha256": "1265bd074094e2c10d80d0a8f2baf5d28cd0ab7e2445ed92a5b2f20540997139",
+  "outputs": {
+    "experiments/supplementary/current_online84_20261024/current_online84_results.json": "e8dd2b9b916902a4abd9b92f31eb04bbdd5864c80616b5ce9ff88745b4528f35",
+    "experiments/supplementary/current_online84_20261024/current_online84_per_case.csv": "d2cc4f78a4b471025de8cc904baf3eace25dc0ed81551a31e0604ea08c202608"
+  },
+  "case_count": 27,
+  "statistical_uncertainty": {
+    "method": "paired non-circular moving-block bootstrap over forecast origins; identical sampled origin blocks for Exact and Online",
+    "block_origins": 84,
+    "replicates": 2000,
+    "seed": "case-specific deterministic seeds recorded in script",
+    "scope": "conditional on observed retrospective city-seed cases and trained checkpoints; not cross-city or retraining uncertainty"
+  },
+  "input_hashes": {
+    "CHARGED-AMS_seed13": {
+      "result_json": "fe3a86f5e61cf17f205db88d7ec39a1ac43a23b11638deac63c407f775d453c7",
+      "predictions": "220a4c9458fa1134de6b2d8d76070221040934c5666d4f5edad1f9b380668464"
+    },
+    "CHARGED-AMS_seed17": {
+      "result_json": "4e3dd9501a5d6c0481c801d0ae100ad052bf510432c9aca7dcc4dc8d9d28f16b",
+      "predictions": "8de58201ce1c7c1a095dd93e65af841b6fadefbb95951e72b4381a454076dd84"
+    },
+    "CHARGED-AMS_seed29": {
+      "result_json": "3726acd7d8c1b2a6a064f6921b0dbe2a174a1daeeb3f6f470e453607d216ca93",
+      "predictions": "670d53a8a4f6c1b16e2bc3bd648e0223589377a89aa0f868322b67505c6fcdb1"
+    },
+    "CHARGED-JHB_seed13": {
+      "result_json": "0f6ecbc1376016d31f6a95dc19175639c1980aa1c923c0584e84dd52755c3e66",
+      "predictions": "2651f2c6a1ec7c60d7cce11748dd50a354dee3aa6d311cec920eee310f492205"
+    },
+    "CHARGED-JHB_seed17": {
+      "result_json": "2f65a6e7ec64aaacbed263253e17c5e7b1d49e078539c9d2404e5c53a7071d5c",
+      "predictions": "32d6fe79b417fc1783c8bf422fc0fb8b3c284e6ecaa00c5fc795ec8904ce9368"
+    },
+    "CHARGED-JHB_seed29": {
+      "result_json": "daf852df40e670545238351586a7644ba8660af36a6c6ddaabdb7376a17797d3",
+      "predictions": "55f9131c6b04579c5122acbf9e6391aea3dda7e88bbaf27ce245f8826b4b1ebe"
+    },
+    "CHARGED-LOA_seed13": {
+      "result_json": "0541ce194715ab14fb7274887abaaa0530acdb2267066f04e0ad26ac6079b411",
+      "predictions": "e6de10eafa90cbed3d1a3cd8bf11515d697a85ebf577b208ce72b22b337c9e94"
+    },
+    "CHARGED-LOA_seed17": {
+      "result_json": "5c34e0105cf479a449ae17ce5fe4eed863bb64278bab609757e9108aeed6aa2c",
+      "predictions": "cd0704b75b1b79a7b97c9444f484442c1991e73451be86c6db68dc04f2bdb36f"
+    },
+    "CHARGED-LOA_seed29": {
+      "result_json": "ee76dc7cec6c123bc0b63d48cd97f67e3bccdc88d4cf5817c1bcdbd0e2a959fe",
+      "predictions": "6c736462bf0f378e0bbfc919d7c5c1e76502039fd48e77e89106f4f1b0305910"
+    },
+    "CHARGED-MEL_seed13": {
+      "result_json": "fd1e9274fbdfc161af4bc452a499883e1d2fcb3a9da1bdd60940c4d6203b5200",
+      "predictions": "ad155e78f9d5bbb90079bdc6d836fc1ffe13a1dce9562bf608d1fcf5ecfd4828"
+    },
+    "CHARGED-MEL_seed17": {
+      "result_json": "3b30f157360d3c36e2a5fb7fb7ac0c221c5681d00729473fdd514d55a2c67233",
+      "predictions": "6d2720816718ced819350ab5c536bff2f2483b38fe39e7ca293bfe51790f2e14"
+    },
+    "CHARGED-MEL_seed29": {
+      "result_json": "49c4f9fc5dbc2364864796f6600ee8005a411dbb75ff8d4fb1c5a211d745dd1e",
+      "predictions": "cdfd99fc2f3d031616b86fb9ec56d773b23297142edd3ba9cd4830f806c2e39d"
+    },
+    "CHARGED-SPO_seed13": {
+      "result_json": "48b139531a868133f2c9af6e74d831ae92941def2898b0c7777a7fbe8cfba1ff",
+      "predictions": "693732196dfaf5a33fd3e8afa885102ad1b1225359313a8f9bfce81c6af31b9c"
+    },
+    "CHARGED-SPO_seed17": {
+      "result_json": "b59dcfc2e1ab2e90875576ca62da0247c06cdea5922cba1f6c1a6d073c59ffb9",
+      "predictions": "404c90ee40584fa196597e9d35ffb996d6d66b961a3b2915c854d4845d0f2108"
+    },
+    "CHARGED-SPO_seed29": {
+      "result_json": "74748ebd6f33c49f07988fb9886f357fda9a7517905757d5be92560a4e5ae561",
+      "predictions": "198820d5dbdc30170257f061069973b0227650c8fd525db9ce6a30aca54a11f4"
+    },
+    "CHARGED-SZH_seed13": {
+      "result_json": "23b2018ca2df5d76eb8915bfa85f1ca6394568e81188caa225e5490e15d2af15",
+      "predictions": "a4fd237d37c2dfecd2304bb1c883a76967879b5cdad3b0210fe9478192fd1a6f"
+    },
+    "CHARGED-SZH_seed17": {
+      "result_json": "67598dc20062dc3905bfad1d4c922e7406e7ea6f908237fd948c923f62eaea5a",
+      "predictions": "d5cb50017ad5643ba265e6d38a1912d75a6145febbc984e50d01e7637c6eab1d"
+    },
+    "CHARGED-SZH_seed29": {
+      "result_json": "8e27b063a72b584515513c610deb7f313c5ee760d88bbb9d1b693778b3aa47ad",
+      "predictions": "0b086848bbf4c21717a6a1f35fe03ea3bf2cf698af4ff0a2d493a0463fd76708"
+    },
+    "Jiaxing_seed13": {
+      "result_json": "f208805ad3dcf2952095d05e76baf7ecdda83035c3a0b0326165776c09466e52",
+      "predictions": "4e4e9bc2efc01011627170c9765ab09b3630114aba9a828e41c873cc510e682a"
+    },
+    "Jiaxing_seed17": {
+      "result_json": "39e452cb292a33cd20e87b78ffb98809c738432a57960bf3611d908e72317194",
+      "predictions": "3dcb9c5b1f50cb4d19ee3599b3f5c30d9d02d1b50f70d4095bd5941b25b6ada0"
+    },
+    "Jiaxing_seed29": {
+      "result_json": "55e23907ae9aa7b4d9dbeed550d0cf89bf46aa75334aaedccf0d7d12fe5e1f85",
+      "predictions": "251216421762b99d9dd339cb2eb5cb8ed2db13236f8dcab28df48795e147fdaa"
+    },
+    "Shanghai_seed13": {
+      "result_json": "90b790eeeb57f75f3d55e715c1bbb35c29692df3e1c55a3e0d25c18af37ed634",
+      "predictions": "bc58729f0047f3e220a6d44c533a50fa4cf11fadaa3498a79c48a7e39c90b2ab"
+    },
+    "Shanghai_seed17": {
+      "result_json": "6ce145b2425e04e495af586a234a8201452d11ec570b33b747ad5c2d22d4b4fb",
+      "predictions": "017d3a735b469e546de3fd83f0037a0a58cb6dddd80e482521f88c5b942cfc51"
+    },
+    "Shanghai_seed29": {
+      "result_json": "275f58fed82cd0bb5727e79d09edcc947bff121286cd9a97659c658986e1636c",
+      "predictions": "7ee06c0d3baa25dbc1437aac45a4bc38b918499cd246704a13477859a33942c0"
+    },
+    "UrbanEV (Shenzhen)_seed13": {
+      "result_json": "3c7b68dddd72f1eeea53dc317402fd94c16541f5d4b7ed3f359b286717f53bc0",
+      "predictions": "d622716c3e6a9cc8033a76cd9214117f59897b7e7c0b1d4c0d584d24cd67b021"
+    },
+    "UrbanEV (Shenzhen)_seed17": {
+      "result_json": "5fd5cb0bdd54c8cd4b2b6b522284291cb54fc93d13427b84e1bebb865c1b517b",
+      "predictions": "39e24a8d583d02b087bc5086fa0fe432d5bf391fcdd0a942d7a985432c09e639"
+    },
+    "UrbanEV (Shenzhen)_seed29": {
+      "result_json": "19eedf38b8ae2ef6a31749798502d74159241a5313a96ba0f57c5bcad236ed55",
+      "predictions": "93b78c0d87f1c03bdc7c4da567374979ac88892b78c9dc23d385d5091e37d458"
+    }
+  }
+}

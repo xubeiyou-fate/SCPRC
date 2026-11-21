@@ -1,0 +1,209 @@
+{
+  "archive": "/data/TimeMixer/scprc/data_adapters/charged/Hourly.zip",
+  "archive_sha256": "1ec9c9513b64f3f492fe73261bf08a5955c268dfb876ef0fe283d05cc5a02fab",
+  "capacity_replay": {
+    "capacity_definition": "max over 24-hour predicted city-total volume times (1 + safety margin)",
+    "normalized_cost_proxy": "raw cost proxy divided by realized 24-hour city-total peak for the same origin",
+    "oracle_definition": "reserved capacity equals realized 24-hour city-total peak; unavailable lower-bound diagnostic",
+    "overload_definition": "positive(actual city-total hourly volume - reserved capacity)",
+    "overload_penalty_grid": [
+      1.0,
+      5.0,
+      10.0,
+      20.0
+    ],
+    "primary_overload_penalty": 10.0,
+    "primary_safety_margin_pct": 10.0,
+    "raw_cost_proxy": "reserved capacity + lambda * overload volume",
+    "safety_margin_grid_pct": [
+      0.0,
+      5.0,
+      10.0,
+      20.0
+    ]
+  },
+  "cities": [
+    "AMS",
+    "JHB",
+    "LOA",
+    "MEL",
+    "SPO",
+    "SZH"
+  ],
+  "city_total_definition": "sum of all station-level hourly volume values within each city",
+  "claim_limits": [
+    "All operational metrics are retrospective diagnostics on the locked August evaluation window.",
+    "Capacity values retain the CHARGED native aggregate-volume units; no kW conversion is assumed.",
+    "Normalized cost is a dimensionless scenario proxy, not an electricity tariff or monetary cost.",
+    "No claim is made about queueing, transformer loading, dispatch feasibility, grid reliability, or energy-market revenue.",
+    "The oracle uses realized labels and is unavailable to a deployed forecaster; it is a lower-bound reference only.",
+    "Fold is the independent unit for comparison; hourly origins and stations are nested repeated observations."
+  ],
+  "context_hours": 168,
+  "created_at_utc": "2026-10-31T06:58:59.794900+00:00",
+  "evaluation_window": "2023-08-01 00:00 through 2023-08-30 23:00; label starts [2928, 3649)",
+  "experiment": "R12 canonical energy-operation diagnostics",
+  "fold_count": 18,
+  "horizon_hours": 24,
+  "layers": [
+    "city_total",
+    "station_level"
+  ],
+  "models": [
+    "Original PhaseFormer",
+    "Full SCPRC",
+    "Seasonal naive 24 h",
+    "Seasonal naive 168 h"
+  ],
+  "no_retraining": true,
+  "origins_per_fold": 721,
+  "outputs": [
+    "operational_metrics_per_fold.csv",
+    "operational_metrics_equal_fold.csv",
+    "operational_metrics_per_origin_city_total.csv",
+    "ramp_thresholds_by_city.csv",
+    "capacity_reserve_risk_per_fold.csv",
+    "capacity_reserve_risk_equal_fold.csv",
+    "capacity_reserve_risk_per_origin.csv",
+    "capacity_reserve_risk_primary_equal_fold.csv",
+    "protocol.json",
+    "summary.json",
+    "README.md"
+  ],
+  "peak_level_definition": "max over the 24-hour forecast window; error is prediction peak minus actual peak",
+  "peak_timing_definition": "first argmax hour within the 24-hour window; error is prediction index minus actual index",
+  "prediction_sources": {
+    "target_ams_seed13": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_ams_seed13/predictions.npz",
+      "full_sha256": "cec24ee3a6d60f61e20a10a7b63bdc6e085a217f24673069738828c64258c596",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_ams_seed13/predictions.npz",
+      "original_sha256": "96ef4ef6c2e8a5916059a5f218a81e0bd68fb513f03dc546f9f9605458013753"
+    },
+    "target_ams_seed17": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_ams_seed17/predictions.npz",
+      "full_sha256": "2844f7a4197f7ce903da33908a5dfd03029504074dc7da0599b5d6ed68201a46",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_ams_seed17/predictions.npz",
+      "original_sha256": "13d1e9c101ece026964e54c87c8ed8d58bffc4bb12febdc1bdaf8a51699cea12"
+    },
+    "target_ams_seed29": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_ams_seed29/predictions.npz",
+      "full_sha256": "6a9dc7da351a1e211275822d72db399dd80e53c8922e79af75bc6102f6fb0be8",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_ams_seed29/predictions.npz",
+      "original_sha256": "81075eb05c547e66082572d2fd38020cd73208e7052ef6d8feb30836ba417495"
+    },
+    "target_jhb_seed13": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_jhb_seed13/predictions.npz",
+      "full_sha256": "a8f6a0b8c27e53331101434a6f4a866c61e2a4023d82f5764554732d22e8eae6",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_jhb_seed13/predictions.npz",
+      "original_sha256": "f733982c394d610e87028b4d6777656b3b1e24dd1cbd565e44a22a1ef436462f"
+    },
+    "target_jhb_seed17": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_jhb_seed17/predictions.npz",
+      "full_sha256": "bee404ece01bd0cb04565a1ab01939721ab384dddeda1d370b4120384846b7c3",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_jhb_seed17/predictions.npz",
+      "original_sha256": "0513e56b4ac8184aca8da4d01f90a385223392d5290d5c140a13c7f4f5b136b5"
+    },
+    "target_jhb_seed29": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_jhb_seed29/predictions.npz",
+      "full_sha256": "ae7dd6ec256b8691b718498896ff76945661a003b83b06a437c5c5db2c10dfed",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_jhb_seed29/predictions.npz",
+      "original_sha256": "3010d963064de64be77114ede6d6ea83f74a1207e03e6b58dba1d5b25ed91e6e"
+    },
+    "target_loa_seed13": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_loa_seed13/predictions.npz",
+      "full_sha256": "ec8ce8ba0502ff323e23da8a4b88df0e0ce65a21dd037dbb14c026bcd6a21604",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_loa_seed13/predictions.npz",
+      "original_sha256": "b80c69fa15b7a6109240dda8919bc230e892d0e7fb4ba5a5519119cb7df401e7"
+    },
+    "target_loa_seed17": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_loa_seed17/predictions.npz",
+      "full_sha256": "b537ac74db1d5d428767abcef0a50e67f6e1b49520a4215f7bc295b950871657",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_loa_seed17/predictions.npz",
+      "original_sha256": "4ecabe155b54fc04583de107a4f9a1ea0e0fa469f30d5dcd21ed59c695cf8b89"
+    },
+    "target_loa_seed29": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_loa_seed29/predictions.npz",
+      "full_sha256": "9c987f510348d2ace9111f83c66ae3c44dd0dc57021b0df1fc31b1e80500be6e",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_loa_seed29/predictions.npz",
+      "original_sha256": "e2374e983296215e0e0043f9710dd60412018a4a744208fb805cb5904d7bc129"
+    },
+    "target_mel_seed13": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_mel_seed13/predictions.npz",
+      "full_sha256": "b1a8d92575593c3f926fe5fdc4e19e2735cc85c8e95a5daae9368e680ed4ab1a",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_mel_seed13/predictions.npz",
+      "original_sha256": "375687de727099b40d7008077f770984ecae40e5d275dea374df27f88586eb55"
+    },
+    "target_mel_seed17": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_mel_seed17/predictions.npz",
+      "full_sha256": "cd03aa177d235a3b6ee2ec308094731e8b62638c1f9ed021513e1136efb75582",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_mel_seed17/predictions.npz",
+      "original_sha256": "8a37dba1ca256d189d51f275b49fabb3a27f898ce958c35e2789f857ff5cd6cf"
+    },
+    "target_mel_seed29": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_mel_seed29/predictions.npz",
+      "full_sha256": "cb39cd4d0954789038f5c7121e7bd06fb3c9771f93254ee723e67ea7cdb8ce66",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_mel_seed29/predictions.npz",
+      "original_sha256": "7364b77ebfc5dd94b5d1bf5ee50c1be861b6c94469255782587a5037ae01414a"
+    },
+    "target_spo_seed13": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_spo_seed13/predictions.npz",
+      "full_sha256": "15d03f3fe016ac7a830a262a5bcd81994bacce28bb9089cd7b93fdd3cc9ec4a7",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_spo_seed13/predictions.npz",
+      "original_sha256": "88808ccdee1c49dff734018820dcf53fe9b40e5b6597efdd83ca9ab1c6f831d6"
+    },
+    "target_spo_seed17": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_spo_seed17/predictions.npz",
+      "full_sha256": "32d978cc56d64ff4dc2f0de5b8b0e68c3b572601b855d0b35a22e2e8d153c2ad",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_spo_seed17/predictions.npz",
+      "original_sha256": "e8174d5e7ef2755e53bacebff446774a155854c938dadfa57014517980efe7a1"
+    },
+    "target_spo_seed29": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_spo_seed29/predictions.npz",
+      "full_sha256": "4ee27e6977cc84bcd30f6df017c92ff6d8f2a27113c0fa7a4f4787e6ad514548",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_spo_seed29/predictions.npz",
+      "original_sha256": "36aecd280376291d5ac5fafbe2ab1b1e699f872b6a1fcd478a14ccc2b5496b66"
+    },
+    "target_szh_seed13": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_szh_seed13/predictions.npz",
+      "full_sha256": "59f398cd8abce82fc8bcbca166c97e890503b6430573d5ea306ea75f6da296af",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_szh_seed13/predictions.npz",
+      "original_sha256": "6f44780ef41a80045ba6bb45330fdd793fe1cfbe7d1d0f3b0698ee0187ff8d31"
+    },
+    "target_szh_seed17": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_szh_seed17/predictions.npz",
+      "full_sha256": "beb8c4b70dcfd943f642c8fac615edfd76a2de743492fb50c2062c3f9cdf4371",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_szh_seed17/predictions.npz",
+      "original_sha256": "e650783196101252ab2fa9753d3c2aa2a6de78c9d3256fcc52871e1764d120f3"
+    },
+    "target_szh_seed29": {
+      "full": "experiments/forecasting/canonical_h24_anchor/target_szh_seed29/predictions.npz",
+      "full_sha256": "65f883c795ebb5866f6f5229129f9f87b580bc92076fb69ce8a057cf4a793553",
+      "original": "experiments/forecasting/p2_no_pcgrad_phaseformer/target_szh_seed29/predictions.npz",
+      "original_sha256": "abb9fad6040551700e33055878f314168c4cac7c6a8951d94d20b2cdb7f2dde6"
+    }
+  },
+  "ramp_definition": "absolute first difference between adjacent hourly values within the 24-hour forecast",
+  "ramp_threshold_definition": "city-total or station-specific q90 of absolute hourly ramps in the observed prefix values[:2928]",
+  "ramp_threshold_is_test_tuned": false,
+  "raw_archive_cutoff": "2023-09-01 00:00 exclusive; no September outcome rows read",
+  "raw_archive_rows_read_per_city": 3672,
+  "read_only_postprocessing": true,
+  "seasonal_rules": {
+    "Seasonal naive 168 h": "value at each forecast hour copied from the preceding 7-day weekly cycle",
+    "Seasonal naive 24 h": "value at each forecast hour copied from the preceding 24-hour daily cycle",
+    "causal_information": "only observed prefix rows before each origin are used"
+  },
+  "seeds": [
+    13,
+    17,
+    29
+  ],
+  "software": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "python": "3.12.7"
+  },
+  "station_level_definition": "each charging station remains a separate series; fold statistics average over origins and stations",
+  "status": "completed",
+  "total_volume_definition": "sum across 24 forecast hours, evaluated at city-total and station level"
+}

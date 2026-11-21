@@ -1,0 +1,34 @@
+# Data are obtained from official sources outside this repository.
+**/UrbanEV/data/
+**/UrbanEV/cache_5min/
+scprc/data_adapters/**/*.zip
+scprc/data_adapters/**/*.csv
+scprc/data_adapters/**/*.xlsx
+scprc/data_adapters/**/unpacked/
+**/data_cache/
+*.npz
+*.npy
+*.parquet
+*.xlsx
+*.h5
+*.hdf5
+
+# Final weights use separately indexed GitHub Release assets.
+checkpoints/
+release_assets/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Server-only candidate paths; public manifests are in manifests/.
+local_notes/
+
+# Runtime caches and private configuration.
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
