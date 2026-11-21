@@ -1,5 +1,9 @@
 # SCPRC: multi-city EV charging demand forecasting
 
+> **论文状态：正在准备期刊投稿。** 本仓库为 SCPRC 的投稿前研究版本，公开方法实现、实验协议、结果摘要和模型检查点，支持研究核验与复现。论文链接与正式引用信息将在可公开时补充。引用本研究时，请注明本仓库及所用 release／commit。
+>
+> **Paper status: manuscript in preparation for journal submission.** This pre-submission research release documents the SCPRC implementation, experimental protocols, results, and checkpoints for verification and reproducibility. A paper link and formal citation will be added when available. Please identify this repository and the release or commit used when referencing this work.
+
 本仓库提供 SCPRC 当前论文实验的源码、最终检查点索引和复现材料。**不包含数据集；数据从官方来源下载。** 维护者的发布步骤见 [UPLOAD_GUIDE_ZH.md](UPLOAD_GUIDE_ZH.md)。
 
 SCPRC 将 PhaseFormer 骨干、多源城市 PCGrad 训练和相位条件站点关系适配结合。适配器包括 Scale、Peer 和 Source 衰减机制。PCGrad 是既有训练方法；本地基线和适配器的具体调整、协议与限制见实验矩阵。
@@ -70,7 +74,7 @@ python scripts/infer.py \
 
 最终权重ZIP和校验文件通过同一仓库的 [Releases](https://github.com/xubeiyou-fate/SCPRC/releases) 分发。GitHub的“Download ZIP”不包含这些Releases附件。下载权重、校验及恢复方法见 [权重说明](docs/WEIGHTS.md)，维护者发布流程见 [上传说明](UPLOAD_GUIDE_ZH.md)。
 
-公开发布前请处理 `THIRD_PARTY_NOTICES.md` 中PhaseFormer和DLinear的未决许可条目；本地可运行验收不等于已经取得上游再分发许可。
+各组件的来源与适用许可见 `THIRD_PARTY_NOTICES.md`。DLinear的固定版本Apache-2.0许可文本已补全；PhaseFormer固定快照未附许可文本的事项仍保留，公开可见不代表本仓库代上游授予复用或再分发许可。
 
 ## 发布目录
 

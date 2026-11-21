@@ -8,11 +8,11 @@ The repository contains the SCPRC experiment integration and selected upstream f
 | PatchTST | https://github.com/yuqinie98/PatchTST | `204c21efe0b39603ad6e2ca640ef5896646ab1a9` | Apache-2.0; preserve upstream LICENSE |
 | TimeMixer | https://github.com/kwuking/TimeMixer | `e24610583b36fdd8c76cc17a8df4e65759a5f460` | Apache-2.0; preserve upstream LICENSE and record local changes |
 | Graph WaveNet | https://github.com/nnzhan/Graph-WaveNet | `6b162e80c59a1d494809252eca055cff93dc66b1` | MIT; preserve upstream LICENSE |
-| DLinear reference | https://github.com/cure-lab/LTSF-Linear | `0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6` | The local adapter records this origin; its corresponding license text still requires verification |
+| DLinear reference | https://github.com/cure-lab/LTSF-Linear | `0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6` | Apache-2.0 verified at the pinned commit; upstream text preserved in `scprc/baselines/DLINEAR_LICENSE` |
 | PCGrad | https://github.com/tianheyu927/PCGrad | See local experiment implementation and paper citation | Cite Yu et al., Gradient Surgery for Multi-Task Learning, NeurIPS 2020 |
 
 TimeMixer contains local changes. Model adapters, training budgets, channel choices and objectives also differ across baselines; consult the experiment matrix. The local N-BEATS graph residual is a diagnostic implementation. Fixed-distance Graph WaveNet must not be described as adaptive Graph WaveNet or MTGNN.
 
-The local migration does not assign a blanket MIT/Apache license to all these files. This file records actual provenance and unresolved terms. Attempts to retrieve missing upstream licenses during migration failed because of network TLS errors; absence of a retrieved license is not proof of permission. Local preparation can be reviewed now; public redistribution should resolve the PhaseFormer and DLinear items.
+The local migration does not assign a blanket MIT/Apache license to all these files. This file records actual provenance and unresolved terms. DLinear license text has now been retrieved and verified from the pinned upstream commit. The pinned PhaseFormer snapshot still has no retrieved LICENSE; this repository does not grant permission on behalf of its authors. Preserve its attribution and consult the upstream rights holder about reuse and redistribution. Public visibility does not assign a blanket open-source license to these components.
 
 Dataset downloads and their licenses are documented in `DATA_SOURCES.md`; dataset files are not redistributed here.
