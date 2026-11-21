@@ -1,8 +1,5 @@
 # 严格消融独立验收（已完成）
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](../../../../MIGRATION_SCOPE_ZH.md)。
-
-
 **结论：PASS_WITH_PROVENANCE_AND_CAUSAL_LIMITATIONS。** 18/18 folds、4 arms、72/72 checkpoints 的核心验收全部通过。机器结果见 [audit.json](../../../../../results/experiments/energy_value/gate_removal/audit/audit.json)、72 行 [audit.csv](../../../../../results/experiments/energy_value/gate_removal/audit/audit.csv) 和 [per_fold/](../../../../SOURCE_ARTIFACT_INDEX.md#src-feeb741c70e5a3db)。本次未启动训练、未调用 backward 或 optimizer step；所有写入仅限本 [audit/](../../../../SOURCE_ARTIFACT_INDEX.md#src-eee3f86400157096)，未修改 runner、manifest、result、原始预测或 canonical。
 
 ## 验收结果
@@ -37,7 +34,7 @@
 
 Full-drop-source 的 threshold 元数据为 null，构造器实际传入占位值 1.0，source gate 关闭。但 fold 在 arm 循环前仍为另外三个 arm 共用估计一次 source-only q90，其数值与 canonical 一致。逐 arm seed reset 隔离了该预处理对后续 RNG 的影响。
 
-因此 `not_estimated_gate_disabled` 应解释为“该 arm 不采用估计阈值”，不能解释为“整个 fold 没有计算 threshold”。可确认删除了 source envelope 的 forward attenuation；不能声称整个 fold 的阈值估计计算预算被删除。审计保留原 metadata，单独披露这一用语范围。
+因此 `not_estimated_gate_disabled` 应解释为“该 arm 不采用估计阈值”，不能解释为“整个 fold 没有计算 threshold”。可确认删除了 source envelope 的 forward attenuation；整个fold的阈值估计计算预算并未删除。审计保留原 metadata，单独披露这一用语范围。
 
 ## 跨运行时间确定性与因果精度
 

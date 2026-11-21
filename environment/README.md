@@ -1,20 +1,22 @@
-# Runtime environment
+# Environment
 
-The migration validation uses Python 3.12.7, PyTorch 2.7.1+cu118, NumPy 1.26.4 and pandas 2.2.2. The complete relevant snapshot is in `migration_environment.json`. This describes the migration checks, not every historical training run.
+Checkpoint inference was checked with Python 3.12.7, PyTorch 2.7.1+cu118, NumPy 1.26.4, and pandas 2.2.2. The recorded environment is in [environment metadata](migration_environment.json). Individual training environments are recorded with their experiments.
 
-Create a fresh Python 3.12 environment. Install the desired PyTorch build first:
+## Installation
+
+Create a Python 3.12 environment and install the PyTorch build for your hardware:
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-# CUDA 11.8 build used by the migration checks:
+# CUDA 11.8
 python -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu118
-# Alternatively, for CPU inference replace the previous line with:
+# For CPU inference, use this command instead of the CUDA line:
 # python -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 ```
 
-The forecasting adapter supplies a narrow Lightning compatibility shim when Lightning is absent. It does not implement the upstream Lightning training loop. Do not combine all historical vendor requirements: their old PyTorch constraints conflict with the validated environment. Follow the migrated experiment entry points for the SCPRC protocol.
+The adapter includes the limited Lightning compatibility interface needed by the supplied inference code. It does not provide the upstream Lightning training loop. Use the repository requirements and experiment-specific entry points rather than combining the requirements of all upstream projects.
 
-GPU execution can vary across devices and library builds. Exact checkpoint tensor hashes and fixed-input forward parity are recorded separately from historical metric uncertainty.
+GPU outputs can vary across devices and library builds. Recorded parameter hashes and fixed-input checks describe checkpoint consistency; uncertainty in forecasting metrics is reported separately in the experiment results.

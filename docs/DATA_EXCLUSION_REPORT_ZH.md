@@ -1,20 +1,17 @@
-# 数据未复制与逐 origin 排除核验
+# 数据与文件范围
 
-本报告只针对本代理写入的 `docs/` 和 `results/`，以及唯一证据审计 JSON。主侧已经独立迁移的 534 个权重不属于本报告零权重声明的统计范围。没有检查、改写或删除那些权重。
+本仓库包含代码、实验配置、小型结果表和文件哈希。原始数据与逐样本预测不随仓库分发；模型权重单独通过Releases提供。
 
-本次数据集、预测数组、校准残差、原始 mask、weights、病例轨迹/逐小时 obs、逐 origin raw truth、逐 origin 派生明细及原始 data CSV 的复制数均为 **0**。未迁入图片或任何二进制文件、压缩数组、数据缓存、symlink。未加载模型、未读预测数组、未训练、未推理、未远程操作。所有指标直接复用已有 summary/result 标量，没有数十 GB 预测重读。
+| 内容 | 发布方式 |
+|---|---|
+| 训练与推理代码 | Git仓库 |
+| 逐折指标、汇总结果、协议和运行元数据 | `results/`及`manifests/` |
+| 534个模型检查点路径 | 14个Release ZIP，见[权重说明](WEIGHTS.md) |
+| 原始数据、加工面板、标签、逐起点真值与预测 | 从原始来源获取，或按对应实验记录重建 |
+| 校准残差、扰动掩码、逐起点派生明细 | 仅提供已有参数、来源和哈希记录 |
 
-只纳入 Markdown、精选 CSV 和 JSON。逐折 CSV 的列和行数、JSON 容器检查逐项记录在 [审计](../manifests/EVIDENCE_MIGRATION_AUDIT.json) 的 `data_exclusion_report`。CSV 不含逐起点键 `origin_time/label_start/target_time` 或 `obs/truth/y_true/y_pred/prediction` 数值列。少量固定效率起点列表为选择协议元数据，不含原始观测。JSON 中只允许短范围、shape 和协议列表；真值/预测/残差等只可出现文件指纹或命名，不能带原始数值载荷。最大数值列表长度为 4，未发现大数组或原始数值载荷。
+结果表中的逐折指标是聚合统计，不含逐小时观测或逐样本预测。少量固定效率起点列表属于测量协议，不包含原始观测。JSON中的shape、dtype、计数和文件哈希用于描述输入与产物。
 
-以下计数仅扫描源 `paper2/` 的目录条目、文件大小，不读取被排除文件内容；其他源数据目录及历史迁移包也完全未复制。类别互斥，非全盘数据集清单，也不能用来推断全盘不存在其他数据。
+部分审计文件按字段保留摘要，并分别记录源文件和发布文件的哈希。原始数组或其他依赖是否可用，应按[来源索引](SOURCE_ARTIFACT_INDEX.md)逐项核对。
 
-| 源候选类别 | 未迁入文件数 | 未迁入总字节（stat） |
-|---|---:|---:|
-| historical_or_proposed_plans | 9 | 82705 |
-| origin_or_raw_data_csv | 4 | 365080967 |
-| datasets_arrays_or_compressed_payloads | 941 | 64362753014 |
-| weights | 1048 | 255746178 |
-
-外部 legacy：按用户范围排除 18 个旧 weights；源处其他诊断/源状态权重也未由本次复制。矩阵的“历史实验完成”语义保留，但外部完整冻结推理不在包里，不宣称可独立完整复现。R10 未验收，不宣称可复现。包外引用见 [仅索引清单](SOURCE_ARTIFACT_INDEX.md)。
-
-源路径与 hash 保留；保留 hash/shape/计数不等于包含对应数据。大型审计 JSON 已做白名单精选投影，并记录原件及副本各自 hash。
+外部v2.2 Exact/SCPRC结果对应的18份权重未提供；外部基线权重的范围以[检查点清单](../manifests/CHECKPOINTS.csv)为准。完整复现范围见[发布内容](MIGRATION_SCOPE_ZH.md)。原文件筛选记录保存在[文件来源审计](../manifests/EVIDENCE_MIGRATION_AUDIT.json)中。

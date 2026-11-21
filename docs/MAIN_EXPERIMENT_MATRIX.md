@@ -1,23 +1,12 @@
-# SCPRC Paper Experiment Matrix
+# Main experiment matrix
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](MIGRATION_SCOPE_ZH.md)。
+This matrix reports the CHARGED forecasting experiments and their supporting controls. The primary comparison is Original PhaseFormer versus SCPRC. Exact-PCGrad is a mechanism control. All evaluations are retrospective.
 
+Protocol ID: `SCPRC-PAPER-20261031-v2`. Completion records are in the [experiment audit](../results/experiments/evaluation/FINAL_SUBMISSION_AUDIT_V2.json).
 
-**2026-11-17 matrix update:** Three supplementary design controls are complete and integrated into the overview table and audited results below. The same-batch Full reference has its own run identity; historical canonical scores are not silently relabeled. Read the [results and conclusions](experiments/design_controls/RESULTS_AND_CONCLUSIONS_ZH.md) and [72-run independent audit](../results/experiments/design_controls/audit/completed_runs_audit.json).
+The [energy experiments](ENERGY_EXPERIMENT_MATRIX.md) include strict component removals, energy metrics, and gate diagnostics. The [paired design study](experiments/design_controls/RESULTS_AND_CONCLUSIONS_ZH.md) includes three architecture controls and a same-batch SCPRC reference, with [72 training records](../results/experiments/design_controls/audit/completed_runs_audit.json). These references have separate run identities.
 
-Historical freeze ID: `SCPRC-PAPER-20261031-v2`  
-Status authority: [experiments/rebuild_20261031/FINAL_SUBMISSION_AUDIT_V2.json](../results/experiments/evaluation/FINAL_SUBMISSION_AUDIT_V2.json)  
-Previous freeze: [MAIN_EXPERIMENT_MATRIX_V1_20261031.md](SOURCE_ARTIFACT_INDEX.md#src-43b5751ca4dc823e)  
-Scope: paper-facing claims and results. All evaluations are retrospective.
-
-**2026-11-05 extension:** the main comparison and headline below remain fixed.
-The completed [energy-value extension matrix](ENERGY_EXPERIMENT_MATRIX.md)
-adds four strict controls (72 independent trainings), 16-model energy scoring,
-gate/phase diagnostics and paired uncertainty. Read its
-[results and bounded conclusions](experiments/energy_value/RESULTS_AND_CONCLUSIONS.md)
-for current evidence. `Full-drop-*` controls are distinct from the old independent switches.
-
-Historical status checked on 2026-11-01: R10 training finished at 2026-10-31 20:18:02 +08:00 (18/18 folds). Its post-run numerical and alignment checks pass, but paper acceptance remains under review. See [experiments/rebuild_20261031/r10_spatial_baselines/POSTRUN_AUDIT.json](../results/experiments/evaluation/spatial_baseline_review/POSTRUN_AUDIT.json). The v2 transfer ZIP remains a dated snapshot of its build time.
+The fixed-distance Graph WaveNet diagnostic completed 18 folds and passed numerical and alignment checks. Run provenance and baseline quality remain under review, so this diagnostic is not part of the accepted main comparison. Its records are available in the [graph baseline audit](../results/experiments/evaluation/spatial_baseline_review/POSTRUN_AUDIT.json).
 
 ## Fixed Comparison Roles
 
@@ -56,7 +45,7 @@ The main paired uncertainty analysis resamples the 18 complete city x seed folds
 | O1 | Capacity reservation replay | Exact-PCGrad, Full, seasonal rules and oracle in normalized native units | Completed scenario replay; separate from U1 | Operational scenario, bounded claims |
 | D1 | Optional Online release | `SCPRC-Online(84,.25)` causal replay, separate from offline forecast scores | Existing retrospective replay | Optional deployment table |
 | N1 | Adaptive GWN / MTGNN | No protocol-matched inductive implementation in the local matrix | Audit only | Do not report as completed baseline |
-| N2 | Energy dynamic behavior graph | No verified official code, preprocessing and matched training protocol | Audit only | Do not claim faithful reproduction |
+| N2 | Energy dynamic behavior graph | No verified official code, preprocessing and matched training protocol | Audit only | Faithful reproduction not established |
 | N3 | Real tariff / dispatch benefit | No local tariff, capacity, queue or grid-constraint inputs | Blocked by required data | Keep normalized scenario; no monetary claim |
 | R8 | Full-no-PCGrad 2×2 arm | Full relation structure with ordinary source-gradient averaging; PCGrad disabled; same h=24 protocol, 18 folds and 3 seeds | Complete, 18/18 | Strict factorial ablation |
 | R9 | Formal paired Exact/Full and interaction | Exact-PCGrad vs canonical Full paired bootstrap plus Original/Exact/Full-no-PCGrad/Full difference-in-differences | Complete, 18 folds, 10,000 replicates | Formal attribution and uncertainty |
@@ -105,14 +94,14 @@ SCPRC vs Original PhaseFormer: RMSE decreases 8.20%, MAE decreases 14.87% on the
 | Source-disagreement-only | 32.6720 | 7.0840 | Independent disagreement component |
 | SCPRC, independent-switch run | 32.1893 | 7.0497 | P2 component matrix; separate run identity |
 
-The canonical four-arm run reports SCPRC as `32.1907 / 7.0498`. Keep that value separate from the independent-switch Full row; do not silently merge results from separate run identities. The interpretation chain is Original -> Exact-PCGrad for the PCGrad effect, then Exact-PCGrad -> Full for the added relation components, with individual switches used to inspect component behavior.
+The canonical four-arm run reports SCPRC as `32.1907 / 7.0498`. It belongs to a different run from the independent-switch Full row. The interpretation chain is Original -> Exact-PCGrad for the PCGrad effect, then Exact-PCGrad -> Full for the added relation components, with individual switches used to inspect component behavior.
 
 **Strict removal extension (2026-11-05):** A1's independent switches do not
 establish Full-drop effects. The new A3/EV10 arms close this gap without
 changing A1's archived values. Current energy evidence supports a phase/peak
 benefit while showing trade-offs for Scale and Peer and a very small
-source-envelope effect. Do not claim every mechanism is necessary or that
-Full wins all energy metrics. Exact remains an attribution reference only.
+source-envelope effect. These results do not establish the necessity of every
+mechanism or an advantage on every energy metric. Exact is an attribution reference.
 
 ### R8-R9 formal factorial completion
 

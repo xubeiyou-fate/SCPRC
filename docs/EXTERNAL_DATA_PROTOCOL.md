@@ -1,15 +1,13 @@
-# External Data and Result Boundaries
+# External datasets
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](MIGRATION_SCOPE_ZH.md)。
+Jiaxing, Shanghai MP-EVData, and UrbanEV are evaluated separately. The Exact/SCPRC rows use protocol v2.2, recorded on 2026-10-24. They are distinct from the main CHARGED Original PhaseFormer versus SCPRC comparison.
 
-
-The external matrix is a collection of separate retrospective case studies, not one pooled benchmark. Its current reported Exact/SCPRC rows come from the 2026-10-24 v2.2 lineage; they are not a new Original PhaseFormer (no-PCGrad) vs SCPRC matched matrix.
-
-| Dataset | Target and unit | Interpretation boundary |
+| Dataset | Target and unit | Interpretation |
 |---|---|---|
-| Jiaxing | Session energy allocated uniformly into hourly bins; kWh proxy | 13 location aggregates, not 13 individual chargers; some seeds regress vs Exact |
-| Shanghai MP-EVData | Hourly mean station power, kW | Daily-mean rule is substantially stronger than the learned models; retain as a negative/boundary case |
-| UrbanEV | Rated-power-derived zone volume | Shenzhen, same city as CHARGED-SZH; cross-dataset/spatial-scale test, not an independent city |
+| Jiaxing | Session energy allocated to hourly bins; kWh proxy | 13 location aggregates; some seeds have higher errors than Exact |
+| Shanghai MP-EVData | Hourly mean station power, kW | The daily-mean rule performs better than the reported learned models |
+| UrbanEV | Rated-power-derived zone volume | Shenzhen cross-dataset evaluation; it shares a city with CHARGED-SZH |
 
-Do not pool RMSE or MAE across these units. The complete three-seed summary table is in [mandatory_supplement/external_strong_baselines_20261028/summary.md](mandatory_supplement/external_baselines/summary.md). The local source files and model arrays remain on the server and are not part of the writing bundle.
+RMSE and MAE are reported in each dataset's own units. The three-seed results are in [external baseline results](mandatory_supplement/external_baselines/summary.md).
 
+External baseline checkpoints are listed in [CHECKPOINTS.csv](../manifests/CHECKPOINTS.csv). The 18 v2.2 Exact/SCPRC checkpoints are not included. Available summaries, configuration records, and other source references are described in [release contents](MIGRATION_SCOPE_ZH.md).

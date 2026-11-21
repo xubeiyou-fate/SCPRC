@@ -1,13 +1,10 @@
 # SCPRC 能源预测价值验证结果
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](../../MIGRATION_SCOPE_ZH.md)。
-
-
 完成日期：2026-11-05。主实验身份保持 Original PhaseFormer (MG) → SCPRC；Exact-PCGrad仅用于辨识关系适配器相对PCGrad-only的增量。
 
-本轮新增4个严格消融arm×18fold=72次独立训练，并重算16个模型身份×18fold×2种后处理=576行fold指标。全部城市、seeds和721起点均保留。
+该组实验包含4个严格消融arm×18fold=72次独立训练，评价16个模型身份×18fold×2种后处理，共576行fold指标。全部城市、seeds和721起点均保留。
 
-## 本轮支持的结论
+## 结果概述
 
 主论文比较：Full相对Original PhaseFormer，raw的Peak、Ramp、24h Total和Timing误差分别降低21.67%、7.77%、41.74%和2.93%。这是18fold原始量值误差均值之比，不能解释成每个城市均改善相同比例；配对城市区间与逐城结果见下表及CSV。
 
@@ -15,7 +12,7 @@
 
 尺度边界：上述百分比是原始量值误差的等fold均值之比，大城市误差可主导绝对改变量。先在各fold归一再平均，Full对Exact的非负Peak收益为1.74%，Ramp为0.25%；Peak在4/6城市改善，Ramp仅1/6城市改善。移除SZH后Peak仍改善4.90%，但总幅度明显缩小。不能将9.43%写成典型城市均改善9.43%，也不能把聚合Ramp改善写成六城普遍改善。
 
-完整衰减包不是所有能源指标上的最优组合。Scale主要体现总量与时刻误差的权衡；Peer改善固定容量proxy，却使峰值/时刻略差；Source-envelope增量很小，不能宣称三项衰减全部必要。
+完整衰减包不是所有能源指标上的最优组合。Scale主要体现总量与时刻误差的权衡；Peer改善固定容量proxy，却使峰值/时刻略差；Source-envelope增量很小，这些结果不足以证明三项衰减全部必要。
 
 ## 指标与后处理
 
@@ -134,24 +131,22 @@ raw是冻结点预测口径。nonnegative_clip先逐站点max(raw,0)，再求城
 
 Full相对Original的proxy更低，但高于Exact与Seasonal-24h；Attention的proxy也更低。Full的超限量较Exact低约8.37%，超限窗口率却更高，说明风险量与发生频率不能互相替代。季节24/168与oracle保存在04_capacity/legacy_*表，未因对Full不利而删除。
 
-16个固定margin/penalty组合中，Full对Original的proxy为16/16更低，对Full-drop-peer为15/16更低，但对Exact只有1/16更低。Peer因此有此类预留proxy的局部证据，仍不能声称Full在运营上普遍优于PCGrad-only。完整网格在04_capacity/proxy_grid_pairwise_tradeoffs.csv。
+16个固定margin/penalty组合中，Full对Original的proxy为16/16更低，对Full-drop-peer为15/16更低，但对Exact只有1/16更低。Peer因此有此类预留proxy的局部证据，这一结果仅支持相应预留情景下的局部收益，未显示Full在运营指标上普遍优于PCGrad-only。完整网格在04_capacity/proxy_grid_pairwise_tradeoffs.csv。
 
 原始review/R12逐fold峰值、爬坡、总量、时刻和容量指标复核最大差约4.48e-7。没有真实电价、容量、电网或排队约束，因此不声称电费节约、调度可行性或电网安全。
 
-## 科学审计边界
+## 实验条件与限制
 
 - 四项新arm均独立seed重置并使用原2048源minibatch/410更新的PCGrad路径；不是修改Full checkpoint后做冻结gate开关。训练审计另在agent_strict_gap/audit。
 - 新严格控制未同时重训Full，参照为既有canonical Full；预算、初始化约定和数据一致，但不能保证跨运行GPU轨迹逐位一致。checkpoint未保存逐步optimizer/RNG轨迹；因此不能将极小差异完全归因为组件移除。
 - Full canonical与independent-switch Full分开保留；源代码/运行时间与CUDA归约可能引入微小差异。Full重复run敏感性CSV作为数值参照，不能当成正式训练噪声估计。Source的极小增量尤其需要谨慎。
-- August/September已参与开发检查的事实未改变，本轮仍是回顾性证据；没有新盲测。
+- August/September已参与开发检查的事实未改变，结果仍属于回顾性评估；没有新盲测。
 - 未基于测试结果改变模型选择、损失、训练预算、扰动掩码或评价集。没有追加训练去追逐有利结果。
 
-## 复现入口
+## 分析代码与输入
 
-1. run_energy_evaluation.py --workers 2：读取16模型预测，重建全部表格、原始与截断逐起点指标、配对区间。
-2. 03_mechanism/analyze_mechanism.py：重建gate/周期性/收益关联与分组。
-3. 04_capacity/reconcile_existing.py：复核旧运营协议并保留季节规则。
-4. 05_figures/plot_energy_evidence.py：生成图形及源数据。
-5. build_report.py：从CSV重新生成本报告。
+重算能源指标需要对应检查点的逐起点预测、真实值、时间和站点索引。原始数组不随仓库提供；检查点及其文件身份见[权重索引](../../../manifests/CHECKPOINTS.csv)。
 
-新增checkpoint/预测的物理位置已迁移至同机/home分区，原paper2路径是有效软链接。STORAGE_RELOCATION.json记录144文件哈希；迁移没有改变实验身份。
+- [run_energy_evaluation.py](../../../experiments/energy_value/run_energy_evaluation.py)
+- [analyze_mechanism.py](../../../experiments/energy_value/03_mechanism/analyze_mechanism.py)
+- [reconcile_existing.py](../../../experiments/energy_value/04_capacity/reconcile_existing.py)

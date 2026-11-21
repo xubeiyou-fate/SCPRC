@@ -1,6 +1,6 @@
 # 证据来源与包含状态
 
-本页区分发布包中已包含的源码、说明、结果，以及仅保留来源定位的包外产物。原始服务器路径只用于可核验溯源，不是部署时的读取路径；数据集和逐样本原始数组不包含。
+本页列出文档引用的来源文件，并标明是否随仓库提供。服务器路径和运行ID用于对应原始记录；使用代码时应采用仓库中的路径和自行准备的数据目录。数据集及逐样本数组不在此列表的下载范围内。
 
 <a id="src-d69dff2a0792d43d"></a>
 
@@ -49,7 +49,7 @@
 
 <a id="src-eee3f86400157096"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/audit`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/audit`；原始记录中未能定位该路径。
 
 
 <a id="src-0dd3aa515c4c6c49"></a>
@@ -99,62 +99,62 @@
 
 <a id="src-3da03d70bc5a3b5d"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_ams_seed17.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_ams_seed17.json`；原始记录中未能定位该路径。
 
 
 <a id="src-a3ca5da21a1478f4"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_ams_seed29.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_ams_seed29.json`；原始记录中未能定位该路径。
 
 
 <a id="src-3c9b50bd471d116e"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_jhb_seed17.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_jhb_seed17.json`；原始记录中未能定位该路径。
 
 
 <a id="src-9e3f23a494275606"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_jhb_seed29.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_jhb_seed29.json`；原始记录中未能定位该路径。
 
 
 <a id="src-2763931c9ea0a921"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_loa_seed17.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_loa_seed17.json`；原始记录中未能定位该路径。
 
 
 <a id="src-ce5a10e6c398f9cc"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_loa_seed29.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_loa_seed29.json`；原始记录中未能定位该路径。
 
 
 <a id="src-81774c96cb9d0bd9"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_mel_seed17.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_mel_seed17.json`；原始记录中未能定位该路径。
 
 
 <a id="src-e298db14990e4e28"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_mel_seed29.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_mel_seed29.json`；原始记录中未能定位该路径。
 
 
 <a id="src-0d322fed0fb6003f"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_spo_seed17.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_spo_seed17.json`；原始记录中未能定位该路径。
 
 
 <a id="src-02a71dc808dbac08"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_spo_seed29.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_spo_seed29.json`；原始记录中未能定位该路径。
 
 
 <a id="src-474f1df2eae8c6e7"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_szh_seed17.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_szh_seed17.json`；原始记录中未能定位该路径。
 
 
 <a id="src-2a319b04b7697d74"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_szh_seed29.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/target_szh_seed29.json`；原始记录中未能定位该路径。
 
 
 <a id="src-649d1de18e764116"></a>
@@ -164,32 +164,32 @@
 
 <a id="src-3e41da61b4b1ce83"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261030/canonical_h24_anchor/target_*/*/predictions.npz`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261030/canonical_h24_anchor/target_*/*/predictions.npz`；原始记录中未能定位该路径。
 
 
 <a id="src-101368b7b3846fb6"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261030/p2_no_pcgrad_phaseformer/target_*/*/predictions.npz`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261030/p2_no_pcgrad_phaseformer/target_*/*/predictions.npz`；原始记录中未能定位该路径。
 
 
 <a id="src-a745a6471f159fc1"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261031/r10_spatial_baselines/predictions.npz`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261031/r10_spatial_baselines/predictions.npz`；原始记录中未能定位该路径。
 
 
 <a id="src-f5620e9e04403f39"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261031/r10_spatial_baselines/result.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261031/r10_spatial_baselines/result.json`；原始记录中未能定位该路径。
 
 
 <a id="src-26c8759dfe4cfe24"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261031/r10_spatial_baselines/state.pt`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261031/r10_spatial_baselines/state.pt`；原始记录中未能定位该路径。
 
 
 <a id="src-3bb4240477855cd5"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261031/r12_energy_diagnostics/Hourly.zip`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/rebuild_20261031/r12_energy_diagnostics/Hourly.zip`；原始记录中未能定位该路径。
 
 
 <a id="src-dd8f6dfe2745a3c1"></a>
@@ -249,32 +249,32 @@
 
 <a id="src-1a3fc016e6ee82f5"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/ROOT/efficiency/per_fold_efficiency.csv`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/ROOT/efficiency/per_fold_efficiency.csv`；原始记录中未能定位该路径。
 
 
 <a id="src-375c2b8a64c9a598"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/checkpoint.pt`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/checkpoint.pt`；原始记录中未能定位该路径。
 
 
 <a id="src-f2ce1694116793e5"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/diagnostics.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/diagnostics.json`；原始记录中未能定位该路径。
 
 
 <a id="src-c3250c3cf66d649b"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/fold_data.npz`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/fold_data.npz`；原始记录中未能定位该路径。
 
 
 <a id="src-2b917267602c0fcd"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/fold_protocol.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/fold_protocol.json`；原始记录中未能定位该路径。
 
 
 <a id="src-070716086c420660"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/manifest.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/manifest.json`；原始记录中未能定位该路径。
 
 
 <a id="src-8eb7971127a78f24"></a>
@@ -284,7 +284,7 @@
 
 <a id="src-6aa8b1a14d476f34"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/summary.csv`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/summary.csv`；原始记录中未能定位该路径。
 
 
 <a id="src-06fe2f1a7f8290d5"></a>
@@ -299,7 +299,7 @@
 
 <a id="src-1fabee06c4396b33"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/initialization.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/initialization.json`；原始记录中未能定位该路径。
 
 
 <a id="src-0d45e877894bc0d0"></a>
@@ -354,7 +354,7 @@
 
 <a id="src-bd4cf04bb281f795"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/mandatory_supplement/external_version_audit_20261030/result.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/mandatory_supplement/external_version_audit_20261030/result.json`；原始记录中未能定位该路径。
 
 
 <a id="src-0a98d23b2ddbd0ba"></a>
@@ -364,7 +364,7 @@
 
 <a id="src-61c9754e717b991d"></a>
 
-- **仅索引，未包含**：`/data/TimeMixer/paper2/sampling_trace.json`；源处未找到该字面定位（可能为模板、历史名或未生成项）。
+- **仅索引，未包含**：`/data/TimeMixer/paper2/sampling_trace.json`；原始记录中未能定位该路径。
 
 
 <a id="src-0a2f3ecd71446fed"></a>

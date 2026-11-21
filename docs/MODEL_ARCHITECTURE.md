@@ -1,15 +1,14 @@
-# SCPRC Framework and Optional Release Layer
+# SCPRC architecture
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](MIGRATION_SCOPE_ZH.md)。
+SCPRC combines a PhaseFormer forecasting backbone, PCGrad-based multi-source training, and a phase-conditioned station-relation adapter. The main comparison is Original PhaseFormer versus SCPRC. Exact-PCGrad provides a training control without the adapter. The separately recorded PhaseFormer Exact run is a different reference.
 
-
-The primary model evaluated in this paper is the **SCPRC forecaster**. The main comparison asks whether its phase-conditioned relation adapter improves forecasting over **Original PhaseFormer (no-PCGrad)** and the eligible matched baselines. Original and Full use the same PhaseFormer architecture; the historical run named `PhaseFormer Exact` is a distinct legacy result and is not the current main baseline. `Exact-PCGrad` is an attribution control. `SCPRC-Online(84,.25)` is an optional deployment/release policy that post-processes candidate and Exact forecasts; it is not part of the offline candidate score and is not required to use the candidate model. The primary implementation lineage is the end-to-end internal PhaseFormer adapter used by the CHARGED LOCO runs. A separate frozen-backbone sidecar residual calibrator exists in [reproduction/models/phase_relation_aware_bounded_residual.py](SOURCE_ARTIFACT_INDEX.md#src-0a2f3ecd71446fed); do not silently merge its formulation or results with the primary implementation.
+The CHARGED LOCO experiments train the adapter within the forecasting model. A [sidecar residual calibrator](SOURCE_ARTIFACT_INDEX.md#src-0a2f3ecd71446fed) is a separate implementation with separate results. The optional `SCPRC-Online(84,.25)` policy selects among forecasts after model inference and is evaluated separately from the core forecasting model.
 
 ## 1. Problem and notation
 
 At forecast origin `t`, the model receives histories for a variable-size set of `N` charging stations, `X_t ∈ R^(B×168×N)`, and predicts the next 24 hours. The main CHARGED setting trains on several source cities and evaluates a held-out city. The target forecast-period labels do not train the relation adapter. Station identifiers, coordinates, and a fixed target-city adjacency matrix are not inputs to the relation operator.
 
-The **offline candidate model** consists of a pinned PhaseFormer backbone and a phase-conditioned inter-station relation adapter trained on source-city data. The backbone is inherited from PhaseFormer; the paper's algorithmic claim must be attached to the adapter formulation and supported by its controls, not to the backbone or optimizer alone. Deployment-time selection and release are separate optional stages.
+The **SCPRC forecasting model** uses a PhaseFormer backbone and a phase-conditioned inter-station relation adapter trained on source-city data. PCGrad coordinates source-city gradients. The experiments evaluate the combined framework and its components. Forecast selection is a separate optional stage.
 
 ## 2. End-to-end SCPRC framework
 
@@ -77,21 +76,22 @@ flowchart TD
   K --> L[Optional Online(84,.25) delayed-feedback update]
 ```
 
-## 5. Evidence-to-claim mapping
+## 5. Experimental comparisons
 
-- **Primary offline accuracy:** lead with Original PhaseFormer (no-PCGrad) versus SCPRC on the frozen CHARGED six-city LOCO matrix. Use Exact-PCGrad only as a mechanism control; report other eligible matched baselines separately and each external dataset on its own scale.
-- **Relation adapter helps the candidate in the present CHARGED study:** use the high-budget matched structure ablation, with the aggregation statistic clearly specified.
-- **Phase conditioning or the chosen relation operator is better than alternatives:** use the daily/phase structural ablation and parameter-matched phase-wise attention/DeepSets controls. On the aligned retrospective matrix SCPRC is modestly lower-error than these tested controls, but this does not establish universal operator superiority.
-- **Source-support selection affects release/coverage:** use nested source-only release and risk-coverage/fallback analyses, not candidate-only accuracy.
-- **Optional release behavior:** use the separate current 27-case `SCPRC-Online(84,.25)` replay table, label it retrospective, and report its grouped estimands. The older 26-case replay is retained only for provenance. Do not use either release result as the primary offline accuracy claim.
-- **Optimizer novelty:** do not claim it. The available PCGrad/CAGrad/mean controls characterize training choices and attribution only.
+The main forecasting comparison uses Original PhaseFormer and SCPRC on the CHARGED six-city LOCO protocol. Exact-PCGrad is the mechanism control. External datasets are evaluated on their own targets and scales.
 
-See [`05_evidence_inventory.md`](SOURCE_ARTIFACT_INDEX.md#src-ed0b66a290e238cd) for exact source paths, metrics, and protocol incompatibilities.
+The relation studies compare daily and phase-conditioned relations, phase-wise attention, DeepSets, independent component switches, and component removals. Results identify metric-specific differences; they do not establish that one operator is uniformly best. The adapter is also evaluated against phase-sharing, station-wise, and concatenation controls using a separately recorded paired reference.
 
-## 6. Claim boundaries
+Source-support screening is assessed with risk-coverage and fallback analyses. The optional online policy uses the 27-case `SCPRC-Online(84,.25)` replay and its own grouped metrics. These are forecast-selection evaluations, separate from the core model's point accuracy. The 26-case replay remains a separate source record. PCGrad/CAGrad/mean-gradient controls evaluate training choices; PCGrad itself is an existing method.
 
-- The local evidence supports an application-specific phase-conditioned relation adapter as the most plausible algorithmic contribution; it does not establish that every part of the operator is novel in the literature.
-- An earlier attention summary appeared better because it used a different SCPRC candidate matrix. On the aligned structure matrix SCPRC has modestly lower equal-fold RMSE/MAE than the tested attention and DeepSets adapters. Report both the matrix lineage and narrow comparison; do not claim general superiority. The same-device profile also shows SCPRC forward latency is higher than these controls.
-- Certificate variants have very similar candidate accuracy; their role is selection/release, not a demonstrated source of the candidate's accuracy gain.
-- Station-input missingness experiments show material brittleness. The support score is a distribution-support diagnostic, not a missing-sensor detector.
-- All currently available results are retrospective. None is a blind or prospective confirmation.
+Detailed source identities are listed in the [experiment inventory](SOURCE_ARTIFACT_INDEX.md#src-ed0b66a290e238cd).
+
+## 6. Interpretation
+
+The experiments assess the phase-conditioned relation adapter within the SCPRC framework. Their scope is the recorded tasks and controls, rather than a claim that every operator component is new.
+
+On the aligned structure matrix, SCPRC has modestly lower equal-fold RMSE/MAE than the tested attention and DeepSets adapters. Its same-device forward latency is higher. A summary using a different SCPRC reference is kept separate from that comparison.
+
+Source-support variants have similar model accuracy and are interpreted through selection and coverage. Input-missingness tests show sensitivity to missing station histories; the support score measures distribution support rather than sensor failure.
+
+All reported evaluations are retrospective.

@@ -168,8 +168,12 @@
       ],
       "destination_sha256": "8a699875e9739c851287985fbd052c736a07220fd562835e3cce7b6430acc43b",
       "destination_bytes": 45130,
-      "current_release_sha256": "888bc2aeff40ad716621c9de695d5348c5096685e7ffdca0f7369d7bee027288",
-      "current_release_bytes": 44489
+      "current_release_sha256": "6224d63899fe22982cf1850e98f90f892b1883474b1742612a8549c51edcceb2",
+      "current_release_bytes": 43370,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "888bc2aeff40ad716621c9de695d5348c5096685e7ffdca0f7369d7bee027288"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/MAIN_EXPERIMENT_MATRIX_ENERGY_20261104.md",
@@ -238,8 +242,12 @@
       ],
       "destination_sha256": "c0cf68b4dd0248ad7c90fd76c4b3add99d66ac4c79e6d84030a3f862e0273d8c",
       "destination_bytes": 31493,
-      "current_release_sha256": "b3a598578bbfdffafd9ceab646ae2fc3b8c51fdb432adeaa9a8377c1013f611a",
-      "current_release_bytes": 31214
+      "current_release_sha256": "33084aa4d33c13a5cedff16db1f589364f491a6ad88214d3cb1c35ff7815639d",
+      "current_release_bytes": 30459,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "b3a598578bbfdffafd9ceab646ae2fc3b8c51fdb432adeaa9a8377c1013f611a"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/01_model_algorithm.md",
@@ -273,8 +281,12 @@
       ],
       "destination_sha256": "08237099822499200e59515b0aa9e4d6cd13bd2ecd61db7943e09410e51059ec",
       "destination_bytes": 11591,
-      "current_release_sha256": "fa80a55f5f037721e15b2661b6fb716fc65937877dedf21493509b4c9ff8a05d",
-      "current_release_bytes": 11367
+      "current_release_sha256": "726310334d17c713f67eb465ad9dd6ca1e67a6be773cb0ffe5a2dfb9eb569574",
+      "current_release_bytes": 9729,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "fa80a55f5f037721e15b2661b6fb716fc65937877dedf21493509b4c9ff8a05d"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/00_protocol_freeze.md",
@@ -287,8 +299,12 @@
       "link_rewrites": [],
       "destination_sha256": "cb529e27399e189f68a971df3f67144e34d9904ab84173ab78a1d8a21eeec324",
       "destination_bytes": 3300,
-      "current_release_sha256": "1481e01bea25d2d9693a37a75256fb48f913c37a7ecaaf79670d7790898fa181",
-      "current_release_bytes": 3297
+      "current_release_sha256": "6efc1deb696207ef9b9d673db61844a96d3b8d4b57110d929c08337c7132bd6a",
+      "current_release_bytes": 2778,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "1481e01bea25d2d9693a37a75256fb48f913c37a7ecaaf79670d7790898fa181"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/PAPER_MODEL_AND_PROTOCOL_20261031.md",
@@ -301,8 +317,12 @@
       "link_rewrites": [],
       "destination_sha256": "319d538e8ed8ebfb3934f629b419c384b380c493ce361c0d138887f1b0c03b6d",
       "destination_bytes": 7392,
-      "current_release_sha256": "c80a5550fc0f0a5175196694516852e271a5eb227997775da4342ce9bd9d3b9d",
-      "current_release_bytes": 7382
+      "current_release_sha256": "52724ffd86e0ce615714f9c373cca7cc7d228f56413dd02aeb31e356c3652be0",
+      "current_release_bytes": 6992,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "c80a5550fc0f0a5175196694516852e271a5eb227997775da4342ce9bd9d3b9d"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/PAPER_EXTERNAL_DATA_BOUNDARIES_20261031.md",
@@ -321,8 +341,12 @@
       ],
       "destination_sha256": "ee6f78faa6954aaf4a68b5213e8373249348b2bd77d88ea8084d9f4a2fa87ae4",
       "destination_bytes": 1679,
-      "current_release_sha256": "f1626223ff02166bb53aec070bf6541ca6015e60273f4a6545061ce2842f0e85",
-      "current_release_bytes": 1658
+      "current_release_sha256": "48669e9fe8ebac07429c75f4f34064068723250d00e2f86b9f6cfc7506aa1ff6",
+      "current_release_bytes": 1122,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "f1626223ff02166bb53aec070bf6541ca6015e60273f4a6545061ce2842f0e85"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/figures_tables/table_strong_baselines.md",
@@ -341,8 +365,12 @@
       ],
       "destination_sha256": "8febf349e8933fc38520a9ef5c49b5e1ef980bb73d9f785a45ff8eb8b572b854",
       "destination_bytes": 4623,
-      "current_release_sha256": "a68a5c201dbd9759784a8a7039218566284b89733da0d6d604b1c58006d9715c",
-      "current_release_bytes": 4566
+      "current_release_sha256": "71bc2efb2160537b9795cf0085f711a1b6accdbc9197bd06dc343f281582e882",
+      "current_release_bytes": 3817,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "a68a5c201dbd9759784a8a7039218566284b89733da0d6d604b1c58006d9715c"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/figures_tables/table_relation_operators.md",
@@ -361,8 +389,12 @@
       ],
       "destination_sha256": "4e16303c0aad47e76af98664d2441f78ff131fc80c8dd14c306efb5d06f23995",
       "destination_bytes": 3221,
-      "current_release_sha256": "d4a04558a6f8c1ad683c316dbadca7127af71e8cc1d96950d947de08ef4af97c",
-      "current_release_bytes": 3179
+      "current_release_sha256": "88432347f0715b814f93e6da7198dfc93e04f1977ce897917d05d4badc9418fc",
+      "current_release_bytes": 2657,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "d4a04558a6f8c1ad683c316dbadca7127af71e8cc1d96950d947de08ef4af97c"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/energy_value_20261104/RESULTS_AND_CONCLUSIONS.md",
@@ -375,8 +407,12 @@
       "link_rewrites": [],
       "destination_sha256": "564cf4437492a80968b742359a072a4e9d59c7a6ca542b345c56d8f528c4a49b",
       "destination_bytes": 16245,
-      "current_release_sha256": "641c893939a3c68f201c3ce2db2b39d72ddaddffb38c74f1511aae54257057fd",
-      "current_release_bytes": 16230
+      "current_release_sha256": "e2d3065aee41f315a23e0ad284c638b756d5deb480a063d2ebf46c252d6d0706",
+      "current_release_bytes": 15673,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "641c893939a3c68f201c3ce2db2b39d72ddaddffb38c74f1511aae54257057fd"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/RESULTS_AND_CONCLUSIONS_ZH.md",
@@ -400,8 +436,12 @@
       ],
       "destination_sha256": "66306a12a1d6c8271c515c11bac68cdf4554fa2953088239a82db876f663f09d",
       "destination_bytes": 6891,
-      "current_release_sha256": "a330cbb7337dac1191ba5e6fa5aac0cbaf352176c1b0fcba33a7fddf98c25e04",
-      "current_release_bytes": 6830
+      "current_release_sha256": "b5a437aba935e742c74b72a3278570363c2c0c5ae60aa6b77154efa4729f328d",
+      "current_release_bytes": 6308,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "a330cbb7337dac1191ba5e6fa5aac0cbaf352176c1b0fcba33a7fddf98c25e04"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/METHODS_AND_LIMITS.md",
@@ -460,8 +500,12 @@
       ],
       "destination_sha256": "4528c1db21ede5e068ee446cb9f05198f0de3ab1cd988b2b2112d4df036e15df",
       "destination_bytes": 15713,
-      "current_release_sha256": "231161b8d9a9cb7218234413b20c5d5673a743a2beebdadb81e00f26f368b939",
-      "current_release_bytes": 15356
+      "current_release_sha256": "f57361e3ff42ef0825c639d311d11643a95a063fc3223541fcc53e559165aaee",
+      "current_release_bytes": 14831,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "231161b8d9a9cb7218234413b20c5d5673a743a2beebdadb81e00f26f368b939"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/ANALYSIS_RULES.md",
@@ -474,8 +518,12 @@
       "link_rewrites": [],
       "destination_sha256": "42426e9878cebae13dace4c3c5a7c9f420832bb008091926d1f6af42f69cc928",
       "destination_bytes": 11430,
-      "current_release_sha256": "42426e9878cebae13dace4c3c5a7c9f420832bb008091926d1f6af42f69cc928",
-      "current_release_bytes": 11430
+      "current_release_sha256": "f1d39bd683e877e7053924433d7a63e8b904d87f9bcd6b8308fd37544680de85",
+      "current_release_bytes": 10905,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "42426e9878cebae13dace4c3c5a7c9f420832bb008091926d1f6af42f69cc928"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/supplementary_design_controls_20261117/VALIDATION_CORRECTIONS.md",
@@ -488,8 +536,12 @@
       "link_rewrites": [],
       "destination_sha256": "3b140f3ff3e3aad642bbd0afa0062e403dd2bcfaafb5318f75c14b491116f430",
       "destination_bytes": 1723,
-      "current_release_sha256": "3b140f3ff3e3aad642bbd0afa0062e403dd2bcfaafb5318f75c14b491116f430",
-      "current_release_bytes": 1723
+      "current_release_sha256": "86cee553f27396e6e30b3595a4aecaa02d56569379980a3dbfcb6066936345bc",
+      "current_release_bytes": 1198,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "3b140f3ff3e3aad642bbd0afa0062e403dd2bcfaafb5318f75c14b491116f430"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/rebuild_20261031/r9_factorial_stats/README.md",
@@ -513,8 +565,12 @@
       ],
       "destination_sha256": "27704dde8736f20524514c8adb477199d180112d543b31cb1c433255dec52971",
       "destination_bytes": 2640,
-      "current_release_sha256": "2f5bef88b183d205db2555fa5c8740f5b7edb3308b159eaf9e3bc01ce6a898c2",
-      "current_release_bytes": 2623
+      "current_release_sha256": "237f2e9cf988e3807ababd94f7667f10f6694cec2043974341c416f53d21f2a6",
+      "current_release_bytes": 2095,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "2f5bef88b183d205db2555fa5c8740f5b7edb3308b159eaf9e3bc01ce6a898c2"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/rebuild_20261031/r10_spatial_baselines/POSTRUN_STATUS_20261101.md",
@@ -533,8 +589,12 @@
       ],
       "destination_sha256": "df820a53d6341f7c5e1f9790b96220911d4e8d4bb001e7bfbcc7beb3d9e891fc",
       "destination_bytes": 2232,
-      "current_release_sha256": "50cc491c08d02c11f86ecf9379dc64dcc861782623c7dcef920436404b739588",
-      "current_release_bytes": 2210
+      "current_release_sha256": "cb3be22c10190fef549f8a8af0f4fb6174dd28b3e5ad7892409e5499abf10bdc",
+      "current_release_bytes": 1682,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "50cc491c08d02c11f86ecf9379dc64dcc861782623c7dcef920436404b739588"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/rebuild_20261031/r10_spatial_baselines/RUN_STATUS.md",
@@ -568,8 +628,12 @@
       ],
       "destination_sha256": "051daaa21a74fa2990f5c38193c95e506f6454619b3e2b817cc361f845a668f3",
       "destination_bytes": 1611,
-      "current_release_sha256": "2029b981ea37c0b99d836ab2b8670969f4fa84306f92526d26cbf850cf4c43a9",
-      "current_release_bytes": 1526
+      "current_release_sha256": "6ffdece1d25977a03f75b705194d7c014e2f11f9dd1e45d7266d2d4d66a7bb04",
+      "current_release_bytes": 998,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "2029b981ea37c0b99d836ab2b8670969f4fa84306f92526d26cbf850cf4c43a9"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/rebuild_20261031/r11_energy_behavior_graph/protocol_comparison.md",
@@ -582,8 +646,12 @@
       "link_rewrites": [],
       "destination_sha256": "1b880a2c5486076f99aeafb81457314bf8af3bf2215548b682d1413c0c0b9620",
       "destination_bytes": 6101,
-      "current_release_sha256": "1b880a2c5486076f99aeafb81457314bf8af3bf2215548b682d1413c0c0b9620",
-      "current_release_bytes": 6101
+      "current_release_sha256": "b7e569f0d4a126e21bd033a75c31d46676cb12f5c55451a6a20e2d2f8c2ea146",
+      "current_release_bytes": 5573,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "1b880a2c5486076f99aeafb81457314bf8af3bf2215548b682d1413c0c0b9620"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/rebuild_20261031/r12_energy_diagnostics/README.md",
@@ -677,8 +745,12 @@
       ],
       "destination_sha256": "ce3360ae257cb99271096cd845dd8983d37c808138349319da1d81b1d418b4d4",
       "destination_bytes": 8009,
-      "current_release_sha256": "13d27d031a76619e4ec2f41e885dc23255c8074f27ac349a68465e2921a0da35",
-      "current_release_bytes": 7908
+      "current_release_sha256": "e5435662a44ed0e6da25a620a5977fee587dd007695ed5307875747d31afd753",
+      "current_release_bytes": 7380,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "13d27d031a76619e4ec2f41e885dc23255c8074f27ac349a68465e2921a0da35"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/rebuild_20261031/r13_temporal_extrapolation/audit_report.md",
@@ -727,8 +799,12 @@
       ],
       "destination_sha256": "d4913e0cdb9c60fe3d1603116f00887713a41fff52ae76c01e5c11a9c068828d",
       "destination_bytes": 4334,
-      "current_release_sha256": "9503e0a58748b095024716324f460effaf86ca4a9e7c1871c3143235eb4666c2",
-      "current_release_bytes": 4200
+      "current_release_sha256": "c35de4f7f7726cd1ac092ac94c561caca8c041c9b2f2c03bc3465e3d92b9cac5",
+      "current_release_bytes": 3672,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "9503e0a58748b095024716324f460effaf86ca4a9e7c1871c3143235eb4666c2"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/mandatory_supplement/external_strong_baselines_20261028/summary.md",
@@ -747,8 +823,12 @@
       ],
       "destination_sha256": "a359ef22f29e57dc1ac7d8cd578996f0b29deb9b3d5a44e048d2ab6e9be15049",
       "destination_bytes": 5410,
-      "current_release_sha256": "2d34dca1a265ae1e238984ae8ca8be89773a9d657800d8f72518e55cfed3133e",
-      "current_release_bytes": 5394
+      "current_release_sha256": "3e5cc1a586bba1e536d727d7c3cbeb9da6906be3970316603cf38f4633de7bea",
+      "current_release_bytes": 4869,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "2d34dca1a265ae1e238984ae8ca8be89773a9d657800d8f72518e55cfed3133e"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/mandatory_supplement/external_version_audit_20261030/audit_summary.md",
@@ -782,8 +862,12 @@
       ],
       "destination_sha256": "50e15b02e730a606be2809bdcea437a3d4918f5f9a69dddccd0b6152d72efeaa",
       "destination_bytes": 3169,
-      "current_release_sha256": "09c509e6c239c7eeceb0e4aeaa916a297762da34d23d41064e24cb9800569082",
-      "current_release_bytes": 3115
+      "current_release_sha256": "b2b93faf1866728e51b07d62df6bcb11b261e08260cdfe052a4ad2d4295666b0",
+      "current_release_bytes": 2590,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "09c509e6c239c7eeceb0e4aeaa916a297762da34d23d41064e24cb9800569082"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/mandatory_supplement/external_version_audit_20261030/external_version_diff.md",
@@ -802,8 +886,12 @@
       ],
       "destination_sha256": "eed1dfe6862ccb286eb55d4747d1a8ef5123b48e0ce4672e6b47aa74443c4105",
       "destination_bytes": 2889,
-      "current_release_sha256": "815f43c3beaa230e1117ad77fd12023e5f39ef1ae1afb9ee1bdbf1a5d2690a9c",
-      "current_release_bytes": 2862
+      "current_release_sha256": "63435114967900aa6c54d473954f0c6f18f3454e1ba4fc10828d094d55bd5054",
+      "current_release_bytes": 2337,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "815f43c3beaa230e1117ad77fd12023e5f39ef1ae1afb9ee1bdbf1a5d2690a9c"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/mandatory_supplement/energy_scenario_20261030/README.md",
@@ -862,8 +950,12 @@
       ],
       "destination_sha256": "52f84a4e521dde5c8786c63cf3fe64a239aa4e43b2608b3dc9ff35828ecdce9c",
       "destination_bytes": 4553,
-      "current_release_sha256": "840949e0538c5d966d13e37ca24ce3e68d6019b8a1ab7466d96d6965af522099",
-      "current_release_bytes": 4308
+      "current_release_sha256": "644dbb597c755ee3d30caab6287f98efada8412fa620e586253f2fa0941c86e1",
+      "current_release_bytes": 3783,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "840949e0538c5d966d13e37ca24ce3e68d6019b8a1ab7466d96d6965af522099"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/energy_value_20261104/agent_strict_gap/audit/README.md",
@@ -1047,8 +1139,12 @@
       ],
       "destination_sha256": "077cd4568ef6a9a7c429d770f701b71335773bc48250e3ce2d003d9b4f41c8b4",
       "destination_bytes": 10917,
-      "current_release_sha256": "84a5e04d049055ea540dcf0d8541da41341e1d210acdcd0964cefb597982cd8a",
-      "current_release_bytes": 10156
+      "current_release_sha256": "40e780981bbb22aaf2f441e50c3ffe5e6580a697379022ca05abf0d72873db5a",
+      "current_release_bytes": 9614,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "84a5e04d049055ea540dcf0d8541da41341e1d210acdcd0964cefb597982cd8a"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/experiments/rebuild_20261031/e1_original_efficiency_stats/paired_fold_ci.md",
@@ -1072,8 +1168,12 @@
       ],
       "destination_sha256": "abf6fe2d7235ab63ec47cdb032a393aa95cd74871a6a4d6a08de1524de35c969",
       "destination_bytes": 2104,
-      "current_release_sha256": "fc11207d87a84af6c6e92da7caa3c5d812f37c035d14e79a25b8247b88889d4b",
-      "current_release_bytes": 2078
+      "current_release_sha256": "434bf423807de7c7171415e70e8ff0216df78c26cbf2286fa261d381dc866fd0",
+      "current_release_bytes": 1550,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "fc11207d87a84af6c6e92da7caa3c5d812f37c035d14e79a25b8247b88889d4b"
+      }
     },
     {
       "source_path": "/data/TimeMixer/paper2/mandatory_supplement/current_matched_ablation_20261027_homogeneous/per_fold.csv",
@@ -4622,8 +4722,12 @@
       ],
       "destination_sha256": "17d7fec962625ed434b2c59254546c22dc3f7fd600432afc6330288155587d78",
       "destination_bytes": 2579,
-      "current_release_sha256": "f364b7bd0bf685771368cd8930b8270b28c39824bc70ba7e38a377e64fd3e82b",
-      "current_release_bytes": 2498
+      "current_release_sha256": "e8a21975236ca1afd136fb69dbd952a9cd81a0369726462dab77c087804acb22",
+      "current_release_bytes": 1945,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "f364b7bd0bf685771368cd8930b8270b28c39824bc70ba7e38a377e64fd3e82b"
+      }
     },
     {
       "destination": "docs/EXPERIMENT_MATRIX.md",
@@ -4663,8 +4767,12 @@
       ],
       "destination_sha256": "01a86f6d804ae969d61acb50acf1f60852e55058406e120b5e9a34c0f05457e2",
       "destination_bytes": 2114,
-      "current_release_sha256": "eb5c6550e6818819979c143bb84435be163d93191ef3927a1167d16b02feedf1",
-      "current_release_bytes": 1746
+      "current_release_sha256": "0c878ac5c0276212d4e48cb869bf77f1e21886687c39ff8701895d6427b94cda",
+      "current_release_bytes": 3263,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "eb5c6550e6818819979c143bb84435be163d93191ef3927a1167d16b02feedf1"
+      }
     },
     {
       "destination": "docs/MIGRATION_SCOPE_ZH.md",
@@ -4694,32 +4802,48 @@
       ],
       "destination_sha256": "605222d702bf3761f0c2e4df7b3986bf2ddd0065d2041ca82ce300e7c4fd4c40",
       "destination_bytes": 5439,
-      "current_release_sha256": "0f24c22caf8a92900514d6424d17f69c40145bb2b090dcfdb968ee92205f196b",
-      "current_release_bytes": 5258
+      "current_release_sha256": "b0818bd85b00fd81ef2c1ff38544f6beabd434f95f62662c82df4bfa57965083",
+      "current_release_bytes": 3841,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "0f24c22caf8a92900514d6424d17f69c40145bb2b090dcfdb968ee92205f196b"
+      }
     },
     {
       "destination": "docs/SOURCE_ARTIFACT_INDEX.md",
       "operation": "generated_document",
       "destination_sha256": "bc4e1d2d754cf99d225f621d39e917918b9c153016a8aebbc1e417f385a6e381",
       "destination_bytes": 16117,
-      "current_release_sha256": "b4c16d6fe79849359f541778da03104c1b65c7fff665dc4fc96549794fb4a9e7",
-      "current_release_bytes": 16224
+      "current_release_sha256": "a09dafbc0f87facf0efbfb73ffff22f2dca620528ec403b885251b7d158dcdcb",
+      "current_release_bytes": 15038,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "b4c16d6fe79849359f541778da03104c1b65c7fff665dc4fc96549794fb4a9e7"
+      }
     },
     {
       "destination": "docs/RESULTS_INDEX.md",
       "operation": "generated_document",
       "destination_sha256": "250320f2697c66171bade3311960e71f45e4a4b9f53d29b1e8358293ff6d66dc",
       "destination_bytes": 30020,
-      "current_release_sha256": "52341b16e88bbf5a9a290e6348caf9a6c41ee02d4872bc27d3bf282db3e147e1",
-      "current_release_bytes": 28208
+      "current_release_sha256": "f14e7d93a0c91ba66fa3e2c534123a9e33abda2d3e10bf2fd7862c86a359ba97",
+      "current_release_bytes": 26416,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "52341b16e88bbf5a9a290e6348caf9a6c41ee02d4872bc27d3bf282db3e147e1"
+      }
     },
     {
       "destination": "docs/DATA_EXCLUSION_REPORT_ZH.md",
       "operation": "generated_document",
       "destination_sha256": "461d3f4bdd90eaa903f38743134111e524f436436cc144d1460a9c989a923752",
       "destination_bytes": 2355,
-      "current_release_sha256": "461d3f4bdd90eaa903f38743134111e524f436436cc144d1460a9c989a923752",
-      "current_release_bytes": 2355
+      "current_release_sha256": "9ccf71fe2b9ef75f219d455d07154c24c593e1b9894ad6b17bea7a3ab4a1abd4",
+      "current_release_bytes": 1412,
+      "public_text_edit": {
+        "scope": "Reader-facing prose and navigation; source identity and recorded experimental values retained.",
+        "before_sha256": "461d3f4bdd90eaa903f38743134111e524f436436cc144d1460a9c989a923752"
+      }
     }
   ],
   "indexed_not_included": [
@@ -8640,5 +8764,10 @@
     "current_files_indexed": 175,
     "authoritative_current_manifest": "manifests/MANIFEST_SHA256.csv",
     "naming_map": "manifests/NAMING_AUDIT.json"
+  },
+  "reader_documentation": {
+    "edited_source_document_copies": 31,
+    "code_and_result_files_changed": false,
+    "source_hash_fields_preserved": true
   }
 }

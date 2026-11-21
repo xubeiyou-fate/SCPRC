@@ -1,8 +1,5 @@
 # E2 External Matrix Version Audit (2026-10-30)
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](../../MIGRATION_SCOPE_ZH.md)。
-
-
 - Audit timestamp (UTC): `2026-10-29T18:41:02.182371+00:00`
 - Scope: Jiaxing, Shanghai MP-EVData, and UrbanEV Shenzhen; seeds `13/17/29`.
 

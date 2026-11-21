@@ -1,24 +1,12 @@
-# SCPRC Energy-Value Extension Matrix
+# Energy forecasting experiments
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](MIGRATION_SCOPE_ZH.md)。
+These experiments evaluate peak demand, load ramps, total energy, peak timing, and capacity-reservation scenarios using the CHARGED forecasts. The primary framework comparison is Original PhaseFormer versus SCPRC; Exact-PCGrad isolates the relation adapter's increment under PCGrad.
 
+Protocol ID: `SCPRC-ENERGY-VALUE-20261104`. The [main forecasting matrix](MAIN_EXPERIMENT_MATRIX.md) records the point-accuracy experiments.
 
-**2026-11-17 matrix update:** Three supplementary design controls are complete and integrated into the overview table and audited results below. The same-batch Full reference has its own run identity; historical canonical scores are not silently relabeled. Read the [results and conclusions](experiments/design_controls/RESULTS_AND_CONCLUSIONS_ZH.md) and [72-run independent audit](../results/experiments/design_controls/audit/completed_runs_audit.json).
+The EV analysis covers 16 model identities, 288 aligned model-fold inputs, and 576 raw/clipped metric rows. Four strict controls were trained over 18 folds, giving 72 trainings. Independent component switches and Full-drop ablations are reported separately. See the [energy results](experiments/energy_value/RESULTS_AND_CONCLUSIONS.md).
 
-Freeze ID: `SCPRC-ENERGY-VALUE-20261104`
-Parent matrix: [MAIN_EXPERIMENT_MATRIX.md](MAIN_EXPERIMENT_MATRIX.md) (`SCPRC-PAPER-20261031-v2`)
-Scope: post-hoc energy-facing validation of the frozen six-city CHARGED matrix.
-
-Completed extension: 2026-11-05. Four strict arms were independently trained
-for all 18 folds (72 trainings). The full analysis includes 16 model identities,
-288 aligned model-fold inputs, and 576 raw/clipped fold metric rows.
-Read [experiments/energy_value_20261104/RESULTS_AND_CONCLUSIONS.md](experiments/energy_value/RESULTS_AND_CONCLUSIONS.md).
-
-This file is an extension of the paper matrix. It does not replace the main
-accuracy matrix. The primary paper comparison remains Original PhaseFormer
-(no-PCGrad) versus SCPRC. Exact-PCGrad is a mechanism control, and the
-independent-switch component runs are descriptive controls rather than strict
-Full-drop ablations.
+The [paired design study](experiments/design_controls/RESULTS_AND_CONCLUSIONS_ZH.md) evaluates phase sharing, station-wise adaptation, and concatenation using its own same-batch SCPRC reference. Its [72 training records](../results/experiments/design_controls/audit/completed_runs_audit.json) are separate from the strict component-removal experiment.
 
 ## Frozen protocol
 

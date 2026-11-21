@@ -1,6 +1,6 @@
-# SCPRC data sources — links and preparation only
+# Data sources
 
-Updated: 2026-11-21 (Asia/Shanghai). This repository does not redistribute datasets. Download the required official files separately and use an external data directory. Original time series, archives, workbooks, derived panels, labels and raw prediction arrays are excluded from migration and publication.
+Download the datasets from the sources below and keep them outside the repository. The tables record the files used in the experiments, their versions, and their expected hashes. Dataset files, processed panels, labels, and raw predictions are not distributed here.
 
 ## Required sources
 
@@ -13,7 +13,7 @@ Updated: 2026-11-21 (Asia/Shanghai). This repository does not redistribute datas
 
 CHARGED direct file: [Hourly.zip](https://zenodo.org/api/records/15814263/files/Hourly.zip/content).
 
-UrbanEV can also be obtained with the [official GitHub repository ZIP](https://github.com/IntelligentSystemsLab/UrbanEV/archive/refs/heads/main.zip), then use its `data/` directory. The `main` URL is mutable: verify the expected file hashes in `manifests/DATA_REFERENCES.csv`; a release should pin the exact upstream commit after it is resolved. A Git tree SHA must not be mistaken for a commit SHA.
+UrbanEV can also be obtained with the [official GitHub repository ZIP](https://github.com/IntelligentSystemsLab/UrbanEV/archive/refs/heads/main.zip), then use its `data/` directory. The `main` URL can change. Match the downloaded files against the hashes in `manifests/DATA_REFERENCES.csv`.
 
 ## Optional UrbanEV data at other resolutions
 
@@ -31,10 +31,10 @@ These optional archives are not required for the current volume-only UrbanEV exp
 - Jiaxing: build the hourly panel from transaction energy apportioned by overlap time. Keep `prepare_jiaxing_scprc_external.py` and the frozen construction settings; expected panel SHA-256 is recorded in the reference inventory. The hourly panel is not shipped.
 - Shanghai: keep the existing panel-construction logic and frozen configuration. Use A1–A6 and A9 as specified; exclude swapping-count sheets A7/A8 and incomplete A10 for this protocol. Native target is hourly mean power in kW. The prepared history panel is not shipped.
 
-Use a configurable data root outside the repository. The final portable entry points must accept a data-root argument or config; this strategy update does not claim that every historical runner has already been made portable. Do not run training just to prepare data.
+Pass the external data location to the relevant preprocessing or experiment entry point. Some evaluation scripts also require recorded prediction arrays that are not distributed. Their availability is described in [release contents](docs/MIGRATION_SCOPE_ZH.md).
 
 ## Attribution and checks
 
 CHARGED, Jiaxing and Shanghai retain their CC BY 4.0 dataset attribution. UrbanEV declares CC0 in its [official README](https://github.com/IntelligentSystemsLab/UrbanEV). Cite each original dataset record; the project code license does not replace dataset licenses.
 
-`manifests/DATA_REFERENCES.csv` contains metadata and local-reference hashes only. It does not contain observations and is not a copy allowlist. Source links were identified from official records during the project audit; file hashes are checked against existing server files. Successful access to every upstream link at release time remains a separate check.
+`manifests/DATA_REFERENCES.csv` records source files and expected hashes rather than observations. The hashes identify the files used in the experiments; availability of the linked upstream files may change.

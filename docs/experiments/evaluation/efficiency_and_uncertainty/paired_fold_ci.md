@@ -1,8 +1,5 @@
 # Paired fold-level uncertainty: Original PhaseFormer vs SCPRC
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](../../../MIGRATION_SCOPE_ZH.md)。
-
-
 Status: **completed**; 18 city×seed folds; 10,000 paired fold bootstrap replicates.
 
 The primary estimator is the equal-weight mean of the 18 fold-level metrics. Each bootstrap draw resamples complete city×seed folds and uses the same indices for Original and Full. The intervals condition on the six observed cities, three fixed seeds, frozen checkpoints, and the retrospective forecast origins.

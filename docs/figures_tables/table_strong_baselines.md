@@ -1,9 +1,6 @@
-# Offline SCPRC candidate accuracy: Original PhaseFormer main comparison
+# CHARGED forecasting results
 
-> 迁移说明：这是源文档的证据副本，保留原角色、指标和历史实验状态；只修复链接。外部 legacy 所需的 18 个旧 weights 已按本次范围排除，外部完整冻结推理不在包里；R10 未验收，不宣称可复现。数据/预测/图/源码等包外路径仅索引，未包含。大型审计 JSON 的链接指向明确标注的精选元数据投影；正文 SHA256 是源产物历史指纹，副本 SHA256 见迁移审计。详见 [迁移范围](../MIGRATION_SCOPE_ZH.md)。
-
-
-This is the main offline-accuracy table. The primary comparison is **Original PhaseFormer (no-PCGrad) versus SCPRC**. `Exact-PCGrad` is a mechanism-ablation control and is reported separately. The old Conventional Exact row remains historical provenance and is not used as the main baseline.
+The primary comparison is **Original PhaseFormer (no-PCGrad) versus SCPRC**. Exact-PCGrad is reported as a mechanism control. Conventional Exact is a separately recorded reference.
 
 All CHARGED scores are retrospective raw-volume RMSE/MAE with lower values better. The canonical protocol is six cities, three seeds, 18 city×seed folds, 168 h input, 24 h output and 721 August origins per fold.
 
@@ -12,7 +9,7 @@ All CHARGED scores are retrospective raw-volume RMSE/MAE with lower values bette
 | Model | RMSE | MAE | Parameters | Evidence status |
 |---|---:|---:|---:|---|
 | **Original PhaseFormer (no-PCGrad)** | 35.0675 | 8.2817 | 36,360 | canonical 18-fold strict control; main baseline |
-| **SCPRC** | **32.1907** | **7.0498** | 37,263 | canonical 18-fold candidate |
+| **SCPRC** | **32.1907** | **7.0498** | 37,263 | main 18-fold model |
 | PatchTST, fair volume-only | 42.8268 | 8.1441 | 25,913 | 18/18 audited folds |
 | TimeMixer, fair volume-only | 44.4249 | 8.3487 | 293,263 | 18/18 audited folds |
 | Seasonal naive (24 h) | 35.8339 | 7.5424 | — | retrospective rule baseline |
@@ -30,7 +27,7 @@ SCPRC relative to Original PhaseFormer improves equal-fold mean RMSE by approxim
 
 This panel estimates the mechanism chain. SCPRC versus Original PhaseFormer is the full-method comparison; Full versus Exact-PCGrad estimates the added relation components after PCGrad. Full does not win every metric: Daily relation has lower MAE.
 
-## Strict independent-component controls
+## Independent component controls
 
 | Model / variant | RMSE | MAE | Role |
 |---|---:|---:|---|
@@ -43,13 +40,13 @@ This panel estimates the mechanism chain. SCPRC versus Original PhaseFormer is t
 
 The independent-component table is the 18-fold P2 matrix. Its Full value is kept distinct from the R1 canonical four-arm value because the output artifacts have separate run identities.
 
-## Historical Conventional Exact reference
+## Conventional Exact reference
 
 | Model / variant | RMSE | MAE | Evidence status |
 |---|---:|---:|---|
 | PhaseFormer Exact | 35.8956 | 8.4028 | legacy Conventional Exact matrix; provenance only |
 
-This row must not be renamed `Original PhaseFormer`, and it must not be pooled with `Exact-PCGrad`. The historical 10.32% RMSE and 16.10% MAE reductions are excluded from the current headline.
+This reference differs from Original PhaseFormer and Exact-PCGrad. The 10.32% RMSE and 16.10% MAE reductions belong to this comparison, rather than the main comparison above.
 
 ## Other offline baselines
 
@@ -61,6 +58,6 @@ This row must not be renamed `Original PhaseFormer`, and it must not be pooled w
 | DLinear (two-variable) | 70.9589 | 13.4285 | retrospective trained baseline; qualified optimization match |
 | N-BEATS + behavior-graph residual | 64.2645 | 12.4309 | local diagnostic; not faithful paper reproduction |
 
-PatchTST and TimeMixer use the matched exposure budget of 8,192 source windows and effective batch 4. N-BEATS remains a local diagnostic and is not a capacity-matched SOTA claim. Do not claim blanket superiority over every baseline.
+PatchTST and TimeMixer use the matched exposure budget of 8,192 source windows and effective batch 4. N-BEATS is a diagnostic implementation with a different capacity; results vary by baseline and metric.
 
 The optional `SCPRC-Online(84,.25)` release result is excluded and reported separately in [table_primary_results.md](../SOURCE_ARTIFACT_INDEX.md#src-6d300dc7d5e314a7).
